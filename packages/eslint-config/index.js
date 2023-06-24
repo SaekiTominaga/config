@@ -6,14 +6,14 @@ module.exports = {
 		'./rules/eslint/suggestions.js',
 		'./rules/eslint/layout&formatting.js',
 		'./rules/import.js',
-		'plugin:jsdoc/recommended-typescript',
+		'plugin:jsdoc/recommended',
 		'./rules/jsdoc.js',
 	],
 	plugins: ['jsdoc'],
 	overrides: [
 		{
 			files: ['*.ts'],
-			extends: ['plugin:@typescript-eslint/recommended'],
+			extends: ['plugin:@typescript-eslint/recommended', 'plugin:jsdoc/recommended-typescript'],
 			rules: {
 				'dot-notation': 'off',
 			},

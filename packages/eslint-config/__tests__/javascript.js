@@ -2,7 +2,7 @@ export default class Test {
 	#foo;
 
 	/**
-	 * @param foo - foo
+	 * @param {string} foo - foo
 	 */
 	constructor(foo) {
 		this.#foo = foo;
@@ -11,10 +11,10 @@ export default class Test {
 	/**
 	 * func
 	 *
-	 * @param foo - foo
-	 * @param bar - bar
+	 * @param {string} foo - foo
+	 * @param {number} bar - bar
 	 *
-	 * @returns foo
+	 * @returns {string} foo
 	 */
 	func(foo, bar) {
 		this.#foo = foo;

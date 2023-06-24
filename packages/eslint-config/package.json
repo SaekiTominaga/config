@@ -1,0 +1,38 @@
+{
+	"name": "@w0s/eslint-config",
+	"version": "1.2.0",
+	"description": "ESLint configuration file used on w0s.jp",
+	"keywords": [
+		"eslint",
+		"eslintconfig",
+		"eslint-config",
+		"styleguide"
+	],
+	"license": "MIT",
+	"author": "Saeki Tominaga",
+	"files": [
+		"rules"
+	],
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SaekiTominaga/w0s.git"
+	},
+	"scripts": {
+		"test": "eslint __tests__/*"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.60.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-jsdoc": "^46.2.6"
+	},
+	"devDependencies": {
+		"eslint": "^8.43.0"
+	},
+	"peerDependencies": {
+		"eslint": "^8.39.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

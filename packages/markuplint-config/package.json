@@ -1,0 +1,34 @@
+{
+	"name": "@w0s/markuplint-config",
+	"version": "2.4.0",
+	"description": "markuplint configuration file used on w0s.jp",
+	"keywords": [
+		"markuplint",
+		"markuplint-config"
+	],
+	"license": "MIT",
+	"author": "Saeki Tominaga",
+	"files": [
+		""
+	],
+	"main": ".markuplintrc",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SaekiTominaga/w0s.git"
+	},
+	"scripts": {
+		"test-valid": "markuplint -c __tests__/.markuplintrc __tests__/valid/**/*.html",
+		"test-invalid": "markuplint -c __tests__/.markuplintrc __tests__/invalid/**/*.html",
+		"test-parser": "markuplint -c __tests__/.markuplintrc __tests__/parser/**/*"
+	},
+	"devDependencies": {
+		"@markuplint/ejs-parser": "^3.8.0",
+		"markuplint": "^3.11.0"
+	},
+	"peerDependencies": {
+		"markuplint": "^3.7.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

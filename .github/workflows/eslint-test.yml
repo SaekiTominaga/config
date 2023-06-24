@@ -1,0 +1,30 @@
+name: eslint-test
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'packages/eslint-config/.eslintrc.json'
+      - 'packages/eslint-config/index.js'
+      - 'packages/eslint-config/rules/**/*.js'
+      - 'packages/eslint-config/__tests__/*'
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/eslint-config/.eslintrc.json'
+      - 'packages/eslint-config/index.js'
+      - 'packages/eslint-config/rules/**/*.js'
+      - 'packages/eslint-config/__tests__/*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm test

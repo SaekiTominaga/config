@@ -1,0 +1,16 @@
+{
+	"extends": [
+		"../.markuplintrc"
+	],
+	"parser": {
+		"\\.ejs$": "@markuplint/ejs-parser"
+	},
+	"nodeRules": [
+		{
+			"selector": "input",
+			"rules": {
+				"id-duplication": false
+			}
+		}
+	]
+}

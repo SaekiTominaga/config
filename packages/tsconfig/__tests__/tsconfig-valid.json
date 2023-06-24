@@ -1,0 +1,11 @@
+{
+	"extends": "../tsconfig.json",
+	"include": ["@types/*.d.ts", "valid/**/*.ts"],
+	"compilerOptions": {
+		/* Emit */
+		"noEmit": true,
+
+		/* Projects */
+		"incremental": false
+	}
+}

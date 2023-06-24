@@ -23,4 +23,4 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - run: npm test
+      - run: npm test -w '@w0s/stylelint-config'

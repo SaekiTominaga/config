@@ -1,6 +1,6 @@
 {
 	"name": "@w0s/tsconfig",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "TSConfig file used on w0s.jp",
 	"keywords": [
 		"tsconfig"

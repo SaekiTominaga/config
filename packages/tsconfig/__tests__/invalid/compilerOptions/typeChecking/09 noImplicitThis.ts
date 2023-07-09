@@ -1,4 +1,4 @@
-class Rectangle {
+export class Rectangle {
 	width: number;
 	height: number;
 

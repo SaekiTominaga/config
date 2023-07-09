@@ -1,11 +1,11 @@
-class Album {
+export class Album {
 	setup() {}
 }
 
-class MLAlbum extends Album {
+export class MLAlbum extends Album {
 	override setup() {}
 }
 
-class SharedAlbum extends Album {
+export class SharedAlbum extends Album {
 	override setup() {}
 }

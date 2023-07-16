@@ -1,3 +1,7 @@
+import fs from 'node:fs';
+
+await fs.promises.readFile('./typescript.ts');
+
 export default class Test {
 	#foo: string;
 

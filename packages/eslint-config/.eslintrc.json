@@ -3,9 +3,5 @@
 	"env": {
 		"es2022": true
 	},
-	"extends": ["./index.js"],
-	"parserOptions": {
-		"ecmaVersion": 2022,
-		"sourceType": "module"
-	}
+	"extends": ["./index.js"]
 }

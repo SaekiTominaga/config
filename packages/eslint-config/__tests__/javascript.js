@@ -1,3 +1,7 @@
+import fs from 'node:fs';
+
+await fs.promises.readFile('./javascript.js');
+
 export default class Test {
 	#foo;
 

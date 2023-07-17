@@ -9,6 +9,10 @@ module.exports = {
 		'plugin:jsdoc/recommended',
 		'./rules/jsdoc.js',
 	],
+	parserOptions: {
+		ecmaVersion: 2022,
+		sourceType: 'module',
+	},
 	plugins: ['jsdoc'],
 	overrides: [
 		{

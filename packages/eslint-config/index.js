@@ -12,14 +12,23 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 2022,
 		sourceType: 'module',
+		project: true,
 	},
 	plugins: ['jsdoc'],
 	overrides: [
 		{
 			files: ['*.ts'],
-			extends: ['plugin:@typescript-eslint/recommended', 'plugin:jsdoc/recommended-typescript'],
+			extends: ['plugin:@typescript-eslint/strict-checked', 'plugin:@typescript-eslint/stylistictype-checked', 'plugin:jsdoc/recommended-typescript'],
 			rules: {
 				'dot-notation': 'off',
+				'@typescript-eslint/dot-notation': 'off',
+				'@typescript-eslint/no-extraneous-class': 'off',
+				'@typescript-eslint/no-non-null-assertion': 'off',
+				'@typescript-eslint/no-unsafe-argument': 'off',
+				'@typescript-eslint/no-unsafe-assignment': 'off',
+				'@typescript-eslint/no-unsafe-call': 'off',
+				'@typescript-eslint/no-unsafe-member-access': 'off',
+				'@typescript-eslint/no-unsafe-return': 'off',
 			},
 		},
 		{

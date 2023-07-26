@@ -18,7 +18,7 @@ module.exports = {
 	overrides: [
 		{
 			files: ['*.ts'],
-			extends: ['plugin:@typescript-eslint/strict-checked', 'plugin:@typescript-eslint/stylistictype-checked', 'plugin:jsdoc/recommended-typescript'],
+			extends: ['plugin:@typescript-eslint/strict-type-checked', 'plugin:@typescript-eslint/stylistic-type-checked', 'plugin:jsdoc/recommended-typescript'],
 			rules: {
 				'dot-notation': 'off',
 				'@typescript-eslint/dot-notation': 'off',

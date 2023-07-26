@@ -1,0 +1,13 @@
+{
+	"include": ["*.ts"],
+	"compilerOptions": {
+		/* Type Checking */
+		"strict": true,
+
+		/* Modules */
+		"module": "ES2022",
+
+		/* Language and Environment */
+		"target": "ES2022"
+	}
+}

@@ -3,5 +3,6 @@
 	"env": {
 		"es2022": true
 	},
-	"extends": ["./index.js"]
+	"extends": ["./index.js"],
+	"ignorePatterns": ["tsconfig.json"]
 }

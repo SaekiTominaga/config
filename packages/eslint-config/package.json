@@ -16,7 +16,7 @@
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/SaekiTominaga/w0s.git"
+		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
 		"test": "eslint __tests__/*"

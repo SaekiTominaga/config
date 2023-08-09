@@ -14,7 +14,7 @@
 	"main": ".markuplintrc",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/SaekiTominaga/w0s.git"
+		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
 		"test-valid": "markuplint -c __tests__/.markuplintrc __tests__/valid/**/*.html",

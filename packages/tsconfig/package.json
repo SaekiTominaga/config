@@ -14,7 +14,7 @@
 	"main": "tsconfig.json",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/SaekiTominaga/w0s.git"
+		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
 		"test": "tsc --project __tests__/tsconfig-valid.json",

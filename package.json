@@ -1,9 +1,7 @@
 {
-	"name": "w0s",
+	"name": "config",
 	"private": true,
 	"workspaces": [
 		"packages/*"
-	],
-	"scripts": {},
-	"devDependencies": {}
+	]
 }

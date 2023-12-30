@@ -9,7 +9,6 @@
 		"custom-property-pattern": "^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
 		"declaration-no-important": true,
 		"length-zero-no-unit": [true, { "ignore": ["custom-properties"] }],
-		"max-line-length": null,
 		"max-nesting-depth": 5,
 		"no-descending-specificity": null,
 		"selector-max-id": 0,

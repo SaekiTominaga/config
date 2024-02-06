@@ -5,12 +5,14 @@ on:
       - main
     paths:
       - 'packages/markuplint-config/.markuplintrc'
+      - 'packages/markuplint-config/package.json'
       - 'packages/markuplint-config/__tests__/valid/**/*.html'
   push:
     branches:
       - main
     paths:
       - 'packages/markuplint-config/.markuplintrc'
+      - 'packages/markuplint-config/package.json'
       - 'packages/markuplint-config/__tests__/valid/**/*.html'
   workflow_dispatch:
 

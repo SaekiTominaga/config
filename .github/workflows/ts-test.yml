@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - 'packages/tsconfig/tsconfig.json'
+      - 'packages/tsconfig/package.json'
       - 'packages/tsconfig/__tests__/@types/*.d.ts'
       - 'packages/tsconfig/__tests__/valid/**/*.ts'
       - 'packages/tsconfig/__tests__/tsconfig-valid.json'
@@ -13,6 +14,7 @@ on:
       - main
     paths:
       - 'packages/tsconfig/tsconfig.json'
+      - 'packages/tsconfig/package.json'
       - 'packages/tsconfig/__tests__/@types/*.d.ts'
       - 'packages/tsconfig/__tests__/valid/**/*.ts'
       - 'packages/tsconfig/__tests__/tsconfig-valid.json'

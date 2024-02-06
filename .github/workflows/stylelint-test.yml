@@ -5,12 +5,14 @@ on:
       - main
     paths:
       - 'packages/stylelint-config/.stylelintrc'
+      - 'packages/stylelint-config/package.json'
       - 'packages/stylelint-config/__tests__/*.css'
   push:
     branches:
       - main
     paths:
       - 'packages/stylelint-config/.stylelintrc'
+      - 'packages/stylelint-config/package.json'
       - 'packages/stylelint-config/__tests__/*.css'
   workflow_dispatch:
 

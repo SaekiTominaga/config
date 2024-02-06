@@ -6,6 +6,7 @@ on:
     paths:
       - 'packages/eslint-config/.eslintrc.json'
       - 'packages/eslint-config/index.js'
+      - 'packages/eslint-config/package.json'
       - 'packages/eslint-config/rules/**/*.js'
       - 'packages/eslint-config/__tests__/*'
   push:
@@ -14,6 +15,7 @@ on:
     paths:
       - 'packages/eslint-config/.eslintrc.json'
       - 'packages/eslint-config/index.js'
+      - 'packages/eslint-config/package.json'
       - 'packages/eslint-config/rules/**/*.js'
       - 'packages/eslint-config/__tests__/*'
   workflow_dispatch:

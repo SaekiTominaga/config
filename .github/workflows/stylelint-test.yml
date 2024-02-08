@@ -4,16 +4,16 @@ on:
     branches:
       - main
     paths:
-      - 'packages/stylelint-config/.stylelintrc'
-      - 'packages/stylelint-config/package.json'
-      - 'packages/stylelint-config/__tests__/*.css'
+      - 'packages/stylelint/.stylelintrc'
+      - 'packages/stylelint/package.json'
+      - 'packages/stylelint/__tests__/*.css'
   push:
     branches:
       - main
     paths:
-      - 'packages/stylelint-config/.stylelintrc'
-      - 'packages/stylelint-config/package.json'
-      - 'packages/stylelint-config/__tests__/*.css'
+      - 'packages/stylelint/.stylelintrc'
+      - 'packages/stylelint/package.json'
+      - 'packages/stylelint/__tests__/*.css'
   workflow_dispatch:
 
 jobs:

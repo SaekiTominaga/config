@@ -18,7 +18,7 @@
 
 ## `rules`
 
-`markuplint:recommended`（v3.7.0 時点）との差異一覧と、その理由を記す。
+`markuplint:recommended`（v4.0.2 時点）との差異一覧と、その理由を記す。
 
 ### `markuplint:recommended` との差異一覧
 
@@ -132,11 +132,9 @@ Prettier で自動整形しているため、必ずしも markuplint 側で気�
 
 ### `search`
 
-`<search>` 要素は2023年3月に登場した新しい要素であるため、ブラウザや支援技術の対応が追いついていない。
+`<search>` 要素は2023年3月に登場した新しい要素であるため、ブラウザや支援技術の対応が追いついていない。そのため、サポートが充分に普及するまでは暫定的に `<search role="search">` とする必要がある。
 
-そのため、サポートが充分に普及するまでは暫定的に `<search role="search">` とする必要がある。
-
-[`markuplint:a11y`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.a11y.json) でも同様の設定がなされている。
+公式のプリセットでは v4.0.0 にて [`role` 属性の記述を必須とする暫定対応が廃止](https://github.com/markuplint/markuplint/pull/1210)された。しかし `<search>` 要素に対応していない Safari 16 系のアクセスもまだ多いため、当サイトではもうしばらく `role="search"` を明記する対応を続けることにする。
 
 ### `div`
 

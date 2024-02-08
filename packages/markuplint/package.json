@@ -18,11 +18,9 @@
 	},
 	"scripts": {
 		"test-valid": "markuplint -c __tests__/.markuplintrc __tests__/valid/**/*.html",
-		"test-invalid": "markuplint -c __tests__/.markuplintrc __tests__/invalid/**/*.html",
-		"test-parser": "markuplint -c __tests__/.markuplintrc __tests__/parser/**/*"
+		"test-invalid": "markuplint -c __tests__/.markuplintrc __tests__/invalid/**/*.html"
 	},
 	"devDependencies": {
-		"@markuplint/ejs-parser": "^4.0.0",
 		"markuplint": "^4.0.2"
 	},
 	"peerDependencies": {

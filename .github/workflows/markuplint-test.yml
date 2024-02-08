@@ -4,16 +4,16 @@ on:
     branches:
       - main
     paths:
-      - 'packages/markuplint-config/.markuplintrc'
-      - 'packages/markuplint-config/package.json'
-      - 'packages/markuplint-config/__tests__/valid/**/*.html'
+      - 'packages/markuplint/.markuplintrc'
+      - 'packages/markuplint/package.json'
+      - 'packages/markuplint/__tests__/valid/**/*.html'
   push:
     branches:
       - main
     paths:
-      - 'packages/markuplint-config/.markuplintrc'
-      - 'packages/markuplint-config/package.json'
-      - 'packages/markuplint-config/__tests__/valid/**/*.html'
+      - 'packages/markuplint/.markuplintrc'
+      - 'packages/markuplint/package.json'
+      - 'packages/markuplint/__tests__/valid/**/*.html'
   workflow_dispatch:
 
 jobs:

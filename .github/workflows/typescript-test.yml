@@ -1,0 +1,32 @@
+name: typescript-test
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'packages/typescript/tsconfig.json'
+      - 'packages/typescript/package.json'
+      - 'packages/typescript/__tests__/@types/*.d.ts'
+      - 'packages/typescript/__tests__/valid/**/*.ts'
+      - 'packages/typescript/__tests__/tsconfig-valid.json'
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/typescript/tsconfig.json'
+      - 'packages/typescript/package.json'
+      - 'packages/typescript/__tests__/@types/*.d.ts'
+      - 'packages/typescript/__tests__/valid/**/*.ts'
+      - 'packages/typescript/__tests__/tsconfig-valid.json'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm test -w '@w0s/tsconfig'

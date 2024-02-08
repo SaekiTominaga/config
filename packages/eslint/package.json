@@ -1,6 +1,6 @@
 {
 	"name": "@w0s/eslint-config",
-	"version": "5.0.1",
+	"version": "5.1.0",
 	"description": "ESLint configuration file used on w0s.jp",
 	"keywords": [
 		"eslint",

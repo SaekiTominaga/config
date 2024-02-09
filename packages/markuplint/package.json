@@ -8,9 +8,7 @@
 	],
 	"license": "MIT",
 	"author": "Saeki Tominaga",
-	"files": [
-		""
-	],
+	"files": [],
 	"main": ".markuplintrc",
 	"repository": {
 		"type": "git",

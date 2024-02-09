@@ -8,9 +8,7 @@
 	],
 	"license": "MIT",
 	"author": "Saeki Tominaga",
-	"files": [
-		""
-	],
+	"files": [],
 	"main": ".stylelintrc",
 	"repository": {
 		"type": "git",

@@ -199,6 +199,12 @@ HTML 仕様では `<caption>` 要素の使い方として以下の記述があ�
 
 `rules` で `no-empty-palpable-content` を設定しているが、 `<output>` 要素は通常 JavaScript で動的に中身を設定することがほとんどであり、初期値がある場合を除き、中身が空の `<output></output>` とすることが多い。そのため除外設定している。
 
+### `details[name]`
+
+HTML 仕様では [`<details>` 要素](https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element)について <q>A document must not contain a `details` element that is a descendant of another `details` element in the same details name group.</q> と規定されている。
+
+[`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.json) ではそれに対応した設定があり、本設定ファイルでも同様の設定としている。
+
 ### `template *`
 
 `<template><a href=""></a></template>` のようなマークアップをすることがあるため、`<template>` 要素内では [`no-empty-palpable-content`](https://markuplint.dev/ja/docs/rules/no-empty-palpable-content) と [`require-accessible-name`](https://markuplint.dev/ja/docs/rules/require-accessible-name) を無効にしている。

@@ -3,11 +3,11 @@
 [![npm version](https://badge.fury.io/js/%40w0s%2Fmarkuplint-config.svg)](https://www.npmjs.com/package/@w0s/markuplint-config)
 [![test status](https://github.com/SaekiTominaga/w0s/actions/workflows/markuplint-test.yml/badge.svg)](https://github.com/SaekiTominaga/w0s/actions/workflows/markuplint-test.yml)
 
-個人サイト [w0s.jp](https://w0s.jp/) で使用している Markuplint の設定ファイルです。
+個人サイト [w0s.jp](https://w0s.jp/) で使用している [Markuplint](https://markuplint.dev/ja/) の設定ファイルです。
 
 ひとりで運営している個人サイトに特化した癖のある設定なので、実際のプロジェクトにそのまま導入するのはお勧めしません。多くのケースでは[公式のプリセット](https://markuplint.dev/ja/docs/guides/presets)を利用するのが良いでしょう。
 
-私はいくつかの理由から `markuplint:recommended` やそれ以外のプリセットをそのまま利用することはせず、有用なルールは部分的に取り入れながらも `rules` と `nodeRules` を独自に設定しています。
+私はいくつかの理由から [`markuplint:recommended`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.recommended.json) やそれ以外のプリセットをそのまま利用することはせず、有用なルールは部分的に取り入れながらも `rules` と `nodeRules` を独自に設定しています。
 
 このドキュメントでは `markuplint:recommended` と異なる部分について**なぜあえて変えているのか**その理由を記しています。もし `markuplint:recommended` の適用に問題があるか、あるいは Markuplint の開発者とは別の意見を見てみたいというのであれば本設定ファイルが参考になる部分もあるかもしれません。そのうえで、あなたのプロジェクトに適した部分があれば部分的に取り入れるのが良いと思います。
 
@@ -31,8 +31,10 @@
 | `deprecated-element` | true | true | |
 | `disallowed-element` | ["noscript", "embed"] | ― | [⚠](#disallowed-element) |
 | `doctype` | true | true | |
+| `heading-levels` | true | true | |
 | `id-duplication` | true | true | |
 | `invalid-attr` | { `accesskey`, `tabindex` } | { `accesskey`, `tabindex` } | |
+| `no-duplicate-dt` | true | true | |
 | `no-empty-palpable-content` | true | ― | [⚠](#no-empty-palpable-content) |
 | `permitted-contents` | true | true | |
 | `placeholder-label-option` | true | true | |
@@ -46,6 +48,8 @@
 | - | - | - | - |
 | `label-has-control` | true | true | |
 | `landmark-roles` | true | true | |
+| `neighbor-popovers` | true | true | |
+| `no-consecutive-br` | true | true | |
 | `no-refer-to-non-existent-id` | true | true | |
 | `require-accessible-name` | true | true | |
 | `required-h1` | true | true | |

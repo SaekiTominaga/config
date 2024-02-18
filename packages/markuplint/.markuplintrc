@@ -8,6 +8,7 @@
 			"embed"
 		],
 		"doctype": true,
+		"heading-levels": true,
 		"id-duplication": true,
 		"invalid-attr": {
 			"options": {
@@ -27,6 +28,7 @@
 				]
 			}
 		},
+		"no-duplicate-dt": true,
 		"no-empty-palpable-content": true,
 		"permitted-contents": true,
 		"placeholder-label-option": true,
@@ -35,6 +37,8 @@
 		"required-element": false,
 		"label-has-control": true,
 		"landmark-roles": true,
+		"neighbor-popovers": true,
+		"no-consecutive-br": true,
 		"no-refer-to-non-existent-id": true,
 		"require-accessible-name": true,
 		"required-h1": true,

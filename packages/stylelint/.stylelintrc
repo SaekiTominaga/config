@@ -3,16 +3,29 @@
 	"rules": {
 		"at-rule-empty-line-before": [
 			"always",
-			{ "except": ["blockless-after-same-name-blockless", "first-nested"], "ignore": ["after-comment"], "ignoreAtRules": ["import"] }
+			{
+				"except": ["blockless-after-same-name-blockless", "first-nested"],
+				"ignore": ["after-comment"],
+				"ignoreAtRules": ["import"]
+			}
 		],
 		"block-no-empty": null,
 		"custom-property-pattern": "^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
 		"declaration-no-important": true,
-		"length-zero-no-unit": [true, { "ignore": ["custom-properties"] }],
 		"max-nesting-depth": 5,
 		"no-descending-specificity": null,
 		"selector-max-id": 0,
-		"selector-max-universal": [0, { "ignoreAfterCombinators": [">", "+"] }],
-		"value-keyword-case": ["lower", { "camelCaseSvgKeywords": true }]
+		"selector-max-universal": [
+			0,
+			{
+				"ignoreAfterCombinators": [">", "+"]
+			}
+		],
+		"value-keyword-case": [
+			"lower",
+			{
+				"camelCaseSvgKeywords": true
+			}
+		]
 	}
 }

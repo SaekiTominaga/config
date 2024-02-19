@@ -2,12 +2,5 @@
 	"extends": [
 		"../.markuplintrc"
 	],
-	"nodeRules": [
-		{
-			"selector": "input",
-			"rules": {
-				"id-duplication": false
-			}
-		}
-	]
+	"nodeRules": []
 }

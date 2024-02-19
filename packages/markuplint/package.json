@@ -19,10 +19,10 @@
 		"test-invalid": "markuplint -c __tests__/.markuplintrc __tests__/invalid/**/*.html"
 	},
 	"devDependencies": {
-		"markuplint": "^4.0.2"
+		"markuplint": "^4.1.1"
 	},
 	"peerDependencies": {
-		"markuplint": "^4.0.1"
+		"markuplint": "^4.1.1"
 	},
 	"publishConfig": {
 		"access": "public"

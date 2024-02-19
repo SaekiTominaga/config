@@ -3,11 +3,11 @@
 [![npm version](https://badge.fury.io/js/%40w0s%2Fmarkuplint-config.svg)](https://www.npmjs.com/package/@w0s/markuplint-config)
 [![test status](https://github.com/SaekiTominaga/w0s/actions/workflows/markuplint-test.yml/badge.svg)](https://github.com/SaekiTominaga/w0s/actions/workflows/markuplint-test.yml)
 
-個人サイト [w0s.jp](https://w0s.jp/) で使用している Markuplint の設定ファイルです。
+個人サイト [w0s.jp](https://w0s.jp/) で使用している [Markuplint](https://markuplint.dev/ja/) の設定ファイルです。
 
 ひとりで運営している個人サイトに特化した癖のある設定なので、実際のプロジェクトにそのまま導入するのはお勧めしません。多くのケースでは[公式のプリセット](https://markuplint.dev/ja/docs/guides/presets)を利用するのが良いでしょう。
 
-私はいくつかの理由から `markuplint:recommended` やそれ以外のプリセットをそのまま利用することはせず、有用なルールは部分的に取り入れながらも `rules` と `nodeRules` を独自に設定しています。
+私はいくつかの理由から [`markuplint:recommended`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.recommended.json) やそれ以外のプリセットをそのまま利用することはせず、有用なルールは部分的に取り入れながらも `rules` と `nodeRules` を独自に設定しています。
 
 このドキュメントでは `markuplint:recommended` と異なる部分について**なぜあえて変えているのか**その理由を記しています。もし `markuplint:recommended` の適用に問題があるか、あるいは Markuplint の開発者とは別の意見を見てみたいというのであれば本設定ファイルが参考になる部分もあるかもしれません。そのうえで、あなたのプロジェクトに適した部分があれば部分的に取り入れるのが良いと思います。
 
@@ -31,8 +31,10 @@
 | `deprecated-element` | true | true | |
 | `disallowed-element` | ["noscript", "embed"] | ― | [⚠](#disallowed-element) |
 | `doctype` | true | true | |
+| `heading-levels` | true | true | |
 | `id-duplication` | true | true | |
 | `invalid-attr` | { `accesskey`, `tabindex` } | { `accesskey`, `tabindex` } | |
+| `no-duplicate-dt` | true | true | |
 | `no-empty-palpable-content` | true | ― | [⚠](#no-empty-palpable-content) |
 | `permitted-contents` | true | true | |
 | `placeholder-label-option` | true | true | |
@@ -46,6 +48,8 @@
 | - | - | - | - |
 | `label-has-control` | true | true | |
 | `landmark-roles` | true | true | |
+| `neighbor-popovers` | true | true | |
+| `no-consecutive-br` | true | true | |
 | `no-refer-to-non-existent-id` | true | true | |
 | `require-accessible-name` | true | true | |
 | `required-h1` | true | true | |
@@ -114,7 +118,7 @@ Prettier で自動整形しているため、必ずしも markuplint 側で気�
 
 個人的な好みであるが、 `<form method="get">` や `<input type="text" />` といったデフォルト値の属性は省略したいため、このルールは有効設定にしている。
 
-一昔前は CSS セレクターとの兼ね合いで省略しない方が都合良い時代もあったが、 `:not()` 疑似クラスが使える現在では省略して問題が起こるケースはないと思う。
+一昔前は CSS セレクターとの兼ね合いで省略しない方が都合良い時代もあったが、`:not()` 疑似クラスが使える現在では省略して問題が起こるケースはないと思う。
 
 ## `nodeRules`
 
@@ -155,7 +159,7 @@ HTML 仕様では `<abbr>` 要素における `title` 属性の設定は任意�
 
 ### `img`
 
-HTML 仕様では `<img>` 要素の `alt` 属性は必須ではないが、省略できるケースは限定的である。当サイトでは省略するケースは存在しないため、 `alt` 属性を必須に設定している。
+HTML 仕様では `<img>` 要素の `alt` 属性は必須ではないが、省略できるケースは限定的である。当サイトでは省略するケースは存在しないため `alt` 属性を必須に設定している。
 
 ### `iframe`
 
@@ -165,7 +169,7 @@ Techniques for WCAG 2.1 の達成基準 4.1.2 における `<iframe>` 要素利�
 
 `<object>` 要素は様々な外部リソースの埋め込みに使えるため、 `type` 属性と `role` 属性を必須とし、データのタイプを明示するようにしている。さらに `aria-labelledby` 属性も必須として、前述のとおり `<object aria-labelledby="object-label"><div id="object-label">...</div></object>` のような形で支援技術が代替テキストを特定できるようにしている。
 
-基本的に画像は `<img>` 要素、動画は `<video>` 要素といったように極力専用の要素を使うため、 `<object>` 要素の使用箇所は少ないが、複雑な図表を表す画像など、代替テキストをリストや表で構造化したい場合は `<object>` 要素が適していることもある。
+基本的に画像は `<img>` 要素、動画は `<video>` 要素といったように極力専用の要素を使うため、`<object>` 要素の使用箇所は少ないが、複雑な図表を表す画像など、代替テキストをリストや表で構造化したい場合は `<object>` 要素が適していることもある。
 
 ### `figcaption ~ table, table:has(~ figcaption)`
 
@@ -185,9 +189,21 @@ HTML 仕様では `<caption>` 要素の使い方として以下の記述があ�
 
 `rules` で `no-empty-palpable-content` を設定しているが、中身が空の `<td></td>` は許容したいため除外している。
 
+### `input[pattern]`
+
+[`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.json) では `pattern` 属性が設定されている場合に `title` 属性が必須に設定されている。
+
+これは [HTML 仕様](https://html.spec.whatwg.org/multipage/input.html#the-pattern-attribute)で <q>When an `input` element has a `pattern` attribute specified, authors should include a `title` attribute to give a description of the pattern.</q> と規定されているためで、あくまで <q>should</q> ではあるものの、これに背く理由もないので本設定ファイルでも同じく必須としている。
+
 ### `output`
 
 `rules` で `no-empty-palpable-content` を設定しているが、 `<output>` 要素は通常 JavaScript で動的に中身を設定することがほとんどであり、初期値がある場合を除き、中身が空の `<output></output>` とすることが多い。そのため除外設定している。
+
+### `details[name]`
+
+HTML 仕様では [`<details>` 要素](https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element)について <q>A document must not contain a `details` element that is a descendant of another `details` element in the same details name group.</q> と規定されている。
+
+[`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.json) ではそれに対応した設定があり、本設定ファイルでも同様の設定としている。
 
 ### `template *`
 

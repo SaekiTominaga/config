@@ -8,6 +8,7 @@
 			"embed"
 		],
 		"doctype": true,
+		"heading-levels": true,
 		"id-duplication": true,
 		"invalid-attr": {
 			"options": {
@@ -27,6 +28,7 @@
 				]
 			}
 		},
+		"no-duplicate-dt": true,
 		"no-empty-palpable-content": true,
 		"permitted-contents": true,
 		"placeholder-label-option": true,
@@ -35,6 +37,8 @@
 		"required-element": false,
 		"label-has-control": true,
 		"landmark-roles": true,
+		"neighbor-popovers": true,
+		"no-consecutive-br": true,
 		"no-refer-to-non-existent-id": true,
 		"require-accessible-name": true,
 		"required-h1": true,
@@ -198,9 +202,44 @@
 			}
 		},
 		{
+			"selector": "input[pattern]",
+			"rules": {
+				"required-attr": {
+					"value": [
+						{
+							"name": "title"
+						}
+					]
+				}
+			}
+		},
+		{
 			"selector": "output",
 			"rules": {
 				"no-empty-palpable-content": false
+			}
+		},
+		{
+			"regexSelector": {
+				"nodeName": "details",
+				"attrName": "name",
+				"attrValue": "^(?<value>.+)$",
+				"combination": {
+					"combinator": " ",
+					"nodeName": "details"
+				}
+			},
+			"rules": {
+				"invalid-attr": {
+					"options": {
+						"disallowAttrs": {
+							"name": {
+								"pattern": "{{ value }}"
+							}
+						}
+					},
+					"reason": "A document must not contain a details element that is a descendant of another details element in the same details name group."
+				}
 			}
 		},
 		{

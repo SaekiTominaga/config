@@ -31,10 +31,37 @@
 		</section>
 
 		<section>
+			<!-- heading-levels -->
+			<h2>heading2</h2>
+
+			<section>
+				<h4>heading4</h4>
+			</section>
+		</section>
+
+		<section>
 			<!-- id-duplication -->
 
 			<p id="a">text</p>
 			<p id="a">text</p>
+		</section>
+
+		<section>
+			<!-- invalid-attr -->
+
+			<p accesskey="a">text</p>
+			<p tabindex="1">text</p>
+		</section>
+
+		<section>
+			<!-- no-duplicate-dt -->
+
+			<dl>
+				<dt>dt</dt>
+				<dd>dd</dd>
+				<dt>dt</dt>
+				<dd>dd</dd>
+			</dl>
 		</section>
 
 		<section>
@@ -110,6 +137,19 @@
 		</section>
 
 		<section>
+			<!-- neighbor-popovers -->
+
+			<p>text <button popovertarget="popover">actions</button> text</p>
+			<p id="popover" popover="">popover</p>
+		</section>
+
+		<section>
+			<!-- no-consecutive-br -->
+
+			<p>text<br><br>text</p>
+		</section>
+
+		<section>
 			<!-- no-refer-to-non-existent-id -->
 
 			<label for="foo">text</label>
@@ -151,13 +191,6 @@
 			<!-- ineffective-attr -->
 
 			<script type="module" src="/path/to/script.js" defer></script>
-		</section>
-
-		<section>
-			<!-- invalid-attr -->
-
-			<p accesskey="a">text</p>
-			<p tabindex="1">text</p>
 		</section>
 
 		<section>

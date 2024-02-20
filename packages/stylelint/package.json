@@ -1,6 +1,6 @@
 {
 	"name": "@w0s/stylelint-config",
-	"version": "2.0.2",
+	"version": "3.0.0",
 	"description": "Stylelint configuration file used on w0s.jp",
 	"keywords": [
 		"stylelint",

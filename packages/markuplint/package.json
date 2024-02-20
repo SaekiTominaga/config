@@ -15,7 +15,7 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
-		"test-valid": "markuplint -c __tests__/.markuplintrc __tests__/valid/**/*.html",
+		"test": "markuplint -c __tests__/.markuplintrc __tests__/valid/**/*.html",
 		"test-invalid": "markuplint -c __tests__/.markuplintrc __tests__/invalid/**/*.html"
 	},
 	"devDependencies": {

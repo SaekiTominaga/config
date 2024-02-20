@@ -25,4 +25,4 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run test-valid -w '@w0s/markuplint-config'
+      - run: npm test -w '@w0s/markuplint-config'

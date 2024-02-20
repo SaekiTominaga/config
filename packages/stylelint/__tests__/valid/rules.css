@@ -1,0 +1,46 @@
+/* at-rule-empty-line-before */
+@import url("foo1");
+@import url("foo2");
+
+@import url("bar");
+
+.at-rule-empty-line-before {
+	/* comment */
+	@nest & {
+	}
+}
+
+/* block-no-empty */
+.block-no-empty {
+}
+
+/* color-hex-alpha */
+.color-hex-alpha1 {
+	color: #000;
+}
+
+.color-hex-alpha2 {
+	color: #010101;
+}
+
+/* custom-property-pattern */
+--foo1-1: 1;
+--_foo1-1: 1;
+
+/* no-descending-specificity */
+.container .no-descending-specificity {
+	inset-block-start: 10px;
+}
+
+.no-descending-specificity {
+	inset-block-start: 0;
+}
+
+/* selector-max-universal */
+.selector-max-universal > * + * {
+}
+
+/* value-keyword-case */
+.value-keyword-case {
+	fill: currentColor;
+}

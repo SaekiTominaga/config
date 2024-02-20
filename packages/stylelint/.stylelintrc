@@ -1,5 +1,5 @@
 {
-	"extends": ["stylelint-config-standard"],
+	"extends": ["stylelint-config-standard", "stylelint-config-concentric-order"],
 	"rules": {
 		"at-rule-empty-line-before": [
 			"always",
@@ -95,6 +95,30 @@
 			{
 				"camelCaseSvgKeywords": true
 			}
+		],
+
+		"order/order": [
+			[
+				"custom-properties",
+				"declarations",
+				{
+					"type": "at-rule",
+					"name": "supports",
+					"hasBlock": true
+				},
+				{
+					"type": "at-rule",
+					"name": "container",
+					"hasBlock": true
+				},
+				{
+					"type": "at-rule",
+					"name": "media",
+					"hasBlock": true
+				},
+				"rules"
+			],
+			{ "unspecified": "bottom" }
 		]
 	}
 }

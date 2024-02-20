@@ -1,0 +1,34 @@
+.order {
+	--x: "x";
+
+	margin: initial;
+	padding: initial;
+
+	@supports () {
+		--x: "x";
+	}
+
+	@container container () {
+		--x: "x";
+	}
+
+	@media print {
+		--x: "x";
+	}
+
+	&:focus {
+		--x: "x";
+	}
+
+	&::after {
+		--x: "x";
+	}
+
+	& > .inner {
+		--x: "x";
+
+		@media print {
+			--x: "x";
+		}
+	}
+}

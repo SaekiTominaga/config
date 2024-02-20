@@ -15,7 +15,8 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
-		"test": "stylelint __tests__/*.css"
+		"test": "stylelint __tests__/valid/*.css",
+		"test-invalid": "stylelint __tests__/invalid/*.css"
 	},
 	"dependencies": {
 		"stylelint-config-standard": "^36.0.0"

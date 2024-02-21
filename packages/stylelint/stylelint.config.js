@@ -51,45 +51,59 @@ export default {
 								/* property list: https://drafts.csswg.org/css-display/#display-value-summary */
 								case 'block': {
 									full = 'block flow';
+									break;
 								}
 								case 'flow-root': {
 									full = 'block flow-root';
+									break;
 								}
 								case 'inline': {
 									full = 'inline flow';
+									break;
 								}
 								case 'inline-block': {
 									full = 'inline flow-root';
+									break;
 								}
 								case 'run-in': {
 									full = 'run-in flow';
+									break;
 								}
 								case 'list-item': {
 									full = 'block flow list-item';
+									break;
 								}
 								case 'inline list-item': {
 									full = 'inline flow list-item';
+									break;
 								}
 								case 'flex': {
 									full = 'block flex';
+									break;
 								}
 								case 'inline-flex': {
 									full = 'inline flex';
+									break;
 								}
 								case 'grid': {
 									full = 'block grid';
+									break;
 								}
 								case 'inline-grid': {
 									full = 'inline grid';
+									break;
 								}
 								case 'ruby': {
 									full = 'inline ruby';
+									break;
 								}
 								case 'table': {
 									full = 'block table';
+									break;
 								}
 								case 'inline-table': {
 									full = 'inline table';
+									break;
 								}
 							}
 							return `Use multi-keyword syntax for "${name}" ("${short}" → "${full}")`;

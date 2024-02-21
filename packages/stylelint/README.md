@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/%40w0s%2Fstylelint-config.svg)](https://www.npmjs.com/package/@w0s/stylelint-config)
 [![test status](https://github.com/SaekiTominaga/w0s/actions/workflows/stylelint-test.yml/badge.svg)](https://github.com/SaekiTominaga/w0s/actions/workflows/stylelint-test.yml)
 
-[Stylelint configuration file](https://stylelint.io/user-guide/configure) used on [w0s.jp](https://w0s.jp/)
+[Stylelint configuration](https://stylelint.io/user-guide/configure) file used on my personal website ([w0s.jp](https://github.com/SaekiTominaga/w0s.jp)).
 
 ## Features
 

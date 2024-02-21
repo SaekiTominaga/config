@@ -19,6 +19,7 @@
 		"test-invalid": "stylelint __tests__/invalid/*.css"
 	},
 	"dependencies": {
+		"stylelint-config-concentric-order": "^5.2.0",
 		"stylelint-config-standard": "^36.0.0"
 	},
 	"devDependencies": {

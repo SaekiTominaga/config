@@ -15,6 +15,7 @@
 
 /* declaration-property-value-disallowed-list */
 .declaration-property-value-disallowed-list {
+	display: block;
 	float: left;
 	clear: left;
 	resize: horizontal;

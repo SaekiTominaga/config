@@ -11,9 +11,9 @@ on:
     branches:
       - main
     paths:
-      - 'packages/stylelint/.stylelintrc'
       - 'packages/stylelint/package.json'
-      - 'packages/stylelint/__tests__/*.css'
+      - 'packages/stylelint/stylelint.config.js'
+      - 'packages/stylelint/__tests__/valid/*.css'
   workflow_dispatch:
 
 jobs:

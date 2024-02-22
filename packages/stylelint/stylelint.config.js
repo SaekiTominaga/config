@@ -170,9 +170,9 @@ export default {
 		],
 		'selector-max-id': 0,
 		'selector-max-universal': [
-			0,
+			1,
 			{
-				ignoreAfterCombinators: ['>', '+'],
+				ignoreAfterCombinators: ['+'],
 			},
 		],
 		'value-keyword-case': [

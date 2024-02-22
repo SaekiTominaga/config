@@ -58,3 +58,7 @@
 /* selector-max-id */
 #selector-max-id {
 }
+
+/* selector-max-universal */
+* > * {
+}

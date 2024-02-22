@@ -46,6 +46,9 @@
 }
 
 /* selector-max-universal */
+* {
+}
+
 .selector-max-universal > * + * {
 }
 

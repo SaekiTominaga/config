@@ -15,6 +15,10 @@ It is based on [stylelint-config-standard](https://github.com/stylelint/stylelin
 - Do not use ID selector.
   - 😨 `#foo { color: #000 }`
   - 🙂 `.foo { color: #000 }`
+- Do not use multiple universal selectors. However, this excludes the use of a next-sibling combinator (`+`).
+  - 🙂 `*`
+  - 🙂 `* + *` (This is used in the "owl selector" in [stack layout](https://every-layout.dev/layouts/stack/))
+  - 😨 `* > *`
 - Use of CSS physical properties and values is not recommended. Use [logical properties and values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
   - 🙁 `margin-top: 1em`
   - 🙂 `margin-block-start: 1em`

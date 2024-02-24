@@ -27,11 +27,11 @@ It is based on [stylelint-config-standard](https://github.com/stylelint/stylelin
 - [Multi-keyword syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display) is recommended for the `display` property.
   - 🙁 `display: block`
   - 🙂 `display: block flow`
-- The order of properties within declaration blocks follows [`stylelint-config-concentric-order`](https://github.com/chaucerbao/stylelint-config-concentric-order).
+- The order of properties within declaration blocks follows [stylelint-config-concentric-order](https://github.com/chaucerbao/stylelint-config-concentric-order).
   - 😨 `.foo { padding: 1em; margin: 1em }`
   - 🙂 `.foo { margin: 1em; padding: 1em }`
 
-See [source code](stylelint.config.js) for other details.
+See [source code](https://github.com/SaekiTominaga/config/blob/main/packages/stylelint/stylelint.config.js) for other details.
 
 ## Usage
 

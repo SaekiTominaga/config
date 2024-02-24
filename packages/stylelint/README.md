@@ -31,7 +31,7 @@ It is based on [stylelint-config-standard](https://github.com/stylelint/stylelin
   - 😨 `.foo { padding: 1em; margin: 1em }`
   - 🙂 `.foo { margin: 1em; padding: 1em }`
 
-See [source code](stylelint.config.js) for other details.
+See [source code](https://github.com/SaekiTominaga/config/blob/main/packages/stylelint/stylelint.config.js) for other details.
 
 ## Usage
 

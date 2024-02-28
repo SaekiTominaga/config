@@ -27,7 +27,7 @@
 			<!-- disallowed-element -->
 
 			<noscript></noscript>
-			<embed src="path/to">
+			<embed src="path/to" />
 		</section>
 
 		<section>
@@ -98,7 +98,7 @@
 			<!-- 不正: 最初のoption要素の親がoptgroup要素 -->
 			<select required>
 				<optgroup label="グループ">
-				<option value="">プレースホルダー</option>
+					<option value="">プレースホルダー</option>
 				</optgroup>
 				<option value="option1">オプション1</option>
 				<option value="option2">オプション2</option>
@@ -146,7 +146,7 @@
 		<section>
 			<!-- no-consecutive-br -->
 
-			<p>text<br><br>text</p>
+			<p>text<br /><br />text</p>
 		</section>
 
 		<section>

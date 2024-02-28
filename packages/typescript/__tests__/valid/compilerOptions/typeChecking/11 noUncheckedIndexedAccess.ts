@@ -1,4 +1,3 @@
-
 {
 	// Declared as existing
 	const sysName = env.NAME;

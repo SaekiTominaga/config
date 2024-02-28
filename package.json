@@ -1,9 +1,11 @@
 {
 	"name": "config",
 	"scripts": {
+		"format": "prettier -w 'packages/**/__tests__/**/*.{html,css,js,ts}'",
 		"github-actions-lint": "yamllint .github/workflows/*.yml"
 	},
 	"devDependencies": {
+		"prettier": "^3.2.5",
 		"yaml-lint": "^1.7.0"
 	},
 	"private": true,

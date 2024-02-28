@@ -1,5 +1,11 @@
 {
 	"name": "config",
+	"scripts": {
+		"github-actions-lint": "yamllint .github/workflows/*.yml"
+	},
+	"devDependencies": {
+		"yaml-lint": "^1.7.0"
+	},
 	"private": true,
 	"workspaces": [
 		"packages/*"

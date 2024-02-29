@@ -24,63 +24,63 @@
 
 #### Conformance checking
 
-| ルール ID | 本設定ファイル | `markuplint:recommended` | 差異 |
-| - | - | - | - |
-| `attr-duplication` | true | true | |
-| `deprecated-attr` | true | true | |
-| `deprecated-element` | true | true | |
-| `disallowed-element` | ["noscript", "embed"] | ― | [⚠](#disallowed-element) |
-| `doctype` | true | true | |
-| `heading-levels` | true | true | |
-| `id-duplication` | true | true | |
-| `invalid-attr` | { `accesskey`, `tabindex` } | { `accesskey`, `tabindex` } | |
-| `no-duplicate-dt` | true | true | |
-| `no-empty-palpable-content` | true | ― | [⚠](#no-empty-palpable-content) |
-| `permitted-contents` | true | true | |
-| `placeholder-label-option` | true | true | |
-| `require-datetime` | true | true | |
-| `required-attr` | true | true | |
-| `required-element` | false | ― | |
+| ルール ID                   | 本設定ファイル              | `markuplint:recommended`    | 差異                             |
+| --------------------------- | --------------------------- | --------------------------- | -------------------------------- |
+| `attr-duplication`          | true                        | true                        |                                  |
+| `deprecated-attr`           | true                        | true                        |                                  |
+| `deprecated-element`        | true                        | true                        |                                  |
+| `disallowed-element`        | ["noscript", "embed"]       | ―                           | [⚠](#disallowed-element)        |
+| `doctype`                   | true                        | true                        |                                  |
+| `heading-levels`            | true                        | true                        |                                  |
+| `id-duplication`            | true                        | true                        |                                  |
+| `invalid-attr`              | { `accesskey`, `tabindex` } | { `accesskey`, `tabindex` } |                                  |
+| `no-duplicate-dt`           | true                        | true                        |                                  |
+| `no-empty-palpable-content` | true                        | ―                           | [⚠](#no-empty-palpable-content) |
+| `permitted-contents`        | true                        | true                        |                                  |
+| `placeholder-label-option`  | true                        | true                        |                                  |
+| `require-datetime`          | true                        | true                        |                                  |
+| `required-attr`             | true                        | true                        |                                  |
+| `required-element`          | false                       | ―                           |                                  |
 
 #### Accessibility
 
-| ルール ID | 本設定ファイル | `markuplint:recommended` | 差異 |
-| - | - | - | - |
-| `label-has-control` | true | true | |
-| `landmark-roles` | true | true | |
-| `neighbor-popovers` | true | true | |
-| `no-consecutive-br` | true | true | |
-| `no-refer-to-non-existent-id` | true | true | |
-| `require-accessible-name` | true | true | |
-| `required-h1` | true | true | |
-| `use-list` | false | true | [⚠](#use-list) |
-| `wai-aria` | true | true | |
+| ルール ID                     | 本設定ファイル | `markuplint:recommended` | 差異            |
+| ----------------------------- | -------------- | ------------------------ | --------------- |
+| `label-has-control`           | true           | true                     |                 |
+| `landmark-roles`              | true           | true                     |                 |
+| `neighbor-popovers`           | true           | true                     |                 |
+| `no-consecutive-br`           | true           | true                     |                 |
+| `no-refer-to-non-existent-id` | true           | true                     |                 |
+| `require-accessible-name`     | true           | true                     |                 |
+| `required-h1`                 | true           | true                     |                 |
+| `use-list`                    | false          | true                     | [⚠](#use-list) |
+| `wai-aria`                    | true           | true                     |                 |
 
 #### Naming Convention
 
-| ルール ID | 本設定ファイル | `markuplint:recommended` | 差異 |
-| - | - | - | - |
-| `class-naming` | false | ― | |
+| ルール ID      | 本設定ファイル | `markuplint:recommended` | 差異 |
+| -------------- | -------------- | ------------------------ | ---- |
+| `class-naming` | false          | ―                        |      |
 
 #### Maintenability
 
-| ルール ID | 本設定ファイル | `markuplint:recommended` | 差異 |
-| - | - | - | - |
-| `no-hard-code-id` | false | ― | |
-| `no-use-event-handler-attr` | true | ― | [⚠](#no-use-event-handler-attr) |
+| ルール ID                   | 本設定ファイル | `markuplint:recommended` | 差異                             |
+| --------------------------- | -------------- | ------------------------ | -------------------------------- |
+| `no-hard-code-id`           | false          | ―                        |                                  |
+| `no-use-event-handler-attr` | true           | ―                        | [⚠](#no-use-event-handler-attr) |
 
 #### Style
 
-| ルール ID | 本設定ファイル | `markuplint:recommended` | 差異 |
-| - | - | - | - |
-| `attr-value-quotes` | "double" | ― | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
-| `case-sensitive-attr-name` | "lower" | ― | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
-| `case-sensitive-tag-name` | "lower" | ― | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
-| `character-reference` | true | true | |
-| `end-tag` | true | ― | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
-| `ineffective-attr` | true | true | |
-| `no-boolean-attr-value` | false | ― | |
-| `no-default-value` | true | ― | [⚠](#no-default-value) |
+| ルール ID                  | 本設定ファイル | `markuplint:recommended` | 差異                                                                              |
+| -------------------------- | -------------- | ------------------------ | --------------------------------------------------------------------------------- |
+| `attr-value-quotes`        | "double"       | ―                        | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
+| `case-sensitive-attr-name` | "lower"        | ―                        | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
+| `case-sensitive-tag-name`  | "lower"        | ―                        | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
+| `character-reference`      | true           | true                     |                                                                                   |
+| `end-tag`                  | true           | ―                        | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
+| `ineffective-attr`         | true           | true                     |                                                                                   |
+| `no-boolean-attr-value`    | false          | ―                        |                                                                                   |
+| `no-default-value`         | true           | ―                        | [⚠](#no-default-value)                                                           |
 
 ### 差異のあるルールの理由
 

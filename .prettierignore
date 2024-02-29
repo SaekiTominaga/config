@@ -1,1 +1,3 @@
-packages/markuplint/__tests__/invalid/rules.html
+/packages/markuplint/__tests__/invalid/rules.html
+
+package-lock.json

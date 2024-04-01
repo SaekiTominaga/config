@@ -18,7 +18,7 @@
 
 ## `rules`
 
-`markuplint:recommended`（v4.2.0 時点）との差異一覧と、その理由を記す。
+`markuplint:recommended`（v4.5.0 時点）との差異一覧と、その理由を記す。
 
 ### `markuplint:recommended` との差異一覧
 
@@ -212,3 +212,7 @@ HTML 仕様では [`<details>` 要素](https://html.spec.whatwg.org/multipage/in
 ### `:has(> template)`
 
 `<ul><template><li></li></template></ul>` のようなマークアップをすることがあるため、`<template>` 要素の親要素は [`wai-aria`](https://markuplint.dev/ja/docs/rules/wai-aria) を無効にしている。
+
+### `[role=radiogroup]`
+
+[Fix `wai-aria` rule's validation · Issue #673 · markuplint/markuplint](https://github.com/markuplint/markuplint/issues/673)で起票されているが、`[role=radiogroup]` の WAI-ARIA ルール解釈にはバグがあるため、一時的に [`wai-aria`](https://markuplint.dev/ja/docs/rules/wai-aria) を無効にしている。

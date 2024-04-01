@@ -254,6 +254,12 @@
 			"rules": {
 				"wai-aria": false
 			}
+		},
+		{
+			"selector": "[role=radiogroup]",
+			"rules": {
+				"wai-aria": false
+			}
 		}
 	]
 }

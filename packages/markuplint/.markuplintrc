@@ -124,14 +124,6 @@
 			}
 		},
 		{
-			"selector": "abbr",
-			"rules": {
-				"required-attr": [
-					"title"
-				]
-			}
-		},
-		{
 			"selector": "img",
 			"rules": {
 				"required-attr": [

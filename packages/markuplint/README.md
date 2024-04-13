@@ -151,12 +151,6 @@ Prettier で自動整形しているため、必ずしも markuplint 側で気�
 - `<dl>` 要素の子要素の場合（例外的に一切属性のない `<div>` 要素を許容したい）
 - `<object>` 要素の子要素の場合（`<object aria-labelledby="object-label"><div id="object-label">...</div></object>` のように `id` 属性のみを設定したい）
 
-### `abbr`
-
-[`markuplint:a11y`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.a11y.json) では `title` 属性が必須に設定されている。
-
-HTML 仕様では `<abbr>` 要素における `title` 属性の設定は任意であるが、当サイトにおいては略語の完全表記を提供するケースでのみ `<abbr>` 要素を使用しているため、書き忘れのないよう本設定ファイルでも同じく必須としている。
-
 ### `img`
 
 HTML 仕様では `<img>` 要素の `alt` 属性は必須ではないが、省略できるケースは限定的である。当サイトでは省略するケースは存在しないため `alt` 属性を必須に設定している。

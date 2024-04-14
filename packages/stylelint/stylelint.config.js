@@ -158,8 +158,6 @@ export default {
 				'height',
 				'min-height',
 				'max-height',
-				'overflow-x',
-				'overflow-y',
 				'overscroll-behavior-x',
 				'overscroll-behavior-y',
 			],

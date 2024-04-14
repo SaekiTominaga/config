@@ -18,7 +18,7 @@
 
 ## `rules`
 
-`markuplint:recommended`（v4.5.0 時点）との差異一覧と、その理由を記す。
+`markuplint:recommended`（v4.6.0 時点）との差異一覧と、その理由を記す。
 
 ### `markuplint:recommended` との差異一覧
 
@@ -36,6 +36,7 @@
 | `invalid-attr`              | { `accesskey`, `tabindex` } | { `accesskey`, `tabindex` } |                                  |
 | `no-duplicate-dt`           | true                        | true                        |                                  |
 | `no-empty-palpable-content` | true                        | ―                           | [⚠](#no-empty-palpable-content) |
+| `no-orphaned-end-tag`       | true                        | true                        |                                  |
 | `permitted-contents`        | true                        | true                        |                                  |
 | `placeholder-label-option`  | true                        | true                        |                                  |
 | `require-datetime`          | true                        | true                        |                                  |

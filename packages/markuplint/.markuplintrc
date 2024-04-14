@@ -30,6 +30,7 @@
 		},
 		"no-duplicate-dt": true,
 		"no-empty-palpable-content": true,
+		"no-orphaned-end-tag": true,
 		"permitted-contents": true,
 		"placeholder-label-option": true,
 		"require-datetime": true,

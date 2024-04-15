@@ -72,16 +72,16 @@
 
 #### Style
 
-| ルール ID                  | 本設定ファイル | `markuplint:recommended` | 差異                                                                              |
-| -------------------------- | -------------- | ------------------------ | --------------------------------------------------------------------------------- |
-| `attr-value-quotes`        | "double"       | ―                        | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
-| `case-sensitive-attr-name` | "lower"        | ―                        | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
-| `case-sensitive-tag-name`  | "lower"        | ―                        | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
-| `character-reference`      | true           | true                     |                                                                                   |
-| `end-tag`                  | true           | ―                        | [⚠](#attr-value-quotes-case-sensitive-attr-name-case-sensitive-tag-name-end-tag) |
-| `ineffective-attr`         | true           | true                     |                                                                                   |
-| `no-boolean-attr-value`    | false          | ―                        |                                                                                   |
-| `no-default-value`         | true           | ―                        | [⚠](#no-default-value)                                                           |
+| ルール ID                  | 本設定ファイル | `markuplint:recommended` | 差異                            |
+| -------------------------- | -------------- | ------------------------ | ------------------------------- |
+| `attr-value-quotes`        | false          | ―                        |                                 |
+| `case-sensitive-attr-name` | "lower"        | ―                        | [⚠](#case-sensitive-attr-name) |
+| `case-sensitive-tag-name`  | "lower"        | ―                        | [⚠](#case-sensitive-tag-name)  |
+| `character-reference`      | true           | true                     |                                 |
+| `end-tag`                  | true           | ―                        | [⚠](#end-tag)                  |
+| `ineffective-attr`         | true           | true                     |                                 |
+| `no-boolean-attr-value`    | false          | ―                        |                                 |
+| `no-default-value`         | true           | ―                        | [⚠](#no-default-value)         |
 
 ### 差異のあるルールの理由
 
@@ -109,11 +109,17 @@ v3.0.0 で追加された新ルール。
 
 当サイトでは HTML にイベントハンドラー属性を使うことはないため有効にしている。
 
-#### [`attr-value-quotes`](https://markuplint.dev/ja/docs/rules/attr-value-quotes), [`case-sensitive-attr-name`](https://markuplint.dev/ja/docs/rules/case-sensitive-attr-name), [`case-sensitive-tag-name`](https://markuplint.dev/ja/docs/rules/case-sensitive-tag-name), [`end-tag`](https://markuplint.dev/ja/docs/rules/end-tag)
+#### [`case-sensitive-attr-name`](https://markuplint.dev/ja/docs/rules/case-sensitive-attr-name)
 
-Prettier で自動整形しているため、必ずしも markuplint 側で気にする必要はないのだが、一応一般的なフォーマットを設定している。
+HTML の整形は Prettier を使用している。Prettier では属性名を自動的に小文字に変換するが、`data-*` 属性は変換されないため、このルールを有効にしてチェックしている
 
-これら4つのルールはおそらくほとんどのプロジェクトでそのまま導入できる設定であり、異論も少ないと思うので、根拠の説明は省略する。
+#### [`case-sensitive-tag-name`](https://markuplint.dev/ja/docs/rules/case-sensitive-tag-name)
+
+Prettier では要素名を自動的に小文字に変換するが、カスタム要素は変換されないため、このルールを有効にしてチェックしている
+
+#### [`end-tag`](https://markuplint.dev/ja/docs/rules/end-tag)
+
+Prettier では終了タグを自動的に補完するが、カスタム要素は補完されないため、このルールを有効にしてチェックしている
 
 #### [`no-default-value`](https://markuplint.dev/ja/docs/rules/no-default-value)
 

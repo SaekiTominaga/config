@@ -13,6 +13,7 @@
 	"files": [
 		"rules"
 	],
+	"type": "module",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
@@ -22,11 +23,14 @@
 		"test": "eslint __tests__/*"
 	},
 	"dependencies": {
+		"@eslint/eslintrc": "^3.0.2",
+		"@eslint/js": "^9.1.1",
 		"@typescript-eslint/eslint-plugin": "^6.21.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-plugin-jsdoc": "^48.0.6"
 	},
 	"devDependencies": {
+		"@types/eslint": "^8.56.10",
 		"eslint": "^8.56.0"
 	},
 	"peerDependencies": {

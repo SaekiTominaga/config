@@ -1,4 +1,7 @@
-module.exports = {
+// @ts-check
+
+/** @type {import("eslint").Linter.FlatConfig} */
+export default {
 	rules: {
 		curly: 'error',
 		eqeqeq: 'error',

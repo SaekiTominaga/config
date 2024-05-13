@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>`placeholder-label-option`</title>
+	</head>
+	<body>
+		<h1><code>placeholder-label-option</code></h1>
+
+		<!-- 不正: 最初のoption要素の値が空でない -->
+		<select required>
+			<option value="placeholder">プレースホルダー</option>
+			<option value="option1">オプション1</option>
+			<option value="option2">オプション2</option>
+		</select>
+
+		<select required size="1">
+			<option value="placeholder">プレースホルダー</option>
+			<option value="option1">オプション1</option>
+			<option value="option2">オプション2</option>
+		</select>
+
+		<!-- 不正: 最初のoption要素の親がoptgroup要素 -->
+		<select required>
+			<optgroup label="グループ">
+				<option value="">プレースホルダー</option>
+			</optgroup>
+			<option value="option1">オプション1</option>
+			<option value="option2">オプション2</option>
+		</select>
+	</body>
+</html>

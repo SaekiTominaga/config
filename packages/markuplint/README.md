@@ -18,7 +18,7 @@
 
 ## `rules`
 
-`markuplint:recommended`（v4.6.0 時点）との差異一覧と、その理由を記す。
+`markuplint:recommended`（v4.8.1 時点）との差異一覧と、その理由を記す。
 
 ### `markuplint:recommended` との差異一覧
 
@@ -45,17 +45,19 @@
 
 #### Accessibility
 
-| ルール ID                     | 本設定ファイル | `markuplint:recommended` | 差異            |
-| ----------------------------- | -------------- | ------------------------ | --------------- |
-| `label-has-control`           | true           | true                     |                 |
-| `landmark-roles`              | true           | true                     |                 |
-| `neighbor-popovers`           | true           | true                     |                 |
-| `no-consecutive-br`           | true           | true                     |                 |
-| `no-refer-to-non-existent-id` | true           | true                     |                 |
-| `require-accessible-name`     | true           | true                     |                 |
-| `required-h1`                 | true           | true                     |                 |
-| `use-list`                    | false          | true                     | [⚠](#use-list) |
-| `wai-aria`                    | true           | true                     |                 |
+| ルール ID                             | 本設定ファイル | `markuplint:recommended` | 差異            |
+| ------------------------------------- | -------------- | ------------------------ | --------------- |
+| `label-has-control`                   | true           | true                     |                 |
+| `landmark-roles`                      | true           | true                     |                 |
+| `neighbor-popovers`                   | true           | true                     |                 |
+| `no-ambiguous-navigable-target-names` | true           | true                     |                 |
+| `no-consecutive-br`                   | true           | true                     |                 |
+| `no-refer-to-non-existent-id`         | true           | true                     |                 |
+| `require-accessible-name`             | true           | true                     |                 |
+| `required-h1`                         | true           | true                     |                 |
+| `table-row-column-alignment`          | true           | true                     |                 |
+| `use-list`                            | false          | true                     | [⚠](#use-list) |
+| `wai-aria`                            | true           | true                     |                 |
 
 #### Naming Convention
 

@@ -321,11 +321,11 @@ export default {
 		/* Pattern */
 		// comment-pattern
 		// ✅ custom-media-pattern
-		'custom-property-pattern': '^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+		'custom-property-pattern': /^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$/,
 		// ✅ keyframes-name-pattern
 		// ✅ selector-class-pattern
 		// ✅ selector-id-pattern
-		// selector-nested-pattern
+		"selector-nested-pattern": /&/,
 
 		/* Quotes */
 		// ✅ font-family-name-quotes

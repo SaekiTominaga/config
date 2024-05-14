@@ -67,3 +67,9 @@
 .font-weight-notation {
 	font-weight: normal;
 }
+
+/* selector-nested-pattern */
+.selector-nested-pattern {
+	.foo {
+	}
+}

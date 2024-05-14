@@ -54,3 +54,9 @@
 .font-weight-notation {
 	font-weight: 500;
 }
+
+/* selector-nested-pattern */
+.selector-nested-pattern {
+	&.foo {
+	}
+}

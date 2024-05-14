@@ -305,7 +305,7 @@ export default {
 		// ✅ alpha-value-notation
 		// ✅ color-function-notation
 		// ✅ color-hex-length
-		// font-weight-notation
+		'font-weight-notation': 'numeric',
 		// ✅ hue-degree-notation
 		// ✅ import-notation
 		// ✅ keyframe-selector-notation

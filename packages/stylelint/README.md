@@ -27,6 +27,9 @@ It is based on [stylelint-config-standard](https://github.com/stylelint/stylelin
   - 🙂 `*`
   - 😨 `* > *`
   - 🙂 `* + *` (This is used in the "owl selector" in [stack layout](https://every-layout.dev/layouts/stack/))
+- The `font-weight` value must be numbers. ([`font-weight-notation`](https://stylelint.io/user-guide/rules/font-weight-notation) rule)
+  - 😨 `font-weight: normal`
+  - 🙂 `font-weight: 500 /* Windows + Yu Gothic measures to be greater than 400 */`
 - The order of properties within declaration blocks follows [stylelint-config-concentric-order](https://github.com/chaucerbao/stylelint-config-concentric-order).
   - 😨 `.foo { padding: 1em; margin: 1em }`
   - 🙂 `.foo { margin: 1em; padding: 1em }`

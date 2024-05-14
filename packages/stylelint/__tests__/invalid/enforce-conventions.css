@@ -52,3 +52,8 @@
 /* selector-max-universal */
 * > * {
 }
+
+/* font-weight-notation */
+.font-weight-notation {
+	font-weight: normal;
+}

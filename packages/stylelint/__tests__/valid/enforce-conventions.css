@@ -10,6 +10,12 @@
 	}
 }
 
+/* at-rule-property-required-list */
+@font-face {
+	font-family: test;
+	src: url("test.woff2") format("woff2");
+}
+
 /* color-hex-alpha */
 .color-hex-alpha1 {
 	color: #000;
@@ -43,3 +49,14 @@
 /* custom-property-pattern */
 --foo1-1: 1;
 --_foo1-1: 1;
+
+/* font-weight-notation */
+.font-weight-notation {
+	font-weight: 500;
+}
+
+/* selector-nested-pattern */
+.selector-nested-pattern {
+	&.foo {
+	}
+}

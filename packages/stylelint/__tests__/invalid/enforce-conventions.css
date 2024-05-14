@@ -1,3 +1,8 @@
+/* at-rule-property-required-list */
+@font-face {
+	src: url("test.woff2") format("woff2");
+}
+
 /* color-hex-alpha */
 .color-hex-alpha {
 	color: #fffa;
@@ -11,6 +16,11 @@
 /* declaration-no-important */
 .declaration-no-important {
 	color: #000 !important;
+}
+
+/* declaration-property-unit-allowed-list */
+.declaration-property-unit-allowed-list {
+	line-height: 1em;
 }
 
 /* declaration-property-value-disallowed-list */
@@ -51,4 +61,15 @@
 
 /* selector-max-universal */
 * > * {
+}
+
+/* font-weight-notation */
+.font-weight-notation {
+	font-weight: normal;
+}
+
+/* selector-nested-pattern */
+.selector-nested-pattern {
+	.foo {
+	}
 }

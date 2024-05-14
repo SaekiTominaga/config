@@ -69,7 +69,9 @@ export default {
 		// at-rule-allowed-list
 		// at-rule-disallowed-list
 		// ✅ at-rule-no-vendor-prefix
-		// at-rule-property-required-list
+		'at-rule-property-required-list': {
+			'font-face': ['font-family', 'src'],
+		},
 		'color-hex-alpha': 'never',
 		'color-named': 'never',
 		// color-no-hex
@@ -80,7 +82,9 @@ export default {
 				severity: 'warning',
 			},
 		],
-		// declaration-property-unit-allowed-list
+		'declaration-property-unit-allowed-list': {
+			'line-height': [],
+		},
 		// declaration-property-unit-disallowed-list
 		// declaration-property-value-allowed-list
 		'declaration-property-value-disallowed-list': [
@@ -183,7 +187,7 @@ export default {
 		'function-url-no-scheme-relative': true,
 		// function-url-scheme-allowed-list
 		// function-url-scheme-disallowed-list
-		// length-zero-no-unit
+		// ✅ length-zero-no-unit
 		// media-feature-name-allowed-list
 		// media-feature-name-disallowed-list
 		// ✅ media-feature-name-no-vendor-prefix
@@ -305,7 +309,7 @@ export default {
 		// ✅ alpha-value-notation
 		// ✅ color-function-notation
 		// ✅ color-hex-length
-		// font-weight-notation
+		'font-weight-notation': 'numeric',
 		// ✅ hue-degree-notation
 		// ✅ import-notation
 		// ✅ keyframe-selector-notation
@@ -317,11 +321,11 @@ export default {
 		/* Pattern */
 		// comment-pattern
 		// ✅ custom-media-pattern
-		'custom-property-pattern': '^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+		'custom-property-pattern': /^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$/,
 		// ✅ keyframes-name-pattern
 		// ✅ selector-class-pattern
 		// ✅ selector-id-pattern
-		// selector-nested-pattern
+		"selector-nested-pattern": /&/,
 
 		/* Quotes */
 		// ✅ font-family-name-quotes

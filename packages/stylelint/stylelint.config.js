@@ -183,7 +183,7 @@ export default {
 		'function-url-no-scheme-relative': true,
 		// function-url-scheme-allowed-list
 		// function-url-scheme-disallowed-list
-		// length-zero-no-unit
+		// ✅ length-zero-no-unit
 		// media-feature-name-allowed-list
 		// media-feature-name-disallowed-list
 		// ✅ media-feature-name-no-vendor-prefix

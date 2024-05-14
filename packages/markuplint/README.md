@@ -45,19 +45,19 @@
 
 #### Accessibility
 
-| ルール ID                             | 本設定ファイル | `markuplint:recommended` | 差異            |
-| ------------------------------------- | -------------- | ------------------------ | --------------- |
-| `label-has-control`                   | true           | true                     |                 |
-| `landmark-roles`                      | true           | true                     |                 |
-| `neighbor-popovers`                   | true           | true                     |                 |
-| `no-ambiguous-navigable-target-names` | true           | true                     |                 |
-| `no-consecutive-br`                   | true           | true                     |                 |
-| `no-refer-to-non-existent-id`         | true           | true                     |                 |
-| `require-accessible-name`             | true           | true                     |                 |
-| `required-h1`                         | true           | true                     |                 |
-| `table-row-column-alignment`          | true           | true                     |                 |
-| `use-list`                            | false          | true                     | [⚠](#use-list) |
-| `wai-aria`                            | true           | true                     |                 |
+| ルール ID                             | 本設定ファイル | `markuplint:recommended` | 差異                              |
+| ------------------------------------- | -------------- | ------------------------ | --------------------------------- |
+| `label-has-control`                   | true           | true                     |                                   |
+| `landmark-roles`                      | true           | true                     |                                   |
+| `neighbor-popovers`                   | true           | true                     |                                   |
+| `no-ambiguous-navigable-target-names` | true           | true                     |                                   |
+| `no-consecutive-br`                   | true           | true                     |                                   |
+| `no-refer-to-non-existent-id`         | true           | true                     |                                   |
+| `require-accessible-name`             | true           | true                     |                                   |
+| `required-h1`                         | true           | true                     |                                   |
+| `table-row-column-alignment`          | false          | true                     | [⚠](#table-row-column-alignment) |
+| `use-list`                            | false          | true                     | [⚠](#use-list)                   |
+| `wai-aria`                            | true           | true                     |                                   |
 
 #### Naming Convention
 
@@ -99,9 +99,11 @@
 
 #### [`no-empty-palpable-content`](https://markuplint.dev/ja/docs/rules/no-empty-palpable-content)
 
-v3.0.0 で追加された新ルール。
-
 `markuplint:recommended` ではこのルールは有効化されていないが、当サイトでは `<div></div>` のように `<div>` 要素や `<span>` 要素の中身を空にすることはないため有効にしている。
+
+#### [`table-row-column-alignment`](https://markuplint.dev/ja/docs/rules/table-row-column-alignment)
+
+[v4.8.0](https://github.com/markuplint/markuplint/releases/tag/v4.8.0) で追加された新ルールだが、バグが多く意図しないエラーが多発するので一時的に無効にしている。
 
 #### [`use-list`](https://markuplint.dev/ja/docs/rules/use-list)
 

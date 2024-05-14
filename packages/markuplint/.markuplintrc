@@ -44,7 +44,7 @@
 		"no-refer-to-non-existent-id": true,
 		"require-accessible-name": true,
 		"required-h1": true,
-		"table-row-column-alignment": true,
+		"table-row-column-alignment": false,
 		"use-list": false,
 		"wai-aria": true,
 		"class-naming": false,

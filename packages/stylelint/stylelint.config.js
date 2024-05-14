@@ -82,7 +82,9 @@ export default {
 				severity: 'warning',
 			},
 		],
-		// declaration-property-unit-allowed-list
+		'declaration-property-unit-allowed-list': {
+			'line-height': [],
+		},
 		// declaration-property-unit-disallowed-list
 		// declaration-property-value-allowed-list
 		'declaration-property-value-disallowed-list': [

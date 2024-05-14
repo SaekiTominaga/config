@@ -69,7 +69,9 @@ export default {
 		// at-rule-allowed-list
 		// at-rule-disallowed-list
 		// ✅ at-rule-no-vendor-prefix
-		// at-rule-property-required-list
+		'at-rule-property-required-list': {
+			'font-face': ['font-family', 'src'],
+		},
 		'color-hex-alpha': 'never',
 		'color-named': 'never',
 		// color-no-hex

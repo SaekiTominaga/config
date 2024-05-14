@@ -10,6 +10,12 @@
 	}
 }
 
+/* at-rule-property-required-list */
+@font-face {
+	font-family: test;
+	src: url("test.woff2") format("woff2");
+}
+
 /* color-hex-alpha */
 .color-hex-alpha1 {
 	color: #000;

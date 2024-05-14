@@ -1,3 +1,8 @@
+/* at-rule-property-required-list */
+@font-face {
+	src: url("test.woff2") format("woff2");
+}
+
 /* color-hex-alpha */
 .color-hex-alpha {
 	color: #fffa;

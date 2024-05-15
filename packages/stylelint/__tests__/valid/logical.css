@@ -1,0 +1,15 @@
+.property {
+	overflow-x: visible;
+}
+
+.value {
+	float: inline-start;
+	clear: inline-start;
+	resize: inline;
+	caption-side: top;
+	text-align: start;
+}
+
+.unit {
+	inline-size: 10vi;
+}

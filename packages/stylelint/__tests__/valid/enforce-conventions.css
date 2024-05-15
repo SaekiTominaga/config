@@ -28,10 +28,6 @@
 /* declaration-property-value-disallowed-list */
 .declaration-property-value-disallowed-list {
 	display: block flow;
-	float: inline-start;
-	clear: inline-start;
-	resize: inline;
-	text-align: start;
 }
 
 /* value-keyword-case */

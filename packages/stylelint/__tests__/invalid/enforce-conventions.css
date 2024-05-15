@@ -26,33 +26,11 @@
 /* declaration-property-value-disallowed-list */
 .declaration-property-value-disallowed-list {
 	display: block;
-	float: left;
-	clear: left;
-	resize: horizontal;
-	text-align: left;
 }
 
 /* function-url-no-scheme-relative */
 .function-url-no-scheme-relative {
 	background-image: url("//example.com/file.jpg");
-}
-
-/* property-disallowed-list */
-.property-disallowed-list1 {
-	top: 0;
-	margin-top: 0;
-	border-top: 0;
-	border-top-width: 0;
-	border-top-style: none;
-	border-top-right-radius: 0;
-	padding-top: 0;
-	width: 0;
-	min-width: 0;
-	max-width: 0;
-	height: 0;
-	min-height: 0;
-	max-height: 0;
-	overscroll-behavior-x: auto;
 }
 
 /* selector-max-id */

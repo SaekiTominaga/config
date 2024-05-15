@@ -1,5 +1,7 @@
+/** @type {import('stylelint').Config} */
 export default {
 	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order'],
+	plugins: ['stylelint-plugin-logical-css'],
 	rules: {
 		/**
 		 * Avoid errors
@@ -90,6 +92,7 @@ export default {
 		'declaration-property-value-disallowed-list': [
 			{
 				display: [
+					/* property list: https://drafts.csswg.org/css-display/#display-value-summary */
 					'block',
 					'flow-root',
 					'inline',
@@ -105,79 +108,74 @@ export default {
 					'table',
 					'inline-table',
 				],
-				float: ['left', 'right'],
-				clear: ['left', 'right'],
-				'text-align': ['left', 'right'],
-				resize: ['vertical', 'horizontal'],
 			},
 			{
-				message: (name, short) => {
+				message: (name, value) => {
 					switch (name) {
 						case 'display': {
-							let full = '';
-							switch (short) {
-								/* property list: https://drafts.csswg.org/css-display/#display-value-summary */
+							let multiValue = '';
+							switch (value) {
 								case 'block': {
-									full = 'block flow';
+									multiValue = 'block flow';
 									break;
 								}
 								case 'flow-root': {
-									full = 'block flow-root';
+									multiValue = 'block flow-root';
 									break;
 								}
 								case 'inline': {
-									full = 'inline flow';
+									multiValue = 'inline flow';
 									break;
 								}
 								case 'inline-block': {
-									full = 'inline flow-root';
+									multiValue = 'inline flow-root';
 									break;
 								}
 								case 'run-in': {
-									full = 'run-in flow';
+									multiValue = 'run-in flow';
 									break;
 								}
 								case 'list-item': {
-									full = 'block flow list-item';
+									multiValue = 'block flow list-item';
 									break;
 								}
 								case 'inline list-item': {
-									full = 'inline flow list-item';
+									multiValue = 'inline flow list-item';
 									break;
 								}
 								case 'flex': {
-									full = 'block flex';
+									multiValue = 'block flex';
 									break;
 								}
 								case 'inline-flex': {
-									full = 'inline flex';
+									multiValue = 'inline flex';
 									break;
 								}
 								case 'grid': {
-									full = 'block grid';
+									multiValue = 'block grid';
 									break;
 								}
 								case 'inline-grid': {
-									full = 'inline grid';
+									multiValue = 'inline grid';
 									break;
 								}
 								case 'ruby': {
-									full = 'inline ruby';
+									multiValue = 'inline ruby';
 									break;
 								}
 								case 'table': {
-									full = 'block table';
+									multiValue = 'block table';
 									break;
 								}
 								case 'inline-table': {
-									full = 'inline table';
+									multiValue = 'inline table';
 									break;
 								}
 							}
-							return `Use multi-keyword syntax for "${name}" ("${short}" → "${full}")`;
+							return `Use multi-keyword syntax for \`${name}\` (\`${value}\` → \`${multiValue}\`)`;
 						}
 					}
-					return `Use logical value for "${name}"`;
+					return `\`${value}\` values are not allowed for \`${name}\` properties`;
 				},
 				severity: 'warning',
 			},
@@ -194,54 +192,7 @@ export default {
 		// media-feature-name-unit-allowed-list
 		// media-feature-name-value-allowed-list
 		// property-allowed-list
-		'property-disallowed-list': [
-			[
-				'top',
-				'right',
-				'bottom',
-				'left',
-				'margin-top',
-				'margin-right',
-				'margin-bottom',
-				'margin-left',
-				'border-top',
-				'border-right',
-				'border-bottom',
-				'border-left',
-				'border-top-width',
-				'border-right-width',
-				'border-bottom-width',
-				'border-left-width',
-				'border-top-style',
-				'border-right-style',
-				'border-bottom-style',
-				'border-left-style',
-				'border-top-color',
-				'border-right-color',
-				'border-bottom-color',
-				'border-left-color',
-				'border-top-right-radius',
-				'border-top-left-radius',
-				'border-bottom-right-radius',
-				'border-bottom-left-radius',
-				'padding-top',
-				'padding-right',
-				'padding-bottom',
-				'padding-left',
-				'width',
-				'min-width',
-				'max-width',
-				'height',
-				'min-height',
-				'max-height',
-				'overscroll-behavior-x',
-				'overscroll-behavior-y',
-			],
-			{
-				message: (name) => `Use logical property for "${name}"`,
-				severity: 'warning',
-			},
-		],
+		// property-disallowed-list
 		// ✅ property-no-vendor-prefix
 		// rule-selector-property-disallowed-list
 		// selector-attribute-name-disallowed-list
@@ -325,7 +276,7 @@ export default {
 		// ✅ keyframes-name-pattern
 		// ✅ selector-class-pattern
 		// ✅ selector-id-pattern
-		"selector-nested-pattern": /&/,
+		'selector-nested-pattern': /&/,
 
 		/* Quotes */
 		// ✅ font-family-name-quotes
@@ -340,7 +291,7 @@ export default {
 		// ✅ comment-whitespace-inside
 
 		/**
-		 * order
+		 * stylelint-order
 		 */
 		'order/order': [
 			[
@@ -364,6 +315,23 @@ export default {
 				'rules',
 			],
 			{ unspecified: 'bottom' },
+		],
+
+		/**
+		 * [plugin] stylelint-plugin-logical-css
+		 */
+		'plugin/use-logical-properties-and-values': [
+			true,
+			{
+				ignore: ['overflow-x', 'overflow-y', 'caption-side'],
+				severity: 'warning',
+			},
+		],
+		'plugin/use-logical-units': [
+			true,
+			{
+				severity: 'warning',
+			},
 		],
 	},
 };

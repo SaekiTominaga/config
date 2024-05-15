@@ -1,0 +1,27 @@
+.property {
+	top: 0;
+	margin-top: 0;
+	border-top: 0;
+	border-top-width: 0;
+	border-top-style: none;
+	border-top-right-radius: 0;
+	padding-top: 0;
+	width: 0;
+	min-width: 0;
+	max-width: 0;
+	height: 0;
+	min-height: 0;
+	max-height: 0;
+	overscroll-behavior-x: auto;
+}
+
+.value {
+	float: left;
+	clear: left;
+	resize: horizontal;
+	text-align: left;
+}
+
+.unit {
+	inline-size: 10vw;
+}

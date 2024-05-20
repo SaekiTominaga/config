@@ -14,7 +14,7 @@
 		"rules"
 	],
 	"type": "module",
-	"main": "index.js",
+	"main": "eslint.config.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/config.git"

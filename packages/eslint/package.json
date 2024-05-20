@@ -23,11 +23,11 @@
 		"test": "eslint __tests__/*"
 	},
 	"dependencies": {
-		"@eslint/eslintrc": "^3.0.2",
-		"@eslint/js": "^9.1.1",
-		"@typescript-eslint/eslint-plugin": "^7.7.1",
+		"@eslint/eslintrc": "^3.1.0",
+		"@eslint/js": "^9.3.0",
+		"@typescript-eslint/eslint-plugin": "^7.9.0",
 		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-plugin-jsdoc": "^48.2.3"
+		"eslint-plugin-jsdoc": "^48.2.5"
 	},
 	"devDependencies": {
 		"@types/eslint": "^8.56.10",

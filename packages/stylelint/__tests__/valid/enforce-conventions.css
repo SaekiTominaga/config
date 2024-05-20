@@ -10,8 +10,10 @@
 	}
 }
 
-/* block-no-empty */
-.block-no-empty {
+/* at-rule-property-required-list */
+@font-face {
+	font-family: test;
+	src: url("test.woff2") format("woff2");
 }
 
 /* color-hex-alpha */
@@ -23,26 +25,14 @@
 	color: #010101;
 }
 
-/* custom-property-pattern */
---foo1-1: 1;
---_foo1-1: 1;
-
 /* declaration-property-value-disallowed-list */
 .declaration-property-value-disallowed-list {
 	display: block flow;
-	float: inline-start;
-	clear: inline-start;
-	resize: inline;
-	text-align: start;
 }
 
-/* no-descending-specificity */
-.container .no-descending-specificity {
-	inset-block-start: 10px;
-}
-
-.no-descending-specificity {
-	inset-block-start: 0;
+/* value-keyword-case */
+.value-keyword-case {
+	fill: currentColor;
 }
 
 /* selector-max-universal */
@@ -52,7 +42,17 @@
 .selector-max-universal > * + * {
 }
 
-/* value-keyword-case */
-.value-keyword-case {
-	fill: currentColor;
+/* custom-property-pattern */
+--foo1-1: 1;
+--_foo1-1: 1;
+
+/* font-weight-notation */
+.font-weight-notation {
+	font-weight: 500;
+}
+
+/* selector-nested-pattern */
+.selector-nested-pattern {
+	&.foo {
+	}
 }

@@ -1,0 +1,12 @@
+/* no-descending-specificity */
+.container .no-descending-specificity {
+	inset-block-start: 10px;
+}
+
+.no-descending-specificity {
+	inset-block-start: 0;
+}
+
+/* block-no-empty */
+.block-no-empty {
+}

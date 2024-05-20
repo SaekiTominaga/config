@@ -1,0 +1,53 @@
+/* at-rule-property-required-list */
+@font-face {
+	src: url("test.woff2") format("woff2");
+}
+
+/* color-hex-alpha */
+.color-hex-alpha {
+	color: #fffa;
+}
+
+/* color-named */
+.color-named {
+	color: black;
+}
+
+/* declaration-no-important */
+.declaration-no-important {
+	color: #000 !important;
+}
+
+/* declaration-property-unit-allowed-list */
+.declaration-property-unit-allowed-list {
+	line-height: 1em;
+}
+
+/* declaration-property-value-disallowed-list */
+.declaration-property-value-disallowed-list {
+	display: block;
+}
+
+/* function-url-no-scheme-relative */
+.function-url-no-scheme-relative {
+	background-image: url("//example.com/file.jpg");
+}
+
+/* selector-max-id */
+#selector-max-id {
+}
+
+/* selector-max-universal */
+* > * {
+}
+
+/* font-weight-notation */
+.font-weight-notation {
+	font-weight: normal;
+}
+
+/* selector-nested-pattern */
+.selector-nested-pattern {
+	.foo {
+	}
+}

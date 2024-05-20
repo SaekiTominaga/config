@@ -1,0 +1,8 @@
+/* declaration-property-value-no-unknown */
+.declaration-property-value-no-unknown {
+	inset-block-start: unknown;
+}
+
+/* media-feature-name-value-no-unknown */
+@media (color: red) {
+}

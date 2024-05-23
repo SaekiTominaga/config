@@ -323,7 +323,7 @@ export default {
 		'plugin/use-logical-properties-and-values': [
 			true,
 			{
-				ignore: ['overflow-x', 'overflow-y', 'caption-side'],
+				ignore: ['overflow-x', 'overflow-y'],
 				severity: 'warning',
 			},
 		],

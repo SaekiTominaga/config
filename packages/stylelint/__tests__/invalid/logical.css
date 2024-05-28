@@ -13,6 +13,7 @@
 	min-height: 0;
 	max-height: 0;
 	overscroll-behavior-x: auto;
+	overflow-inline: visible;
 }
 
 .value {

@@ -192,7 +192,7 @@ export default {
 		// media-feature-name-unit-allowed-list
 		// media-feature-name-value-allowed-list
 		// property-allowed-list
-		// property-disallowed-list
+		'property-disallowed-list': ['overflow-block', 'overflow-inline'],
 		// ✅ property-no-vendor-prefix
 		// rule-selector-property-disallowed-list
 		// selector-attribute-name-disallowed-list

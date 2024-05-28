@@ -1,7 +1,7 @@
 /** @type {import('stylelint').Config} */
 export default {
 	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order'],
-	plugins: ['stylelint-plugin-logical-css'],
+	plugins: ['stylelint-plugin-logical-css', 'stylelint-root-colors'],
 	rules: {
 		/**
 		 * Avoid errors
@@ -333,5 +333,10 @@ export default {
 				severity: 'warning',
 			},
 		],
+
+		/**
+		 * [plugin] stylelint-root-colors
+		 */
+		'plugin/root-colors': true,
 	},
 };

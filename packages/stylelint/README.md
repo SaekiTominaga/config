@@ -3,11 +3,11 @@
 [![npm version](https://badge.fury.io/js/%40w0s%2Fstylelint-config.svg)](https://www.npmjs.com/package/@w0s/stylelint-config)
 [![test status](https://github.com/SaekiTominaga/w0s/actions/workflows/stylelint-test.yml/badge.svg)](https://github.com/SaekiTominaga/w0s/actions/workflows/stylelint-test.yml)
 
-[Stylelint configuration](https://stylelint.io/user-guide/configure) file used on my personal website ([w0s.jp](https://github.com/SaekiTominaga/w0s.jp)).
+[Stylelint configuration](https://stylelint.io/user-guide/configure) file used on my personal website ([`w0s.jp`](https://github.com/SaekiTominaga/w0s.jp)).
 
 ## Features
 
-It is based on [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) with its own rule settings.
+It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard) with its own rule settings.
 
 - Disallow `!important` within declarations.
   - 🙁 `color: #000 !important`
@@ -15,29 +15,32 @@ It is based on [stylelint-config-standard](https://github.com/stylelint/stylelin
 - [Multi-keyword syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display) is recommended for the `display` property.
   - 🙁 `display: block`
   - 🙂 `display: block flow`
-- Use of CSS physical properties and values is not recommended. Use [logical properties and values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
+- Use of CSS physical properties and values is not recommended. Use [logical properties and values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values). The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
   - 🙁 `margin-top: 1em`
   - 🙂 `margin-block-start: 1em`
   - 🙁 `text-align: right`
   - 🙂 `text-align: end`
   - 🙂 `overflow-x: visible` (The `overflow-*` logical properties is not well supported by browsers)
-- Use of CSS physical utils is not recommended. Use logical utils.
+- Use of CSS physical utils is not recommended. Use logical utils. The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
   - 🙁 `inline-size: 100vw`
   - 🙂 `inline-size: 100vi`
 - Do not use ID selector.
-  - 😨 `#foo { color: #000 }`
-  - 🙂 `.foo { color: #000 }`
+  - 😨 `#foo {}`
+  - 🙂 `.foo {}`
 - Do not use multiple universal selectors. However, this excludes the use of a next-sibling combinator (`+`).
-  - 🙂 `*`
-  - 😨 `* > *`
-  - 🙂 `* + *` (This is used in the "owl selector" in [stack layout](https://every-layout.dev/layouts/stack/))
+  - 🙂 `* {}`
+  - 😨 `* > * {}`
+  - 🙂 `* + * {}` (This is used in the "owl selector" in [stack layout](https://every-layout.dev/layouts/stack/))
 - The `font-weight` value must be numbers.
   - 😨 `font-weight: normal`
   - 🙂 `font-weight: 500 /* Windows + Yu Gothic measures to be greater than 400 */`
 - CSS nesting must use the `&` nesting selector.
   - 😨 `.foo { .bar {} }`
   - 🙂 `.foo { &.bar {} }`
-- The order of properties within declaration blocks follows [stylelint-config-concentric-order](https://github.com/chaucerbao/stylelint-config-concentric-order).
+- For the root element, `color` and `background-color` must be specified as a set. See [`stylelint-root-colors`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/root-colors) for details.
+  - 😨 `:root { color: #000 }`
+  - 🙂 `:root { background-color: #fff; color: #000 }`
+- The order of properties within declaration blocks follows [`stylelint-config-concentric-order`](https://github.com/chaucerbao/stylelint-config-concentric-order).
   - 😨 `.foo { padding: 1em; margin: 1em }`
   - 🙂 `.foo { margin: 1em; padding: 1em }`
 

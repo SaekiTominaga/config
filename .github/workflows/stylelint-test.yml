@@ -6,14 +6,16 @@ on:
     paths:
       - 'packages/stylelint/package.json'
       - 'packages/stylelint/stylelint.config.js'
-      - 'packages/stylelint/__tests__/valid/*.css'
+      - 'packages/stylelint/__tests__/*.test.js'
+      - 'packages/stylelint/__tests__/**/*.css'
   push:
     branches:
       - main
     paths:
       - 'packages/stylelint/package.json'
       - 'packages/stylelint/stylelint.config.js'
-      - 'packages/stylelint/__tests__/valid/*.css'
+      - 'packages/stylelint/__tests__/*.test.js'
+      - 'packages/stylelint/__tests__/**/*.css'
   workflow_dispatch:
 
 jobs:

@@ -6,6 +6,7 @@ on:
     paths:
       - 'packages/markuplint/markuplint.config.js'
       - 'packages/markuplint/package.json'
+      - 'packages/markuplint/__tests__/*.test.js'
       - 'packages/markuplint/__tests__/valid/**/*.html'
   push:
     branches:
@@ -13,6 +14,7 @@ on:
     paths:
       - 'packages/markuplint/markuplint.config.js'
       - 'packages/markuplint/package.json'
+      - 'packages/markuplint/__tests__/*.test.js'
       - 'packages/markuplint/__tests__/valid/**/*.html'
   workflow_dispatch:
 

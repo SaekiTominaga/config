@@ -4,14 +4,14 @@ on:
     branches:
       - main
     paths:
-      - 'packages/markuplint/.markuplintrc'
+      - 'packages/markuplint/markuplint.config.js'
       - 'packages/markuplint/package.json'
       - 'packages/markuplint/__tests__/valid/**/*.html'
   push:
     branches:
       - main
     paths:
-      - 'packages/markuplint/.markuplintrc'
+      - 'packages/markuplint/markuplint.config.js'
       - 'packages/markuplint/package.json'
       - 'packages/markuplint/__tests__/valid/**/*.html'
   workflow_dispatch:

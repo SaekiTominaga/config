@@ -16,8 +16,7 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
-		"test": "stylelint __tests__/valid/*.css",
-		"test-invalid": "stylelint __tests__/invalid/*.css"
+		"test": "node __tests__/index.test.js"
 	},
 	"dependencies": {
 		"stylelint-config-concentric-order": "^5.2.0",

@@ -43,7 +43,6 @@ test('invalid', async (t) => {
 	});
 
 	await t.test('warnings', () => {
-		console.debug(linterResult.results.flatMap((result) => result.warnings));
 		assert.equal(
 			linterResult.results.flatMap((result) => result.warnings).length,
 			36,

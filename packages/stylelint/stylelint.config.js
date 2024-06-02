@@ -1,7 +1,7 @@
 /** @type {import('stylelint').Config} */
 export default {
 	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order'],
-	plugins: ['stylelint-plugin-logical-css'],
+	plugins: ['stylelint-plugin-logical-css', 'stylelint-root-colors'],
 	rules: {
 		/**
 		 * Avoid errors
@@ -192,7 +192,7 @@ export default {
 		// media-feature-name-unit-allowed-list
 		// media-feature-name-value-allowed-list
 		// property-allowed-list
-		// property-disallowed-list
+		'property-disallowed-list': ['overflow-block', 'overflow-inline'],
 		// ✅ property-no-vendor-prefix
 		// rule-selector-property-disallowed-list
 		// selector-attribute-name-disallowed-list
@@ -323,7 +323,7 @@ export default {
 		'plugin/use-logical-properties-and-values': [
 			true,
 			{
-				ignore: ['overflow-x', 'overflow-y', 'caption-side'],
+				ignore: ['overflow-x', 'overflow-y'],
 				severity: 'warning',
 			},
 		],
@@ -333,5 +333,10 @@ export default {
 				severity: 'warning',
 			},
 		],
+
+		/**
+		 * [plugin] stylelint-root-colors
+		 */
+		'plugin/root-colors': true,
 	},
 };

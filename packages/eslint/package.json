@@ -20,7 +20,7 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
-		"test": "eslint __tests__/*"
+		"test": "node __tests__/index.test.js"
 	},
 	"dependencies": {
 		"@eslint/eslintrc": "^3.1.0",

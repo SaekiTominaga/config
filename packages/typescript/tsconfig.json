@@ -30,6 +30,9 @@
 		"target": "ES2022",
 
 		/* Projects */
-		"incremental": true
+		"incremental": true,
+
+		/* Completeness */
+		"skipLibCheck": true
 	}
 }

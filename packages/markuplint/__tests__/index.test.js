@@ -5,7 +5,7 @@ import { MLEngine } from 'markuplint';
 import config from '../markuplint.config.js';
 
 test('valid', async (t) => {
-	let linterResults = [];
+	const linterResults = [];
 	t.beforeEach(async () => {
 		const files = fs.promises.glob('__tests__/valid/**/*.html');
 
@@ -28,7 +28,7 @@ test('valid', async (t) => {
 });
 
 test('invalid', async (t) => {
-	let linterResults = [];
+	const linterResults = [];
 	t.beforeEach(async () => {
 		const files = fs.promises.glob('__tests__/invalid/**/*.html');
 

@@ -24,13 +24,13 @@
 	},
 	"dependencies": {
 		"@eslint/eslintrc": "^3.1.0",
-		"@eslint/js": "^9.3.0",
-		"@typescript-eslint/eslint-plugin": "^7.9.0",
+		"@eslint/js": "^8.57.0",
+		"@typescript-eslint/eslint-plugin": "^7.17.0",
 		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-plugin-jsdoc": "^48.2.5"
+		"eslint-plugin-jsdoc": "^48.8.3"
 	},
 	"devDependencies": {
-		"@types/eslint": "^8.56.10",
+		"@types/eslint": "^8.56.11",
 		"eslint": "^8.57.0"
 	},
 	"peerDependencies": {

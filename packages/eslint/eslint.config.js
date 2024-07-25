@@ -3,7 +3,9 @@
 import { FlatCompat } from '@eslint/eslintrc';
 import eslintJs from '@eslint/js';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
+import tseslint from 'typescript-eslint';
 import pluginTypeScript from '@typescript-eslint/eslint-plugin';
+import parserTypeScript from '@typescript-eslint/parser';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
 import configEslintPossibleProblems from './rules/eslint/possible-problems.js';
 import configEslintSuggestions from './rules/eslint/suggestions.js';
@@ -12,14 +14,15 @@ import configJsdoc from './rules/jsdoc.js';
 
 const compat = new FlatCompat();
 
-/** @type {import("eslint").Linter.FlatConfig[]} */
-export default [
+/** @type {import("@typescript-eslint/utils/ts-eslint").FlatConfig.ConfigArray} */
+export default tseslint.config(
 	eslintJs.configs.recommended,
 	...compat.config({ extends: 'eslint-config-airbnb-base' }),
 	configEslintPossibleProblems,
 	configEslintSuggestions,
 	configEslintLayoutFormatting,
 	configImport,
+	...tseslint.configs.recommended,
 	pluginJsdoc.configs['flat/recommended'],
 	configJsdoc,
 	{
@@ -34,7 +37,10 @@ export default [
 		},
 	},
 	{
-		files: ['*.ts'],
+		files: ['**/*.ts'],
+		languageOptions: {
+			parser: parserTypeScript,
+		},
 		rules: {
 			...pluginTypeScript.configs['strict-type-checked'].rules,
 			...pluginTypeScript.configs['stylistic-type-checked'].rules,
@@ -57,7 +63,7 @@ export default [
 		},
 	},
 	{
-		files: ['*.d.ts'],
+		files: ['**/**.d.ts'],
 		rules: {
 			'no-use-before-define': 'off',
 			'no-var': 'off',
@@ -66,7 +72,7 @@ export default [
 		},
 	},
 	{
-		files: ['*.test.ts', '*.test.js'],
+		files: ['**/**.test.ts', '**/**.test.js'],
 		rules: {
 			'no-new': 'off',
 			'no-tabs': 'off',
@@ -74,18 +80,18 @@ export default [
 		},
 	},
 	{
-		files: ['*.test.ts'],
+		files: ['**/**.test.ts'],
 		rules: {
 			'@typescript-eslint/ban-ts-comment': 'off',
 			'@typescript-eslint/no-non-null-assertion': 'off',
 		},
 	},
 	{
-		files: ['*.test.js'],
+		files: ['**/**.test.js'],
 		rules: {
 			'import/no-extraneous-dependencies': 'off',
 			'import/no-named-as-default': 'off',
 			'import/no-named-as-default-member': 'off',
 		},
 	},
-];
+);

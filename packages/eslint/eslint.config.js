@@ -28,9 +28,6 @@ export default tseslint.config(
 	{
 		languageOptions: {
 			ecmaVersion: 'latest', // TODO: デフォルト値は latest だが、明示的に指定しないと Top-level await で Parsing error が発生する
-			parserOptions: {
-				project: false,
-			},
 		},
 		plugins: {
 			pluginJsdoc,

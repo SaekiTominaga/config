@@ -24,8 +24,15 @@ ESLint configuration file used on my personal website ([w0s.jp](https://github.c
 
 ## Usage
 
-```json
-{
-  "extends": ["@w0s/eslint-config"]
-}
+```javascript
+import w0sConfig from '@w0s/eslint-config';
+
+/** @type {import("eslint").Linter.FlatConfig[]} */
+export default [
+  ...w0sConfig,
+  {
+    // other options
+  }
+];
+
 ```

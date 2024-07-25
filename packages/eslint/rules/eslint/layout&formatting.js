@@ -1,4 +1,7 @@
-module.exports = {
+// @ts-check
+
+/** @type {import("eslint").Linter.FlatConfig} */
+export default {
 	rules: {
 		'comma-dangle': ['error', 'always-multiline'],
 		'function-paren-newline': 'off',

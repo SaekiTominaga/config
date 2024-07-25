@@ -23,6 +23,6 @@ export default class Test {
 	func(foo, bar) {
 		this.#foo = foo;
 
-		return `${foo}${bar}`;
+		return `${this.#foo}${bar}`;
 	}
 }

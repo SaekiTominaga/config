@@ -1,9 +1,8 @@
 // @ts-check
 
-import { FlatCompat } from '@eslint/eslintrc';
-import eslintJs from '@eslint/js';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
 import tseslint from 'typescript-eslint';
+import eslintJs from '@eslint/js';
 import pluginTypeScript from '@typescript-eslint/eslint-plugin';
 import parserTypeScript from '@typescript-eslint/parser';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
@@ -12,12 +11,9 @@ import configEslintSuggestions from './rules/eslint/suggestions.js';
 import configImport from './rules/import.js';
 import configJsdoc from './rules/jsdoc.js';
 
-const compat = new FlatCompat();
-
 /** @type {import("@typescript-eslint/utils/ts-eslint").FlatConfig.ConfigArray} */
 export default tseslint.config(
 	eslintJs.configs.recommended,
-	...compat.config({ extends: 'eslint-config-airbnb-base' }),
 	configEslintPossibleProblems,
 	configEslintSuggestions,
 	configEslintLayoutFormatting,

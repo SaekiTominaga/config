@@ -31,6 +31,11 @@ export default {
 				disallowArithmeticOperators: true,
 			},
 		], // eslint-config-airbnb-base@15.0.0; errors
-		'valid-typeof': ['error', { requireStringLiterals: true }], // eslint-config-airbnb-base@15.0.0; errors
+		'valid-typeof': [
+			'error',
+			{
+				requireStringLiterals: true,
+			},
+		], // eslint-config-airbnb-base@15.0.0; errors
 	},
 };

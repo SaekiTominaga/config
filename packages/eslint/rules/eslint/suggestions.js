@@ -69,7 +69,7 @@ export default {
 		'no-plusplus': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-proto': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-restricted-globals': ['error', 'isFinite', 'isNaN'], // eslint-config-airbnb-base@15.0.0; variables
-		'no-restricted-syntax': ['error', 'ForInStatement', 'ForOfStatement', 'LabeledStatement', 'WithStatement'], // eslint-config-airbnb-base@15.0.0; style
+		'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'], // eslint-config-airbnb-base@15.0.0; style
 		'no-return-assign': ['error', 'always'], // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-script-url': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-sequences': 'error', // eslint-config-airbnb-base@15.0.0; best-practices

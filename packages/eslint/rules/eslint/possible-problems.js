@@ -9,9 +9,9 @@ export default {
 				allowImplicit: true,
 			},
 		], // eslint-config-airbnb-base@15.0.0; best-practices
-		'no-await-in-loop': 'error', // eslint-config-airbnb-base@15.0.0; error
-		'no-cond-assign': ['error', 'always'], // eslint-config-airbnb-base@15.0.0; error
-		'no-console': 'warn', // eslint-config-airbnb-base@15.0.0; error
+		'no-await-in-loop': 'error', // eslint-config-airbnb-base@15.0.0; errors
+		'no-cond-assign': ['error', 'always'], // eslint-config-airbnb-base@15.0.0; errors
+		'no-console': 'warn', // eslint-config-airbnb-base@15.0.0; errors
 		'no-constructor-return': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-irregular-whitespace': [
 			'error',
@@ -21,16 +21,16 @@ export default {
 				skipTemplates: true,
 			},
 		],
-		'no-promise-executor-return': 'error', // eslint-config-airbnb-base@15.0.0; error
+		'no-promise-executor-return': 'error', // eslint-config-airbnb-base@15.0.0; errors
 		'no-self-compare': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
-		'no-template-curly-in-string': 'error', // eslint-config-airbnb-base@15.0.0; error
+		'no-template-curly-in-string': 'error', // eslint-config-airbnb-base@15.0.0; errors
 		'no-unmodified-loop-condition': 'error',
 		'no-unsafe-optional-chaining': [
 			'error',
 			{
 				disallowArithmeticOperators: true,
 			},
-		], // eslint-config-airbnb-base@15.0.0; error
-		'valid-typeof': ['error', { requireStringLiterals: true }], // eslint-config-airbnb-base@15.0.0; error
+		], // eslint-config-airbnb-base@15.0.0; errors
+		'valid-typeof': ['error', { requireStringLiterals: true }], // eslint-config-airbnb-base@15.0.0; errors
 	},
 };

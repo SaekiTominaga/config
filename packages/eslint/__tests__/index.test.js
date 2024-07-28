@@ -48,6 +48,7 @@ test('invalid', async (t) => {
 			[
 				'array-callback-return',
 				'consistent-return',
+				'constructor-super',
 				'no-await-in-loop',
 				'no-cond-assign',
 				'no-constant-condition',

@@ -1,6 +1,6 @@
 import { strict as assert } from 'node:assert/strict';
 import { test } from 'node:test';
-import { ESLint, loadESLint } from 'eslint';
+import { ESLint, Linter, loadESLint } from 'eslint';
 import config from '../eslint.config.js';
 
 /** @type {typeof ESLint} */
@@ -13,7 +13,7 @@ const eslint = new FlatESLint({
 test('valid', async (t) => {
 	/** @type {ESLint.LintResult[]} */
 	let linterResults;
-	t.beforeEach(async () => {
+	t.before(async () => {
 		linterResults = await eslint.lintFiles(['__tests__/valid/*.{js,ts}']);
 	});
 
@@ -33,23 +33,45 @@ test('valid', async (t) => {
 });
 
 test('invalid', async (t) => {
-	/** @type {ESLint.LintResult[]} */
-	let linterResults;
-	t.beforeEach(async () => {
-		linterResults = await eslint.lintFiles(['__tests__/invalid/*.{js,ts}']);
+	/** @type {Linter.LintMessage[]} */
+	let linterMessages;
+	t.before(async () => {
+		linterMessages = (await eslint.lintFiles(['__tests__/invalid/*.{js,ts}'])).map((result) => result.messages).flat();
 	});
 
-	await t.test('errorCount', () => {
-		assert.equal(
-			linterResults.map((result) => result.errorCount).reduce((a, b) => a + b),
-			3,
+	await t.test('error', () => {
+		assert.deepEqual(
+			linterMessages
+				.filter((message) => message.severity === 2)
+				.map((message) => message.ruleId)
+				.sort(),
+			[
+				'array-callback-return',
+				'consistent-return',
+				'no-await-in-loop',
+				'no-cond-assign',
+				'no-constant-condition',
+				'no-constructor-return',
+				'no-irregular-whitespace',
+				'no-self-compare',
+				'no-template-curly-in-string',
+				'no-unmodified-loop-condition',
+				'no-unsafe-optional-chaining',
+				'no-unsafe-optional-chaining',
+				'unicode-bom',
+				'valid-typeof',
+				'valid-typeof',
+			],
 		);
 	});
 
-	await t.test('warningCount', () => {
-		assert.equal(
-			linterResults.map((result) => result.warningCount).reduce((a, b) => a + b),
-			0,
+	await t.test('warning', () => {
+		assert.deepEqual(
+			linterMessages
+				.filter((message) => message.severity === 1)
+				.map((message) => message.ruleId)
+				.sort(),
+			['no-console'],
 		);
 	});
 });

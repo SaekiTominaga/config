@@ -47,6 +47,7 @@ export default {
 		'no-implied-eval': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-invalid-this': 'error',
 		'no-iterator': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
+		'no-label-var': 'error', // eslint-config-airbnb-base@15.0.0; variables
 		'no-labels': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-lone-blocks': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-lonely-if': 'error', // eslint-config-airbnb-base@15.0.0; style
@@ -67,11 +68,14 @@ export default {
 		],
 		'no-plusplus': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-proto': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
+		'no-restricted-globals': ['error', 'isFinite', 'isNaN'], // eslint-config-airbnb-base@15.0.0; variables
 		'no-restricted-syntax': ['error', 'ForInStatement', 'ForOfStatement', 'LabeledStatement', 'WithStatement'], // eslint-config-airbnb-base@15.0.0; style
 		'no-return-assign': ['error', 'always'], // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-script-url': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-sequences': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
+		'no-shadow': 'error', // eslint-config-airbnb-base@15.0.0; variables
 		'no-throw-literal': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
+		'no-undef-init': 'error', // eslint-config-airbnb-base@15.0.0; variables
 		'no-underscore-dangle': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-unneeded-ternary': [
 			'error',
@@ -79,9 +83,6 @@ export default {
 				defaultAssignment: false,
 			},
 		], // eslint-config-airbnb-base@15.0.0; style
-		'no-useless-computed-key': 'error', // eslint-config-airbnb-base@15.0.0; es6
-		'no-useless-constructor': 'error', // eslint-config-airbnb-base@15.0.0; es6
-		'no-useless-rename': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'no-unused-expressions': [
 			'error',
 			{
@@ -90,6 +91,11 @@ export default {
 				allowTaggedTemplates: false,
 			},
 		], // eslint-config-airbnb-base@15.0.0; best-practices
+		'no-unused-vars': 'error',
+		'no-use-before-define': 'error', // eslint-config-airbnb-base@15.0.0; variables
+		'no-useless-computed-key': 'error', // eslint-config-airbnb-base@15.0.0; es6
+		'no-useless-constructor': 'error', // eslint-config-airbnb-base@15.0.0; es6
+		'no-useless-rename': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'no-useless-call': 'error',
 		'no-useless-concat': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-useless-return': 'error', // eslint-config-airbnb-base@15.0.0; best-practices

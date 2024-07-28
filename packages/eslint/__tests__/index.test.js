@@ -3,16 +3,17 @@ import { test } from 'node:test';
 import { ESLint, loadESLint } from 'eslint';
 import config from '../eslint.config.js';
 
+/** @type {typeof ESLint} */
+const FlatESLint = await loadESLint({ useFlatConfig: true });
+
+const eslint = new FlatESLint({
+	baseConfig: config,
+});
+
 test('valid', async (t) => {
-	/** @type {ESLint.LinterResult[]} */
+	/** @type {ESLint.LintResult[]} */
 	let linterResults;
 	t.beforeEach(async () => {
-		const FlatESLint = await loadESLint({ useFlatConfig: true });
-
-		const eslint = new FlatESLint({
-			baseConfig: config,
-		});
-
 		linterResults = await eslint.lintFiles(['__tests__/valid/*.{js,ts}']);
 	});
 
@@ -32,15 +33,9 @@ test('valid', async (t) => {
 });
 
 test('invalid', async (t) => {
-	/** @type {ESLint.LinterResult[]} */
+	/** @type {ESLint.LintResult[]} */
 	let linterResults;
 	t.beforeEach(async () => {
-		const FlatESLint = await loadESLint({ useFlatConfig: true });
-
-		const eslint = new FlatESLint({
-			baseConfig: config,
-		});
-
 		linterResults = await eslint.lintFiles(['__tests__/invalid/*.{js,ts}']);
 	});
 

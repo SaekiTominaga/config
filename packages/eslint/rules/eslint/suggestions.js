@@ -3,6 +3,7 @@
 /** @type {import("eslint").Linter.FlatConfig} */
 export default {
 	rules: {
+		'arrow-body-style': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'block-scoped-var': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'class-methods-use-this': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'consistent-return': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
@@ -56,6 +57,9 @@ export default {
 		'no-script-url': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-sequences': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-throw-literal': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
+		'no-useless-computed-key': 'error', // eslint-config-airbnb-base@15.0.0; es6
+		'no-useless-constructor': 'error', // eslint-config-airbnb-base@15.0.0; es6
+		'no-useless-rename': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'no-unused-expressions': [
 			'error',
 			{
@@ -67,21 +71,46 @@ export default {
 		'no-useless-call': 'error',
 		'no-useless-concat': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-useless-return': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
-		'no-var': 'error',
+		'no-var': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'no-void': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'object-shorthand': ['error', 'methods'],
-		'prefer-const': 'error',
-		'prefer-promise-reject-errors': 'error',
+		'prefer-arrow-callback': 'error', // eslint-config-airbnb-base@15.0.0; es6
+		'prefer-const': [
+			'error',
+			{
+				destructuring: 'any',
+				ignoreReadBeforeAssign: true,
+			},
+		], // eslint-config-airbnb-base@15.0.0; es6
+		'prefer-destructuring': [
+			'error',
+			{
+				VariableDeclarator: {
+					array: false,
+					object: true,
+				},
+				AssignmentExpression: {
+					array: true,
+					object: false,
+				},
+			},
+		], // eslint-config-airbnb-base@15.0.0; es6
+		'prefer-numeric-literals': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'prefer-object-has-own': 'error',
+		'prefer-promise-reject-errors': 'error',
 		'prefer-regex-literals': [
 			'error',
 			{
 				disallowRedundantWrapping: true,
 			},
 		], // eslint-config-airbnb-base@15.0.0; best-practices
+		'prefer-rest-params': 'error', // eslint-config-airbnb-base@15.0.0; es6
+		'prefer-spread': 'error', // eslint-config-airbnb-base@15.0.0; es6
+		'prefer-template': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		radix: 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'require-await': 'error',
 		strict: 'error',
+		'symbol-description': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		yoda: 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 	},
 };

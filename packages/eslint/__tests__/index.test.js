@@ -14,7 +14,7 @@ test('valid', async (t) => {
 	/** @type {ESLint.LintResult[]} */
 	let linterResults;
 	t.before(async () => {
-		linterResults = await eslint.lintFiles(['__tests__/valid/*.{js,ts}']);
+		linterResults = await eslint.lintFiles(['__tests__/valid/**/*.{js,ts}']);
 	});
 
 	await t.test('errorCount', () => {
@@ -36,7 +36,7 @@ test('invalid', async (t) => {
 	/** @type {Linter.LintMessage[]} */
 	let linterMessages;
 	t.before(async () => {
-		linterMessages = (await eslint.lintFiles(['__tests__/invalid/*.{js,ts}'])).map((result) => result.messages).flat();
+		linterMessages = (await eslint.lintFiles(['__tests__/invalid/**/*.{js,ts}'])).map((result) => result.messages).flat();
 	});
 
 	await t.test('error', () => {
@@ -49,6 +49,8 @@ test('invalid', async (t) => {
 				'array-callback-return',
 				'consistent-return',
 				'constructor-super',
+				'import/export',
+				'import/export',
 				'no-await-in-loop',
 				'no-cond-assign',
 				'no-constant-condition',

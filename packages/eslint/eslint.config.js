@@ -24,6 +24,10 @@ export default tseslint.config(
 	/* Plugins */
 	// @ts-ignore
 	...compat.plugins('eslint-plugin-import'),
+	...compat.config({
+		plugins: ['eslint-plugin-import'],
+		extends: 'plugin:import/recommended',
+	}),
 	pluginJsdoc.configs['flat/recommended'],
 	configImport,
 	configJsdoc,

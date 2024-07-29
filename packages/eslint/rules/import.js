@@ -45,7 +45,7 @@ export default {
 		'import/no-webpack-loader-syntax': 'error',
 
 		/* Style guide */
-		// TODO: 'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+		// import/consistent-type-specifier-style
 		// import/dynamic-import-chunkname
 		// import/exports-last
 		'import/extensions': ['error', 'ignorePackages'],

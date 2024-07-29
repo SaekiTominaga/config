@@ -17,8 +17,8 @@ export default {
 			},
 		],
 		'import/no-mutable-exports': 'error',
-		'import/no-named-as-default': 'off', // ✅ TODO: parserPath or languageOptions.parser is required!
-		'import/no-named-as-default-member': 'off', // ✅ TODO: parserPath or languageOptions.parser is required!
+		'import/no-named-as-default': 'off', // ✅ TODO: parserPath or languageOptions.parser is required! / 有効にする際は *.test.js での無効化を検討
+		'import/no-named-as-default-member': 'off', // ✅ TODO: parserPath or languageOptions.parser is required! / 有効にする際は *.test.js での無効化を検討
 		// import/no-unused-modules
 
 		/* Module systems */

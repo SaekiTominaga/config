@@ -96,18 +96,16 @@ export default tseslint.config(
 		},
 	},
 	{
+		files: ['**/*.test.js'],
+		rules: {
+			'import/no-extraneous-dependencies': 'off',
+		},
+	},
+	{
 		files: ['**/*.test.ts'],
 		rules: {
 			'@typescript-eslint/ban-ts-comment': 'off',
 			'@typescript-eslint/no-non-null-assertion': 'off',
-		},
-	},
-	{
-		files: ['**/*.test.js'],
-		rules: {
-			'import/no-extraneous-dependencies': 'off',
-			'import/no-named-as-default': 'off',
-			'import/no-named-as-default-member': 'off',
 		},
 	},
 	{

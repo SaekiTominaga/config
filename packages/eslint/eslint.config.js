@@ -79,7 +79,7 @@ export default tseslint.config(
 		},
 	},
 	{
-		files: ['**/**.d.ts'],
+		files: ['**/*.d.ts'],
 		rules: {
 			'no-use-before-define': 'off',
 			'no-var': 'off',
@@ -88,7 +88,7 @@ export default tseslint.config(
 		},
 	},
 	{
-		files: ['**/**.test.ts', '**/**.test.js'],
+		files: ['**/*.test.ts', '**/*.test.js'],
 		rules: {
 			'no-new': 'off',
 			'no-tabs': 'off',
@@ -96,18 +96,24 @@ export default tseslint.config(
 		},
 	},
 	{
-		files: ['**/**.test.ts'],
+		files: ['**/*.test.ts'],
 		rules: {
 			'@typescript-eslint/ban-ts-comment': 'off',
 			'@typescript-eslint/no-non-null-assertion': 'off',
 		},
 	},
 	{
-		files: ['**/**.test.js'],
+		files: ['**/*.test.js'],
 		rules: {
 			'import/no-extraneous-dependencies': 'off',
 			'import/no-named-as-default': 'off',
 			'import/no-named-as-default-member': 'off',
+		},
+	},
+	{
+		files: ['**/*.config.js'],
+		rules: {
+			'import/no-extraneous-dependencies': 'off',
 		},
 	},
 );

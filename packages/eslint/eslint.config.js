@@ -61,6 +61,7 @@ export default tseslint.config(
 			...pluginTypeScript.configs['stylistic-type-checked'].rules,
 			...pluginJsdoc.configs['flat/recommended-typescript'].rules,
 			'dot-notation': 'off',
+			'import/no-unresolved': 'off',
 			'@typescript-eslint/dot-notation': 'off',
 			'@typescript-eslint/no-extraneous-class': 'off',
 			'@typescript-eslint/no-non-null-assertion': 'off',

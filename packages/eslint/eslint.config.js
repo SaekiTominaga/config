@@ -1,6 +1,7 @@
 // @ts-check
 
 import pluginJsdoc from 'eslint-plugin-jsdoc';
+import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 import eslintJs from '@eslint/js';
@@ -41,6 +42,12 @@ export default tseslint.config(
 	/* TypeScript */
 	...tseslint.configs.recommended,
 
+	{
+		files: ['**/*.js', '**/*.mjs'],
+		languageOptions: {
+			globals: globals.nodeBuiltin,
+		},
+	},
 	{
 		files: ['**/*.ts'],
 		languageOptions: {

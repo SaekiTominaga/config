@@ -25,4 +25,4 @@ jobs:
         with:
           node-version: '22'
       - run: npm ci
-      - run: npm lint -w '@w0s/eslint-config'
+      - run: npm run lint -w '@w0s/eslint-config'

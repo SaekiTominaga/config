@@ -28,7 +28,7 @@ export default tseslint.config(
 	configEslintLayoutFormatting,
 
 	/* Plugins */
-	// @ts-ignore
+	// @ts-expect-error: ts(2345)
 	...compat.plugins('eslint-plugin-import'),
 	...compat.config({
 		plugins: ['eslint-plugin-import'],

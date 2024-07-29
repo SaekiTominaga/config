@@ -16,6 +16,12 @@ const compat = new FlatCompat();
 
 /** @type {import("@typescript-eslint/utils/ts-eslint").FlatConfig.ConfigArray} */
 export default tseslint.config(
+	{
+		plugins: {
+			pluginJsdoc,
+		},
+	},
+
 	eslintJs.configs.recommended,
 	configEslintPossibleProblems,
 	configEslintSuggestions,
@@ -34,14 +40,7 @@ export default tseslint.config(
 
 	/* TypeScript */
 	...tseslint.configs.recommended,
-	{
-		languageOptions: {
-			ecmaVersion: 'latest', // TODO: デフォルト値は latest だが、明示的に指定しないと Top-level await で Parsing error が発生する
-		},
-		plugins: {
-			pluginJsdoc,
-		},
-	},
+
 	{
 		files: ['**/*.ts'],
 		languageOptions: {

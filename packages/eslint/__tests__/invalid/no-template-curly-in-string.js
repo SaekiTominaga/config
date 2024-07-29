@@ -1,1 +1,1 @@
-export const foo = 'Hello ${name}!';
+export default 'Hello ${name}!';

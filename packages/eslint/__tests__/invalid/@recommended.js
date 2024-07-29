@@ -1,5 +1,5 @@
 /* constructor-super */
-export class A {
+export default class A {
 	constructor() {
 		super();
 	}

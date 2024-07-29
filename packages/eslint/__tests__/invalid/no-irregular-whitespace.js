@@ -1,1 +1,2 @@
-export const foo /*<ENSP>*/ = '';
+const foo /*<ENSP>*/ = '';
+export default foo;

@@ -3,4 +3,4 @@ const obj = {
 };
 
 const { bar } = obj?.foo;
-export const exp = obj?.foo + bar; // disallowArithmeticOperators
+export default obj?.foo + bar; // disallowArithmeticOperators

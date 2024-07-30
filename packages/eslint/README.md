@@ -27,7 +27,6 @@ export default [
   ...w0sConfig,
   {
     // other options
-  }
+  },
 ];
-
 ```

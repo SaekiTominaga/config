@@ -21,7 +21,7 @@
 	},
 	"scripts": {
 		"test": "node __tests__/index.test.js",
-		"lint": "eslint eslint.config.js"
+		"lint": "eslint eslint.config.js rules/**/*.js"
 	},
 	"dependencies": {
 		"@eslint/eslintrc": "^3.1.0",

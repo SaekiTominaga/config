@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/%40w0s%2Feslint-config.svg)](https://www.npmjs.com/package/@w0s/eslint-config)
 [![test status](https://github.com/SaekiTominaga/w0s/actions/workflows/eslint-test.yml/badge.svg)](https://github.com/SaekiTominaga/w0s/actions/workflows/eslint-test.yml)
 
-ESLint configuration file used on my personal website ([w0s.jp](https://github.com/SaekiTominaga/w0s.jp)).
+ESLint configuration file used on my personal website ([`w0s.jp`](https://github.com/SaekiTominaga/w0s.jp)).
 
 ## Base rules & plugins
 

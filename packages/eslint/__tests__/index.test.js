@@ -1,5 +1,6 @@
 import { strict as assert } from 'node:assert/strict';
 import { test } from 'node:test';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { ESLint, Linter, loadESLint } from 'eslint';
 import config from '../eslint.config.js';
 

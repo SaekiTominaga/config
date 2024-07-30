@@ -2,10 +2,13 @@
 
 import pluginJsdoc from 'eslint-plugin-jsdoc';
 import globals from 'globals';
+// eslint-disable-next-line import/no-unresolved
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 import eslintJs from '@eslint/js';
+// eslint-disable-next-line import/no-unresolved
 import pluginTypeScript from '@typescript-eslint/eslint-plugin';
+// eslint-disable-next-line import/no-unresolved
 import parserTypeScript from '@typescript-eslint/parser';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
 import configEslintPossibleProblems from './rules/eslint/possible-problems.js';

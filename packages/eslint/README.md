@@ -8,7 +8,7 @@ ESLint configuration file used on my personal website ([w0s.jp](https://github.c
 ## Base rules & plugins
 
 - [eslint:recommended](https://eslint.org/docs/latest/user-guide/configuring/configuration-files#using-eslintrecommended)
-- [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
+- [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import):recommended
 - [eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc):recommended
 
 ### TypeScript

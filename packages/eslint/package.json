@@ -29,7 +29,7 @@
 		"@typescript-eslint/eslint-plugin": "^7.18.0",
 		"@typescript-eslint/parser": "^7.18.0",
 		"eslint-plugin-import": "^2.29.1",
-		"eslint-plugin-jsdoc": "^48.9.2",
+		"eslint-plugin-jsdoc": "^48.10.2",
 		"globals": "^15.8.0",
 		"typescript-eslint": "^7.18.0"
 	},

@@ -9,6 +9,6 @@ export default {
 			{
 				startLines: 1,
 			},
-		], // Recommended
+		], // ✅
 	},
 };

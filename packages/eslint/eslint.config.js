@@ -80,4 +80,12 @@ export default tseslint.config(
 			'import/no-extraneous-dependencies': 'off',
 		},
 	},
+	{
+		files: ['**/*.test.js', '**/*.test.ts'],
+		rules: {
+			'no-new': 'off',
+			'no-unused-expressions': 'off',
+			'import/no-extraneous-dependencies': 'off',
+		},
+	},
 );

@@ -1,0 +1,30 @@
+name: eslint-lint
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'packages/eslint/__tests__/*.js'
+      - 'packages/eslint/rules/**/*.js'
+      - 'packages/eslint/eslint.config.js'
+      - 'packages/eslint/package.json'
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/eslint/__tests__/*.js'
+      - 'packages/eslint/rules/**/*.js'
+      - 'packages/eslint/eslint.config.js'
+      - 'packages/eslint/package.json'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npm run lint -w '@w0s/eslint-config'

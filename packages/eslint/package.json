@@ -1,7 +1,7 @@
 {
 	"name": "@w0s/eslint-config",
-	"version": "6.0.2",
-	"description": "ESLint configuration file used on w0s.jp",
+	"version": "7.0.0-rc.6",
+	"description": "ESLint configuration file used on `w0s.jp`",
 	"keywords": [
 		"eslint",
 		"eslintconfig",
@@ -20,19 +20,22 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
-		"test": "node __tests__/index.test.js"
+		"test": "node __tests__/index.test.js",
+		"lint": "eslint __tests__/*.js rules/**/*.js eslint.config.js"
 	},
 	"dependencies": {
 		"@eslint/eslintrc": "^3.1.0",
 		"@eslint/js": "^8.57.0",
-		"@typescript-eslint/eslint-plugin": "^7.17.0",
-		"@typescript-eslint/parser": "^7.17.0",
-		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-plugin-jsdoc": "^48.8.3",
-		"typescript-eslint": "^7.17.0"
+		"@typescript-eslint/eslint-plugin": "^7.18.0",
+		"@typescript-eslint/parser": "^7.18.0",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jsdoc": "^48.10.2",
+		"globals": "^15.8.0",
+		"typescript-eslint": "^7.18.0"
 	},
 	"devDependencies": {
 		"@types/eslint": "^8.56.11",
+		"@types/node": "^22.0.0",
 		"eslint": "^8.57.0"
 	},
 	"peerDependencies": {

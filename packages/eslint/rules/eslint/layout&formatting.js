@@ -3,34 +3,13 @@
 /** @type {import("eslint").Linter.FlatConfig} */
 export default {
 	rules: {
-		'comma-dangle': ['error', 'always-multiline'],
-		'function-paren-newline': 'off',
-		'implicit-arrow-linebreak': 'off',
-		indent: [
-			'error',
-			'tab',
-			{
-				SwitchCase: 1,
-			},
-		],
-		'max-len': 'off',
-		'newline-per-chained-call': 'off',
-		'no-tabs': [
+		'line-comment-position': [
 			'error',
 			{
-				allowIndentationTabs: true,
+				position: 'beside',
+				ignorePattern: '@ts-',
 			},
 		],
-		'object-curly-newline': 'off',
-		'operator-linebreak': [
-			'error',
-			'after',
-			{
-				overrides: {
-					'?': 'before',
-					':': 'before',
-				},
-			},
-		],
+		'unicode-bom': 'error',
 	},
 };

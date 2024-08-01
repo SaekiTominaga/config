@@ -66,6 +66,7 @@ test('invalid', async (t) => {
 				'import/no-useless-path-segments',
 				'import/order',
 				'import/prefer-default-export',
+				'line-comment-position',
 				'no-await-in-loop',
 				'no-cond-assign',
 				'no-constant-condition',

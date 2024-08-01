@@ -23,6 +23,7 @@ export default {
 		'func-style': 'error',
 		'grouped-accessor-pairs': ['error', 'getBeforeSet'],
 		'guard-for-in': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
+		'logical-assignment-operators': 'error',
 		'max-classes-per-file': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'new-cap': 'error',
 		'no-alert': 'warn', // eslint-config-airbnb-base@15.0.0; best-practices

@@ -20,6 +20,7 @@ export default {
 		'dot-notation': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		eqeqeq: 'error',
 		'func-names': 'warn', // eslint-config-airbnb-base@15.0.0; style
+		'func-style': 'error',
 		'grouped-accessor-pairs': ['error', 'getBeforeSet'],
 		'guard-for-in': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'max-classes-per-file': 'error', // eslint-config-airbnb-base@15.0.0; best-practices

@@ -206,7 +206,7 @@ HTML 仕様では [`<details>` 要素](https://html.spec.whatwg.org/multipage/in
 
 [`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.json) ではそれに対応した設定があり、本設定ファイルでも同様の設定としている。
 
-### `video, output, canvas`
+### `audio, video, output, canvas`
 
 これらの要素は[パルパブルコンテンツ](https://html.spec.whatwg.org/multipage/dom.html#palpable-content)でありながら子孫のテキストが空でも「要素が空でない」状態であるため、[`no-empty-palpable-content`](https://markuplint.dev/ja/docs/rules/no-empty-palpable-content) を無効にしている。
 

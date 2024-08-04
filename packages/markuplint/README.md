@@ -200,15 +200,15 @@ HTML 仕様では `<caption>` 要素の使い方として以下の記述があ�
 
 これは [HTML 仕様](https://html.spec.whatwg.org/multipage/input.html#the-pattern-attribute)で <q>When an `input` element has a `pattern` attribute specified, authors should include a `title` attribute to give a description of the pattern.</q> と規定されているためで、あくまで <q>should</q> ではあるものの、これに背く理由もないので本設定ファイルでも同じく必須としている。
 
-### `output`
-
-`rules` で `no-empty-palpable-content` を設定しているが、 `<output>` 要素は通常 JavaScript で動的に中身を設定することがほとんどであり、初期値がある場合を除き、中身が空の `<output></output>` とすることが多い。そのため除外設定している。
-
 ### `details[name]`
 
 HTML 仕様では [`<details>` 要素](https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element)について <q>A document must not contain a `details` element that is a descendant of another `details` element in the same details name group.</q> と規定されている。
 
 [`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.json) ではそれに対応した設定があり、本設定ファイルでも同様の設定としている。
+
+### `video, output, canvas`
+
+これらの要素は[パルパブルコンテンツ](https://html.spec.whatwg.org/multipage/dom.html#palpable-content)でありながら子孫のテキストが空でも「要素が空でない」状態であるため、[`no-empty-palpable-content`](https://markuplint.dev/ja/docs/rules/no-empty-palpable-content) を無効にしている。
 
 ### `template *`
 
@@ -220,4 +220,4 @@ HTML 仕様では [`<details>` 要素](https://html.spec.whatwg.org/multipage/in
 
 ### `[role=radiogroup]`
 
-[Fix `wai-aria` rule's validation · Issue #673 · markuplint/markuplint](https://github.com/markuplint/markuplint/issues/673)で起票されているが、`[role=radiogroup]` の WAI-ARIA ルール解釈にはバグがあるため、一時的に [`wai-aria`](https://markuplint.dev/ja/docs/rules/wai-aria) を無効にしている。
+[Fix `wai-aria` rule's validation · Issue #673 · markuplint/markuplint](https://github.com/markuplint/markuplint/issues/673)で起票されているが、`[role=radiogroup]` の WAI-ARIA ルール解釈にはバグがあるため、暫定的に [`wai-aria`](https://markuplint.dev/ja/docs/rules/wai-aria) を無効にしている。

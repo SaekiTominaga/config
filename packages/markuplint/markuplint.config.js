@@ -177,12 +177,6 @@ export default {
 			},
 		},
 		{
-			selector: 'output',
-			rules: {
-				'no-empty-palpable-content': false,
-			},
-		},
-		{
 			regexSelector: {
 				nodeName: 'details',
 				attrName: 'name',
@@ -206,6 +200,14 @@ export default {
 			},
 		},
 		{
+			/* https://github.com/markuplint/markuplint/issues/1948 */
+			selector: 'video, output, canvas',
+			rules: {
+				'no-empty-palpable-content': false,
+			},
+		},
+		{
+			/* https://github.com/markuplint/markuplint/issues/1948 */
 			selector: 'template *',
 			rules: {
 				'no-empty-palpable-content': false,
@@ -213,12 +215,14 @@ export default {
 			},
 		},
 		{
+			/* https://github.com/markuplint/markuplint/issues/1948 */
 			selector: ':has(> template)',
 			rules: {
 				'wai-aria': false,
 			},
 		},
 		{
+			/* https://github.com/markuplint/markuplint/issues/673 */
 			selector: '[role=radiogroup]',
 			rules: {
 				'wai-aria': false,

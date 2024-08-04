@@ -1,4 +1,5 @@
+/packages/eslint/__tests__/invalid/import/@recommended.js
 /packages/eslint/__tests__/invalid/no-irregular-whitespace.js
-/packages/markuplint/__tests__/invalid/rules.html
+/packages/markuplint/__tests__/invalid/rules/end-tag.html
 
 package-lock.json

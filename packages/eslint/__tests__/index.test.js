@@ -90,7 +90,7 @@ test('invalid', async (t) => {
 				.filter((message) => message.severity === 1)
 				.map((message) => message.ruleId)
 				.sort(),
-			['jsdoc/no-types', 'jsdoc/require-returns-type', 'jsdoc/tag-lines', 'no-console'],
+			['jsdoc/lines-before-block', 'jsdoc/no-types', 'jsdoc/require-returns-type', 'jsdoc/tag-lines', 'no-console'],
 		);
 	});
 });

@@ -47,6 +47,9 @@ test('invalid', async (t) => {
 				.map((message) => message.ruleId)
 				.sort(),
 			[
+				'@typescript-eslint/dot-notation',
+				'@typescript-eslint/no-array-delete',
+				'@typescript-eslint/no-confusing-void-expression',
 				'array-callback-return',
 				'consistent-return',
 				'constructor-super',

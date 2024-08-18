@@ -1,3 +1,3 @@
-import MyClass from '/__tests__/invalid/import/@recommended.js';
+import { exportSample } from '/__tests__/valid/import/@export-sample.js';
 
-export default new MyClass();
+export default exportSample;

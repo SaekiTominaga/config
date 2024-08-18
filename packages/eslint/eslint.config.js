@@ -6,10 +6,6 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 import eslintJs from '@eslint/js';
-// eslint-disable-next-line import/no-unresolved
-import pluginTypeScript from '@typescript-eslint/eslint-plugin';
-// eslint-disable-next-line import/no-unresolved
-import parserTypeScript from '@typescript-eslint/parser';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
 import configEslintPossibleProblems from './rules/eslint/possible-problems.js';
 import configEslintSuggestions from './rules/eslint/suggestions.js';
@@ -18,10 +14,10 @@ import configJsdoc from './rules/jsdoc.js';
 
 const compat = new FlatCompat();
 
-/** @type {import("@typescript-eslint/utils/ts-eslint").FlatConfig.ConfigArray} */
 export default tseslint.config(
 	{
 		plugins: {
+			'@typescript-eslint': tseslint.plugin,
 			pluginJsdoc,
 		},
 	},
@@ -42,26 +38,23 @@ export default tseslint.config(
 	configImport,
 	configJsdoc,
 
-	/* TypeScript */
-	...tseslint.configs.recommended,
-
 	{
 		files: ['**/*.js'],
 		languageOptions: {
+			ecmaVersion: 'latest', // デフォルト値は 'latest' だが明示的な指定が必要
 			globals: globals.nodeBuiltin,
 		},
 	},
 	{
 		files: ['**/*.ts'],
 		languageOptions: {
-			parser: parserTypeScript,
+			parser: tseslint.parser,
 			parserOptions: {
 				project: true,
 			},
 		},
+		extends: [...tseslint.configs.strictTypeChecked, ...tseslint.configs.stylisticTypeChecked],
 		rules: {
-			...pluginTypeScript.configs['strict-type-checked'].rules,
-			...pluginTypeScript.configs['stylistic-type-checked'].rules,
 			...pluginJsdoc.configs['flat/recommended-typescript'].rules,
 			'dot-notation': 'off',
 			'import/no-unresolved': 'off',

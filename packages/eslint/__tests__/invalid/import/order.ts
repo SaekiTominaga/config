@@ -1,5 +1,5 @@
-import MyClass from './@recommended.js';
+import { exportSample } from '../../valid/import/@export-sample.js';
 import fs from 'node:fs';
 
 await fs.promises.access('path');
-export default new MyClass();
+export default exportSample;

@@ -1,6 +1,5 @@
 import { strict as assert } from 'node:assert/strict';
 import { test } from 'node:test';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { ESLint, Linter, loadESLint } from 'eslint';
 import config from '../eslint.config.js';
 
@@ -47,11 +46,12 @@ test('invalid', async (t) => {
 				.map((message) => message.ruleId)
 				.sort(),
 			[
+				'@typescript-eslint/dot-notation',
+				'@typescript-eslint/no-array-delete',
+				'@typescript-eslint/no-confusing-void-expression',
 				'array-callback-return',
 				'consistent-return',
 				'constructor-super',
-				'import/export',
-				'import/export',
 				'import/extensions',
 				'import/newline-after-import',
 				'import/no-absolute-path',
@@ -90,7 +90,15 @@ test('invalid', async (t) => {
 				.filter((message) => message.severity === 1)
 				.map((message) => message.ruleId)
 				.sort(),
-			['jsdoc/lines-before-block', 'jsdoc/no-types', 'jsdoc/require-returns-type', 'jsdoc/tag-lines', 'no-console'],
+			[
+				'import/no-duplicates',
+				'import/no-duplicates',
+				'jsdoc/lines-before-block',
+				'jsdoc/no-types',
+				'jsdoc/require-returns-type',
+				'jsdoc/tag-lines',
+				'no-console',
+			],
 		);
 	});
 });

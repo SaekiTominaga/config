@@ -1,2 +1,2 @@
-import MyClass from './@recommended.js';
-export default new MyClass();
+import { exportSample } from '../../valid/import/@export-sample.js';
+export default exportSample;

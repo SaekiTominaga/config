@@ -50,8 +50,6 @@ test('invalid', async (t) => {
 				'array-callback-return',
 				'consistent-return',
 				'constructor-super',
-				'import/export',
-				'import/export',
 				'import/extensions',
 				'import/newline-after-import',
 				'import/no-absolute-path',
@@ -90,7 +88,15 @@ test('invalid', async (t) => {
 				.filter((message) => message.severity === 1)
 				.map((message) => message.ruleId)
 				.sort(),
-			['jsdoc/lines-before-block', 'jsdoc/no-types', 'jsdoc/require-returns-type', 'jsdoc/tag-lines', 'no-console'],
+			[
+				'import/no-duplicates',
+				'import/no-duplicates',
+				'jsdoc/lines-before-block',
+				'jsdoc/no-types',
+				'jsdoc/require-returns-type',
+				'jsdoc/tag-lines',
+				'no-console',
+			],
 		);
 	});
 });

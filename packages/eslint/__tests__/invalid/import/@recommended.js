@@ -1,8 +1,5 @@
-/* import/export */
+import { foo } from '../../valid/import/@export-sample.js'; // import/no-duplicates
+import { foo as foo2 } from '../../valid/import/@export-sample.js'; // import/no-duplicates
 
-export default class MyClass {
-} // Multiple default exports.
-
-const makeClass = () => new MyClass();
-
-export default makeClass; // Multiple default exports.
+export const bar1 = foo();
+export const bar2 = foo2();

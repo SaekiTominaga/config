@@ -38,12 +38,10 @@ export default tseslint.config(
 	configImport,
 	configJsdoc,
 
-	/* TypeScript */
-	...tseslint.configs.recommended,
-
 	{
 		files: ['**/*.js'],
 		languageOptions: {
+			ecmaVersion: 'latest', // デフォルト値は 'latest' だが明示的な指定が必要
 			globals: globals.nodeBuiltin,
 		},
 	},

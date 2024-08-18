@@ -19,6 +19,7 @@ const compat = new FlatCompat();
 export default tseslint.config(
 	{
 		plugins: {
+			'@typescript-eslint': tseslint.plugin,
 			pluginJsdoc,
 		},
 	},

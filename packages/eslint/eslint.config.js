@@ -6,8 +6,6 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 import eslintJs from '@eslint/js';
-// eslint-disable-next-line import/no-unresolved
-import pluginTypeScript from '@typescript-eslint/eslint-plugin';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
 import configEslintPossibleProblems from './rules/eslint/possible-problems.js';
 import configEslintSuggestions from './rules/eslint/suggestions.js';
@@ -57,9 +55,8 @@ export default tseslint.config(
 				project: true,
 			},
 		},
+		extends: [...tseslint.configs.strictTypeChecked, ...tseslint.configs.stylisticTypeChecked],
 		rules: {
-			...pluginTypeScript.configs['strict-type-checked'].rules,
-			...pluginTypeScript.configs['stylistic-type-checked'].rules,
 			...pluginJsdoc.configs['flat/recommended-typescript'].rules,
 			'dot-notation': 'off',
 			'import/no-unresolved': 'off',

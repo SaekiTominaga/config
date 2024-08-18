@@ -8,8 +8,6 @@ import { FlatCompat } from '@eslint/eslintrc';
 import eslintJs from '@eslint/js';
 // eslint-disable-next-line import/no-unresolved
 import pluginTypeScript from '@typescript-eslint/eslint-plugin';
-// eslint-disable-next-line import/no-unresolved
-import parserTypeScript from '@typescript-eslint/parser';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
 import configEslintPossibleProblems from './rules/eslint/possible-problems.js';
 import configEslintSuggestions from './rules/eslint/suggestions.js';
@@ -18,7 +16,6 @@ import configJsdoc from './rules/jsdoc.js';
 
 const compat = new FlatCompat();
 
-/** @type {import("@typescript-eslint/utils/ts-eslint").FlatConfig.ConfigArray} */
 export default tseslint.config(
 	{
 		plugins: {
@@ -54,7 +51,7 @@ export default tseslint.config(
 	{
 		files: ['**/*.ts'],
 		languageOptions: {
-			parser: parserTypeScript,
+			parser: tseslint.parser,
 			parserOptions: {
 				project: true,
 			},

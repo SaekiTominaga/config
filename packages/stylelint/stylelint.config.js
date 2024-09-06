@@ -1,7 +1,7 @@
 /** @type {import('stylelint').Config} */
 export default {
 	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order'],
-	plugins: ['stylelint-plugin-logical-css', 'stylelint-root-colors'],
+	plugins: ['stylelint-display-multi-keyword', 'stylelint-plugin-logical-css', 'stylelint-root-colors'],
 	rules: {
 		/**
 		 * Avoid errors
@@ -89,97 +89,7 @@ export default {
 		},
 		// declaration-property-unit-disallowed-list
 		// declaration-property-value-allowed-list
-		'declaration-property-value-disallowed-list': [
-			{
-				display: [
-					/* property list: https://drafts.csswg.org/css-display/#display-value-summary */
-					'block',
-					'flow-root',
-					'inline',
-					'inline-block',
-					'run-in',
-					'list-item',
-					'inline list-item',
-					'flex',
-					'inline-flex',
-					'grid',
-					'inline-grid',
-					'ruby',
-					'table',
-					'inline-table',
-				],
-			},
-			{
-				message: (name, value) => {
-					switch (name) {
-						case 'display': {
-							let multiValue = '';
-							switch (value) {
-								case 'block': {
-									multiValue = 'block flow';
-									break;
-								}
-								case 'flow-root': {
-									multiValue = 'block flow-root';
-									break;
-								}
-								case 'inline': {
-									multiValue = 'inline flow';
-									break;
-								}
-								case 'inline-block': {
-									multiValue = 'inline flow-root';
-									break;
-								}
-								case 'run-in': {
-									multiValue = 'run-in flow';
-									break;
-								}
-								case 'list-item': {
-									multiValue = 'block flow list-item';
-									break;
-								}
-								case 'inline list-item': {
-									multiValue = 'inline flow list-item';
-									break;
-								}
-								case 'flex': {
-									multiValue = 'block flex';
-									break;
-								}
-								case 'inline-flex': {
-									multiValue = 'inline flex';
-									break;
-								}
-								case 'grid': {
-									multiValue = 'block grid';
-									break;
-								}
-								case 'inline-grid': {
-									multiValue = 'inline grid';
-									break;
-								}
-								case 'ruby': {
-									multiValue = 'inline ruby';
-									break;
-								}
-								case 'table': {
-									multiValue = 'block table';
-									break;
-								}
-								case 'inline-table': {
-									multiValue = 'inline table';
-									break;
-								}
-							}
-							return `Use multi-keyword syntax for \`${name}\` (\`${value}\` → \`${multiValue}\`)`;
-						}
-					}
-					return `\`${value}\` values are not allowed for \`${name}\` properties`;
-				},
-				severity: 'warning',
-			},
-		],
+		// declaration-property-value-disallowed-list
 		// function-allowed-list
 		// function-disallowed-list
 		'function-url-no-scheme-relative': true,
@@ -328,6 +238,16 @@ export default {
 			},
 		],
 		'plugin/use-logical-units': [
+			true,
+			{
+				severity: 'warning',
+			},
+		],
+
+		/**
+		 * [plugin] stylelint-display-multi-keyword
+		 */
+		'plugin/display-multi-keyword': [
 			true,
 			{
 				severity: 'warning',

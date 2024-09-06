@@ -35,11 +35,12 @@ test('invalid', async (t) => {
 		});
 	});
 
-	await t.test('errored', () => {
-		assert.equal(
-			linterResult.results.every((result) => result.errored),
-			true,
-		);
+	await t.test('severity: error files', () => {
+		assert.equal(linterResult.results.flatMap((result) => result.errored).filter((result) => result === true).length, 5);
+	});
+
+	await t.test('severity: warning files', () => {
+		assert.equal(linterResult.results.flatMap((result) => result.errored).filter((result) => result === false).length, 1);
 	});
 
 	await t.test('warnings', () => {

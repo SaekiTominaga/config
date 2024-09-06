@@ -23,11 +23,6 @@
 	line-height: 1em;
 }
 
-/* declaration-property-value-disallowed-list */
-.declaration-property-value-disallowed-list {
-	display: block;
-}
-
 /* function-url-no-scheme-relative */
 .function-url-no-scheme-relative {
 	background-image: url("//example.com/file.jpg");

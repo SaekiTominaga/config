@@ -25,11 +25,6 @@
 	color: #010101;
 }
 
-/* declaration-property-value-disallowed-list */
-.declaration-property-value-disallowed-list {
-	display: block flow;
-}
-
 /* value-keyword-case */
 .value-keyword-case {
 	fill: currentColor;

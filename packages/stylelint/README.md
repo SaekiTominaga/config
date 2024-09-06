@@ -12,7 +12,7 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
 - Disallow `!important` within declarations.
   - 🙁 `color: #000 !important`
   - 🙂 `color: #000`
-- [Multi-keyword syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display) is recommended for the `display` property.
+- [Multi-keyword syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display) is recommended for the `display` property. The [`stylelint-display-multi-keyword`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/display-multi-keyword) plugin is used.
   - 🙁 `display: block`
   - 🙂 `display: block flow`
 - Use of CSS physical properties and values is not recommended. Use [logical properties and values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values). The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.

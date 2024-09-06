@@ -9,6 +9,8 @@
 
 It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard) with its own rule settings.
 
+🙂: No problem, 🙁: Warning, 😨: Error
+
 - Disallow `!important` within declarations.
   - 🙁 `color: #000 !important`
   - 🙂 `color: #000`

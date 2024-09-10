@@ -1,18 +1,17 @@
 // @ts-check
 
+// @ts-expect-error: ts(1192)
+import pluginImport from 'eslint-plugin-import';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
 import globals from 'globals';
 // eslint-disable-next-line import/no-unresolved
 import tseslint from 'typescript-eslint';
-import { FlatCompat } from '@eslint/eslintrc';
 import eslintJs from '@eslint/js';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
 import configEslintPossibleProblems from './rules/eslint/possible-problems.js';
 import configEslintSuggestions from './rules/eslint/suggestions.js';
 import configImport from './rules/import.js';
 import configJsdoc from './rules/jsdoc.js';
-
-const compat = new FlatCompat();
 
 export default tseslint.config(
 	{
@@ -28,12 +27,7 @@ export default tseslint.config(
 	configEslintLayoutFormatting,
 
 	/* Plugins */
-	// @ts-expect-error: ts(2345)
-	...compat.plugins('eslint-plugin-import'),
-	...compat.config({
-		plugins: ['eslint-plugin-import'],
-		extends: 'plugin:import/recommended',
-	}),
+	pluginImport.flatConfigs.recommended,
 	pluginJsdoc.configs['flat/recommended'],
 	configImport,
 	configJsdoc,

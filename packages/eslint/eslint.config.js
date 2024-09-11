@@ -53,6 +53,12 @@ export default tseslint.config(
 			'dot-notation': 'off',
 			'import/no-unresolved': 'off',
 			'@typescript-eslint/no-extraneous-class': 'off',
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{
+					caughtErrors: 'none',
+				},
+			],
 			'@typescript-eslint/strict-boolean-expressions': [
 				'error',
 				{

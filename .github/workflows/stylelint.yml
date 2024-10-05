@@ -1,25 +1,18 @@
-name: stylelint-test
+name: Stylelint
+
 on:
   pull_request:
     branches:
       - main
     paths:
-      - 'packages/stylelint/package.json'
-      - 'packages/stylelint/stylelint.config.js'
       - 'packages/stylelint/__tests__/*.test.js'
       - 'packages/stylelint/__tests__/**/*.css'
-  push:
-    branches:
-      - main
-    paths:
       - 'packages/stylelint/package.json'
       - 'packages/stylelint/stylelint.config.js'
-      - 'packages/stylelint/__tests__/*.test.js'
-      - 'packages/stylelint/__tests__/**/*.css'
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

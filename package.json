@@ -2,7 +2,7 @@
 	"name": "config",
 	"scripts": {
 		"format": "prettier -w .",
-		"github-actions-lint": "yamllint .github/workflows/*.yml"
+		"yaml-lint": "yamllint .github/workflows/*.yml"
 	},
 	"devDependencies": {
 		"prettier": "^3.2.5",

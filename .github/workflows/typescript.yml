@@ -1,27 +1,19 @@
-name: typescript-test
+name: TypeScript
+
 on:
   pull_request:
     branches:
       - main
     paths:
-      - 'packages/typescript/tsconfig.json'
-      - 'packages/typescript/package.json'
       - 'packages/typescript/__tests__/@types/*.d.ts'
       - 'packages/typescript/__tests__/valid/**/*.ts'
       - 'packages/typescript/__tests__/tsconfig-valid.json'
-  push:
-    branches:
-      - main
-    paths:
       - 'packages/typescript/tsconfig.json'
       - 'packages/typescript/package.json'
-      - 'packages/typescript/__tests__/@types/*.d.ts'
-      - 'packages/typescript/__tests__/valid/**/*.ts'
-      - 'packages/typescript/__tests__/tsconfig-valid.json'
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

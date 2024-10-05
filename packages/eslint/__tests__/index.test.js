@@ -55,6 +55,8 @@ test('invalid', async (t) => {
 				'import/extensions',
 				'import/newline-after-import',
 				'import/no-absolute-path',
+				'import/no-deprecated',
+				'import/no-deprecated',
 				'import/no-empty-named-blocks',
 				'import/no-extraneous-dependencies',
 				'import/no-mutable-exports',

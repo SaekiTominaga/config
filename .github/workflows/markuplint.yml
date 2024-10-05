@@ -1,25 +1,18 @@
-name: markuplint-test
+name: Markuplint
+
 on:
   pull_request:
     branches:
       - main
     paths:
-      - 'packages/markuplint/markuplint.config.js'
-      - 'packages/markuplint/package.json'
       - 'packages/markuplint/__tests__/*.test.js'
       - 'packages/markuplint/__tests__/valid/**/*.html'
-  push:
-    branches:
-      - main
-    paths:
       - 'packages/markuplint/markuplint.config.js'
       - 'packages/markuplint/package.json'
-      - 'packages/markuplint/__tests__/*.test.js'
-      - 'packages/markuplint/__tests__/valid/**/*.html'
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

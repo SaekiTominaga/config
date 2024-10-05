@@ -1,11 +1,7 @@
-name: github-actions-lint
+name: Linting YAML files
+
 on:
   pull_request:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/*.yml'
-  push:
     branches:
       - main
     paths:
@@ -21,4 +17,4 @@ jobs:
         with:
           node-version: '22'
       - run: npm ci
-      - run: npm run github-actions-lint
+      - run: npm run yaml-lint

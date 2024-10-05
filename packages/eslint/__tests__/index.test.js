@@ -79,7 +79,6 @@ test('invalid', async (t) => {
 				'no-unsafe-optional-chaining',
 				'unicode-bom',
 				'valid-typeof',
-				'valid-typeof',
 			],
 		);
 	});

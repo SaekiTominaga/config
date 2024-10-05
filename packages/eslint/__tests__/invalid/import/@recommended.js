@@ -1,5 +1,5 @@
-import { foo } from '../../valid/import/@export-sample.js'; // import/no-duplicates
-import { foo as foo2 } from '../../valid/import/@export-sample.js'; // import/no-duplicates
+import { exportSample } from '../../valid/import/@export-sample.js'; // import/no-duplicates
+import { exportSample as exportSample2 } from '../../valid/import/@export-sample.js'; // import/no-duplicates
 
-export const bar1 = foo();
-export const bar2 = foo2();
+export const bar1 = exportSample();
+export const bar2 = exportSample2();

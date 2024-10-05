@@ -22,7 +22,7 @@ ESLint configuration file used on my personal website ([`w0s.jp`](https://github
 ```javascript
 import w0sConfig from '@w0s/eslint-config';
 
-/** @type {import("eslint").Linter.FlatConfig[]} */
+/** @type {import("eslint").Linter.Config[]} */
 export default [
   ...w0sConfig,
   {

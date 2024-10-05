@@ -1,6 +1,6 @@
 // @ts-check
 
-/** @type {import("eslint").Linter.FlatConfig} */
+/** @type {import("eslint").Linter.Config} */
 export default {
 	rules: {
 		'arrow-body-style': 'error', // eslint-config-airbnb-base@15.0.0; es6

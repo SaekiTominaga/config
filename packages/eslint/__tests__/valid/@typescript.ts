@@ -12,6 +12,6 @@ export default class Test {
 	func(foo: string, bar: number): string {
 		this.#foo = foo;
 
-		return `${foo}${String(bar)}`;
+		return `${this.#foo}${String(bar)}`;
 	}
 }

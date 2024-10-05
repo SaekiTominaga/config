@@ -1,6 +1,6 @@
 // @ts-check
 
-/** @type {import("eslint").Linter.FlatConfig} */
+/** @type {import("eslint").Linter.Config} */
 export default {
 	rules: {
 		'array-callback-return': [

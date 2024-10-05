@@ -1,14 +1,14 @@
 // @ts-check
 /* eslint-disable jsdoc/lines-before-block */
 
-/** @type {import("eslint").Linter.FlatConfig} */
+/** @type {import("eslint").Linter.Config} */
 export default {
 	rules: {
 		/**
 		 * Helpful warnings
 		 */
 		/* ✅ import/export */
-		/* import/no-deprecated TODO: parserPath or languageOptions.parser is required! */
+		'import/no-deprecated': 'error',
 		'import/no-empty-named-blocks': 'error',
 		'import/no-extraneous-dependencies': [
 			'error',
@@ -20,8 +20,8 @@ export default {
 			},
 		],
 		'import/no-mutable-exports': 'error',
-		'import/no-named-as-default': 'off', // ✅ TODO: parserPath or languageOptions.parser is required! / 有効にする際は *.test.js での無効化を検討
-		'import/no-named-as-default-member': 'off', // ✅ TODO: parserPath or languageOptions.parser is required! / 有効にする際は *.test.js での無効化を検討
+		/* ✅ import/no-named-as-default */
+		/* ✅ import/no-named-as-default-member */
 		/* import/no-unused-modules */
 
 		/**
@@ -36,9 +36,9 @@ export default {
 		/**
 		 * Static analysis
 		 */
-		'import/default': 'off', // ✅ TODO: parserPath or languageOptions.parser is required!
+		/* ✅ import/default */
 		/* ✅ import/named */
-		'import/namespace': 'off', // ✅ TODO: parserPath or languageOptions.parser is required!
+		/* ✅ import/namespace */
 		'import/no-absolute-path': 'error',
 		/* import/no-cycle ⚠ This rule is comparatively computationally expensive */
 		/* import/no-dynamic-require */

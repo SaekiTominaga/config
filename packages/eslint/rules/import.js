@@ -1,4 +1,3 @@
-// @ts-check
 /* eslint-disable jsdoc/lines-before-block */
 
 /** @type {import("eslint").Linter.Config} */

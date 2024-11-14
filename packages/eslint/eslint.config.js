@@ -1,6 +1,4 @@
-// @ts-check
-
-// @ts-expect-error: ts(1192)
+// @ts-expect-error: ts(7016)
 import pluginImport from 'eslint-plugin-import';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
 import globals from 'globals';

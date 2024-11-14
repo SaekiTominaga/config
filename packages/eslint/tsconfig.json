@@ -12,6 +12,9 @@
 
 		/* JavaScript Support */
 		"allowJs": true,
-		"checkJs": true
+		"checkJs": true,
+
+		/* Interop Constraints */
+		"esModuleInterop": true
 	}
 }

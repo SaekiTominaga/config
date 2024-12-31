@@ -57,6 +57,7 @@ export default tseslint.config(
 					caughtErrors: 'none',
 				},
 			],
+			'@typescript-eslint/no-unsafe-type-assertion': 'error',
 			'@typescript-eslint/strict-boolean-expressions': [
 				'error',
 				{

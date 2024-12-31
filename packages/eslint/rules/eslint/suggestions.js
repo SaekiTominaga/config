@@ -91,7 +91,6 @@ export default {
 				allowTaggedTemplates: false,
 			},
 		], // eslint-config-airbnb-base@15.0.0; best-practices
-		'no-unused-vars': 'error',
 		'no-use-before-define': 'error', // eslint-config-airbnb-base@15.0.0; variables
 		'no-useless-computed-key': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'no-useless-constructor': 'error', // eslint-config-airbnb-base@15.0.0; es6

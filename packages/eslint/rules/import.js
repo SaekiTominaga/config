@@ -69,6 +69,6 @@ export default {
 		/* import/no-namespace */
 		'import/no-unassigned-import': 'error',
 		'import/order': 'error',
-		'import/prefer-default-export': 'error',
+		/* import/prefer-default-export */
 	},
 };

@@ -79,4 +79,11 @@ export default tseslint.config(
 			'import/no-extraneous-dependencies': 'off',
 		},
 	},
+	{
+		files: ['**/*.test.ts'],
+		rules: {
+			'@typescript-eslint/no-non-null-assertion': 'off',
+			'@typescript-eslint/no-unnecessary-type-assertion': 'off',
+		},
+	},
 );

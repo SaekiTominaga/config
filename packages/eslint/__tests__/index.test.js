@@ -67,7 +67,6 @@ test('invalid', async (t) => {
 				'import/no-unresolved',
 				'import/no-useless-path-segments',
 				'import/order',
-				'import/prefer-default-export',
 				'line-comment-position',
 				'no-await-in-loop',
 				'no-cond-assign',

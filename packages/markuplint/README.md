@@ -18,7 +18,7 @@
 
 ## `rules`
 
-`markuplint:recommended`（v4.9.2 時点）との差異一覧と、その理由を記す。
+`markuplint:recommended`（v4.11.4 時点）との差異一覧と、その理由を記す。
 
 ### `markuplint:recommended` との差異一覧
 
@@ -205,10 +205,6 @@ HTML 仕様では `<caption>` 要素の使い方として以下の記述があ�
 HTML 仕様では [`<details>` 要素](https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element)について <q>A document must not contain a `details` element that is a descendant of another `details` element in the same details name group.</q> と規定されている。
 
 [`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.json) ではそれに対応した設定があり、本設定ファイルでも同様の設定としている。
-
-### `audio, video, output, canvas`
-
-これらの要素は[パルパブルコンテンツ](https://html.spec.whatwg.org/multipage/dom.html#palpable-content)でありながら子孫のテキストが空でも「要素が空でない」状態であるため、[`no-empty-palpable-content`](https://markuplint.dev/ja/docs/rules/no-empty-palpable-content) を無効にしている。
 
 ### `template *`
 

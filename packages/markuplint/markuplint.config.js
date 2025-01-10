@@ -201,13 +201,6 @@ export default {
 		},
 		{
 			/* https://github.com/markuplint/markuplint/issues/1948 */
-			selector: 'audio, video, output, canvas',
-			rules: {
-				'no-empty-palpable-content': false,
-			},
-		},
-		{
-			/* https://github.com/markuplint/markuplint/issues/1948 */
 			selector: 'template *',
 			rules: {
 				'no-empty-palpable-content': false,

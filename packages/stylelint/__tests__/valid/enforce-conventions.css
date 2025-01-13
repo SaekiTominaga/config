@@ -6,7 +6,7 @@
 
 .at-rule-empty-line-before {
 	/* comment */
-	@nest & {
+	@media print {
 	}
 }
 

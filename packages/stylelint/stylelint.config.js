@@ -6,6 +6,10 @@ export default {
 		/**
 		 * Avoid errors
 		 */
+		/* Deprecated */
+		// ✅ at-rule-no-deprecated
+		// ✅ declaration-property-value-keyword-no-deprecated
+
 		/* Descending */
 		'no-descending-specificity': null, // ✅
 
@@ -23,7 +27,8 @@ export default {
 		// ✅ no-empty-source
 
 		/* Invalid */
-		// ✅ color-no-invalid-hex
+		// ✅ at-rule-prelude-no-invalid
+		// color-no-invalid-hex
 		// ✅ function-calc-no-unspaced-operator
 		// ✅ keyframe-declaration-no-important
 		// ✅ media-query-no-invalid
@@ -40,7 +45,7 @@ export default {
 		// ✅ font-family-no-missing-generic-family-keyword
 
 		/* Non-standard */
-		// ✅ function-linear-gradient-no-nonstandard-direction
+		// function-linear-gradient-no-nonstandard-direction
 
 		/* Overrides */
 		// ✅ declaration-block-no-shorthand-property-overrides
@@ -50,11 +55,13 @@ export default {
 
 		/* Unknown */
 		// ✅ annotation-no-unknown
+		// ✅ at-rule-descriptor-no-unknown
+		// ✅ at-rule-descriptor-value-no-unknown
 		// ✅ at-rule-no-unknown
-		'declaration-property-value-no-unknown': true,
-		// ✅ function-no-unknown
+		// ✅ declaration-property-value-no-unknown
+		// function-no-unknown
 		// ✅ media-feature-name-no-unknown
-		'media-feature-name-value-no-unknown': true,
+		// ✅ media-feature-name-value-no-unknown
 		// no-unknown-animations
 		// no-unknown-custom-media
 		// no-unknown-custom-properties
@@ -62,7 +69,7 @@ export default {
 		// ✅ selector-pseudo-class-no-unknown
 		// ✅ selector-pseudo-element-no-unknown
 		// ✅ selector-type-no-unknown
-		// ✅ unit-no-unknown
+		// unit-no-unknown
 
 		/**
 		 * Enforce conventions
@@ -129,7 +136,7 @@ export default {
 			{
 				camelCaseSvgKeywords: true,
 			},
-		],
+		], // ✅
 
 		/* Empty lines */
 		'at-rule-empty-line-before': [
@@ -182,7 +189,7 @@ export default {
 		/* Pattern */
 		// comment-pattern
 		// ✅ custom-media-pattern
-		'custom-property-pattern': /^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$/,
+		'custom-property-pattern': /^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$/, // ✅
 		// ✅ keyframes-name-pattern
 		// ✅ selector-class-pattern
 		// ✅ selector-id-pattern

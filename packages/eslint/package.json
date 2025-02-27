@@ -28,6 +28,7 @@
 		"@eslint/js": "^9.17.0",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-jsdoc": "^50.6.1",
+		"eslint-plugin-safely-storage": "^1.0.2",
 		"globals": "^15.14.0",
 		"typescript-eslint": "^8.19.0"
 	},

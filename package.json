@@ -5,7 +5,7 @@
 		"yaml-lint": "yamllint .github/workflows/*.yml"
 	},
 	"devDependencies": {
-		"prettier": "^3.2.5",
+		"prettier": "^3.5.2",
 		"yaml-lint": "^1.7.0"
 	},
 	"private": true,

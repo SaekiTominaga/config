@@ -78,6 +78,7 @@ test('invalid', async (t) => {
 				'no-unmodified-loop-condition',
 				'no-unsafe-optional-chaining',
 				'no-unsafe-optional-chaining',
+				'safely-storage/try-catch',
 				'unicode-bom',
 				'valid-typeof',
 			],

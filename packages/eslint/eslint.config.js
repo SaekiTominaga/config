@@ -1,6 +1,7 @@
 // @ts-expect-error: ts(7016)
 import pluginImport from 'eslint-plugin-import';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
+import pluginSafelyStorage from 'eslint-plugin-safely-storage';
 import globals from 'globals';
 // eslint-disable-next-line import/no-unresolved
 import tseslint from 'typescript-eslint';
@@ -27,6 +28,7 @@ export default tseslint.config(
 	/* Plugins */
 	pluginImport.flatConfigs.recommended,
 	pluginJsdoc.configs['flat/recommended'],
+	...pluginSafelyStorage.configs.default,
 	configImport,
 	configJsdoc,
 

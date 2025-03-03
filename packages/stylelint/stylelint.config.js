@@ -36,6 +36,7 @@ export default {
 		// ✅ no-invalid-double-slash-comments
 		// ✅ no-invalid-position-at-import-rule
 		// ✅ string-no-newline
+		'syntax-string-no-invalid': true,
 
 		/* Irregular */
 		// ✅ no-irregular-whitespace

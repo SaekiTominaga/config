@@ -40,10 +40,10 @@ test('invalid', async (t) => {
 	});
 
 	await t.test('severity: warning files', () => {
-		assert.equal(linterResult.results.flatMap((result) => result.errored).filter((result) => result === false).length, 2);
+		assert.equal(linterResult.results.flatMap((result) => result.errored).filter((result) => result === false).length, 3);
 	});
 
 	await t.test('warnings', () => {
-		assert.equal(linterResult.results.flatMap((result) => result.warnings).length, 34);
+		assert.equal(linterResult.results.flatMap((result) => result.warnings).length, 35);
 	});
 });

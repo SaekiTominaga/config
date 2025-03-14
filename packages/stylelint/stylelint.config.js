@@ -265,12 +265,7 @@ export default {
 		/**
 		 * [plugin] stylelint-no-default-viewport
 		 */
-		'plugin/no-default-viewport': [
-			true,
-			{
-				severity: 'warning',
-			},
-		],
+		'plugin/no-default-viewport': true,
 
 		/**
 		 * [plugin] stylelint-root-colors

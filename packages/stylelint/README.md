@@ -11,9 +11,22 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
 
 🙂: No problem, 🙁: Warning, 😨: Error
 
+- Do not use ID selector.
+  - 😨 `#foo {}`
+  - 🙂 `.foo {}`
+- Do not use multiple universal selectors. However, this excludes the use of a next-sibling combinator (`+`).
+  - 🙂 `* {}`
+  - 😨 `* > * {}`
+  - 🙂 `* + * {}` (This is used in the "owl selector" in [stack layout](https://every-layout.dev/layouts/stack/))
+- CSS nesting must use the `&` nesting selector.
+  - 😨 `.foo { .bar {} }`
+  - 🙂 `.foo { &.bar {} }`
 - Disallow `!important` within declarations.
   - 🙁 `color: #000 !important`
   - 🙂 `color: #000`
+- The order of properties within declaration blocks follows [`stylelint-config-concentric-order`](https://github.com/chaucerbao/stylelint-config-concentric-order).
+  - 😨 `.foo { padding: 1em; margin: 1em }`
+  - 🙂 `.foo { margin: 1em; padding: 1em }`
 - [Multi-keyword syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display) is recommended for the `display` property. The [`stylelint-display-multi-keyword`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/display-multi-keyword) plugin is used.
   - 🙁 `display: block`
   - 🙂 `display: block flow`
@@ -24,27 +37,17 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
   - 🙂 `text-align: end`
   - 🙂 `overflow-x: visible` (The `overflow-*` logical properties is not well supported by browsers)
 - Use of CSS physical utils is not recommended. Use logical utils. The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
-  - 🙁 `inline-size: 100vw`
-  - 🙂 `inline-size: 100vi`
-- Do not use ID selector.
-  - 😨 `#foo {}`
-  - 🙂 `.foo {}`
-- Do not use multiple universal selectors. However, this excludes the use of a next-sibling combinator (`+`).
-  - 🙂 `* {}`
-  - 😨 `* > * {}`
-  - 🙂 `* + * {}` (This is used in the "owl selector" in [stack layout](https://every-layout.dev/layouts/stack/))
+  - 🙁 `inline-size: 100lvw`
+  - 🙂 `inline-size: 100lvi`
+- Disallow default viewport-percentage units. The [`stylelint-no-default-viewport`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/no-default-viewport) plugin is used.
+  - 😨 `inline-size: 10vi`
+  - 🙂 `inline-size: 10lvi`
 - The `font-weight` value must be numbers.
   - 😨 `font-weight: normal`
   - 🙂 `font-weight: 500 /* Windows + Yu Gothic measures to be greater than 400 */`
-- CSS nesting must use the `&` nesting selector.
-  - 😨 `.foo { .bar {} }`
-  - 🙂 `.foo { &.bar {} }`
 - For the root element, `color` and `background-color` must be specified as a set. See [`stylelint-root-colors`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/root-colors) for details.
   - 😨 `:root { color: #000 }`
   - 🙂 `:root { background-color: #fff; color: #000 }`
-- The order of properties within declaration blocks follows [`stylelint-config-concentric-order`](https://github.com/chaucerbao/stylelint-config-concentric-order).
-  - 😨 `.foo { padding: 1em; margin: 1em }`
-  - 🙂 `.foo { margin: 1em; padding: 1em }`
 
 See [source code](https://github.com/SaekiTominaga/config/blob/main/packages/stylelint/stylelint.config.js) for other details.
 

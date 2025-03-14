@@ -1,7 +1,7 @@
 /** @type {import('stylelint').Config} */
 export default {
 	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order'],
-	plugins: ['stylelint-display-multi-keyword', 'stylelint-plugin-logical-css', 'stylelint-root-colors'],
+	plugins: ['stylelint-display-multi-keyword', 'stylelint-no-default-viewport', 'stylelint-plugin-logical-css', 'stylelint-root-colors'],
 	rules: {
 		/**
 		 * Avoid errors
@@ -261,6 +261,11 @@ export default {
 				severity: 'warning',
 			},
 		],
+
+		/**
+		 * [plugin] stylelint-no-default-viewport
+		 */
+		'plugin/no-default-viewport': true,
 
 		/**
 		 * [plugin] stylelint-root-colors

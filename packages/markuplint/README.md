@@ -159,8 +159,9 @@ Prettier では終了タグを自動的に補完するが、カスタム要素�
 
 なお、以下の場合は `class` 属性なしのケースがあるため、上書き設定で `required-attr` を無効にしている。
 
+- `id` 属性が設定されている場合
+- `role` 属性が設定されている場合
 - `<dl>` 要素の子要素の場合（例外的に一切属性のない `<div>` 要素を許容したい）
-- `<object>` 要素の子要素の場合（`<object aria-labelledby="object-label"><div id="object-label">...</div></object>` のように `id` 属性のみを設定したい）
 
 ### `img`
 

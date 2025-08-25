@@ -106,9 +106,9 @@ export default {
 			},
 		},
 		{
-			selector: 'dl > div, object > div',
+			selector: 'div[id], div[role], dl > div',
 			rules: {
-				'required-attr': false,
+				'required-attr': true,
 			},
 		},
 		{

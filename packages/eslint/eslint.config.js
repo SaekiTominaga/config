@@ -1,4 +1,3 @@
-// @ts-expect-error: ts(7016)
 import pluginImport from 'eslint-plugin-import';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
 import pluginSafelyStorage from 'eslint-plugin-safely-storage';
@@ -45,6 +44,7 @@ export default tseslint.config(
 			parser: tseslint.parser,
 			parserOptions: {
 				project: true,
+				tsconfigRootDir: import.meta.dirname,
 			},
 		},
 		extends: [...tseslint.configs.strictTypeChecked, ...tseslint.configs.stylisticTypeChecked],

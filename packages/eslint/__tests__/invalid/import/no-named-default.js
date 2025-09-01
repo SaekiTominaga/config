@@ -1,3 +1,3 @@
-import { default as Foo } from '../../valid/import/@export-sample.js';
+import { default as Foo } from './@export-sample-js.js';
 
 export default new Foo();

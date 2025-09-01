@@ -1,4 +1,4 @@
-import { exportSample } from '../../valid/import/@export-sample.js';
+import { exportSample } from './@export-sample-ts.ts';
 import fs from 'node:fs';
 
 await fs.promises.access('path');

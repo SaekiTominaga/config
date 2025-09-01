@@ -1,1 +1,1 @@
-import {} from '../../valid/import/@export-sample.js';
+import {} from './@export-sample-js.js';

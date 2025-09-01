@@ -1,3 +1,3 @@
-import { exportSample } from '/__tests__/valid/import/@export-sample.js';
+import { exportSample } from '/__tests__/invalid/import/@export-sample-js.js';
 
 export default exportSample;

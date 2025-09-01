@@ -51,6 +51,13 @@ export default tseslint.config(
 		rules: {
 			...pluginJsdoc.configs['flat/recommended-typescript'].rules,
 			'dot-notation': 'off',
+			'import/extensions': [
+				'error',
+				'ignorePackages',
+				{
+					js: 'never',
+				},
+			],
 			'import/no-unresolved': 'off',
 			'@typescript-eslint/no-extraneous-class': 'off',
 			'@typescript-eslint/no-unused-vars': [

@@ -1,11 +1,12 @@
 {
-	"include": ["__tests__/**/*.ts", "rules/**/*.js", "eslint.config.js"],
+	"include": ["__tests__/**/*.ts"],
 	"compilerOptions": {
 		/* Type Checking */
 		"strict": true,
 
 		/* Modules */
 		"module": "NodeNext",
+		"rewriteRelativeImportExtensions": true,
 
 		/* Emit */
 		"noEmit": true,

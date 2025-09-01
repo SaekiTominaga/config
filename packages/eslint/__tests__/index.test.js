@@ -53,6 +53,7 @@ test('invalid', async (t) => {
 				'consistent-return',
 				'constructor-super',
 				'import/extensions',
+				'import/extensions',
 				'import/newline-after-import',
 				'import/no-absolute-path',
 				'import/no-deprecated',

@@ -54,6 +54,7 @@ test('invalid', async (t) => {
 				'constructor-super',
 				'import/extensions',
 				'import/extensions',
+				'import/extensions',
 				'import/newline-after-import',
 				'import/no-absolute-path',
 				'import/no-deprecated',

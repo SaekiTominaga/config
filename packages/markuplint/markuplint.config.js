@@ -89,6 +89,12 @@ export default {
 			},
 		},
 		{
+			selector: 'dl',
+			rules: {
+				'required-element': ['div'],
+			},
+		},
+		{
 			selector: 'search',
 			rules: {
 				'required-attr': ['role'],

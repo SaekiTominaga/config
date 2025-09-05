@@ -2,8 +2,6 @@ name: ESLint
 
 on:
   pull_request:
-    branches:
-      - main
     paths:
       - 'packages/eslint/__tests__/*'
       - 'packages/eslint/rules/**/*.js'

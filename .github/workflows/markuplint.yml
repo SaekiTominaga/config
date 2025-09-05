@@ -2,8 +2,6 @@ name: Markuplint
 
 on:
   pull_request:
-    branches:
-      - main
     paths:
       - 'packages/markuplint/__tests__/*.test.js'
       - 'packages/markuplint/__tests__/valid/**/*.html'

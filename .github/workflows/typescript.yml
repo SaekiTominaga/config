@@ -2,8 +2,6 @@ name: TypeScript
 
 on:
   pull_request:
-    branches:
-      - main
     paths:
       - 'packages/typescript/__tests__/@types/*.d.ts'
       - 'packages/typescript/__tests__/valid/**/*.ts'

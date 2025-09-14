@@ -1,35 +1,34 @@
+// @ts-check
+
+// eslint-disable-next-line import/no-unresolved
+import { defineConfig } from 'eslint/config';
 import pluginImport from 'eslint-plugin-import';
-import pluginJsdoc from 'eslint-plugin-jsdoc';
+import { jsdoc as pluginJsdoc } from 'eslint-plugin-jsdoc';
 import pluginSafelyStorage from 'eslint-plugin-safely-storage';
 import globals from 'globals';
 // eslint-disable-next-line import/no-unresolved
 import tseslint from 'typescript-eslint';
-import eslintJs from '@eslint/js';
+import eslint from '@eslint/js';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
 import configEslintPossibleProblems from './rules/eslint/possible-problems.js';
 import configEslintSuggestions from './rules/eslint/suggestions.js';
 import configImport from './rules/import.js';
 import configJsdoc from './rules/jsdoc.js';
 
-export default tseslint.config(
-	{
-		plugins: {
-			'@typescript-eslint': tseslint.plugin,
-			pluginJsdoc,
-		},
-	},
-
-	eslintJs.configs.recommended,
+export default defineConfig(
+	eslint.configs.recommended,
 	configEslintPossibleProblems,
 	configEslintSuggestions,
 	configEslintLayoutFormatting,
 
 	/* Plugins */
 	pluginImport.flatConfigs.recommended,
-	pluginJsdoc.configs['flat/recommended'],
-	...pluginSafelyStorage.configs.default,
 	configImport,
+
+	pluginJsdoc({ config: 'flat/recommended' }),
 	configJsdoc,
+
+	pluginSafelyStorage.configs.default,
 
 	{
 		files: ['**/*.js'],
@@ -41,15 +40,13 @@ export default tseslint.config(
 	{
 		files: ['**/*.ts'],
 		languageOptions: {
-			parser: tseslint.parser,
 			parserOptions: {
 				project: true,
-				tsconfigRootDir: import.meta.dirname,
 			},
 		},
-		extends: [...tseslint.configs.strictTypeChecked, ...tseslint.configs.stylisticTypeChecked],
+		extends: [tseslint.configs.strictTypeChecked, tseslint.configs.stylisticTypeChecked],
 		rules: {
-			...pluginJsdoc.configs['flat/recommended-typescript'].rules,
+			...pluginJsdoc({ config: 'flat/recommended-typescript' }).rules,
 			'dot-notation': 'off',
 			'import/extensions': [
 				'error',

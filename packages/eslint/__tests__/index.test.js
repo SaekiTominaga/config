@@ -77,6 +77,7 @@ test('invalid', async (t) => {
 				'no-irregular-whitespace',
 				'no-self-compare',
 				'no-template-curly-in-string',
+				'no-undef',
 				'no-unmodified-loop-condition',
 				'no-unsafe-optional-chaining',
 				'no-unsafe-optional-chaining',

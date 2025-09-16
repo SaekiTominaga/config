@@ -1,6 +1,6 @@
 /* allowNullableObject */
 export const objFunc = (obj?: object): object => {
-	if (obj) {
+	if (obj !== undefined) {
 		return obj;
 	}
 
@@ -9,7 +9,7 @@ export const objFunc = (obj?: object): object => {
 
 /* allowNumber */
 export const numFunc = (num: number): number => {
-	if (num) {
+	if (num !== 0) {
 		return num;
 	}
 
@@ -18,7 +18,7 @@ export const numFunc = (num: number): number => {
 
 /* allowString */
 export const strFunc = (str: string): string => {
-	if (str) {
+	if (str !== '') {
 		return str;
 	}
 

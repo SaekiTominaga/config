@@ -1,3 +1,12 @@
+/* allowNullableBoolean */
+export const boolFunc = (bool?: boolean): boolean => {
+	if (bool) {
+		return bool;
+	}
+
+	return false;
+};
+
 /* allowNullableObject */
 export const objFunc = (obj?: object): object => {
 	if (obj !== undefined) {

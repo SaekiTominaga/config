@@ -35,3 +35,15 @@ export default [
   },
 ];
 ```
+
+or
+
+```javascript
+import { defineConfig } from 'eslint/config';
+import w0sConfig from '@w0s/eslint-config';
+
+/** @type {import("eslint").Linter.Config[]} */
+export default defineConfig(w0sConfig, {
+  // other options
+});
+```

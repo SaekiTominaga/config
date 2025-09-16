@@ -49,6 +49,7 @@ test('invalid', async (t) => {
 				'@typescript-eslint/dot-notation',
 				'@typescript-eslint/no-array-delete',
 				'@typescript-eslint/no-confusing-void-expression',
+				'@typescript-eslint/strict-boolean-expressions',
 				'array-callback-return',
 				'consistent-return',
 				'constructor-super',

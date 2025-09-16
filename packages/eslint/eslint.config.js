@@ -47,6 +47,7 @@ export default defineConfig(
 		extends: [tseslint.configs.strictTypeChecked, tseslint.configs.stylisticTypeChecked, pluginJsdoc({ config: 'flat/recommended-typescript' })],
 		rules: {
 			'dot-notation': 'off',
+			'no-unused-vars': 'off',
 			'import/extensions': [
 				'error',
 				'ignorePackages',

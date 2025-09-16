@@ -6,8 +6,8 @@ on:
       - 'packages/typescript/__tests__/@types/*.d.ts'
       - 'packages/typescript/__tests__/valid/**/*.ts'
       - 'packages/typescript/__tests__/tsconfig-valid.json'
-      - 'packages/typescript/tsconfig.json'
       - 'packages/typescript/package.json'
+      - 'packages/typescript/tsconfig.json'
   workflow_dispatch:
 
 permissions: {}

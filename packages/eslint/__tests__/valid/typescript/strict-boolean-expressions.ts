@@ -1,5 +1,5 @@
 export const strFunc = (str: string): string => {
-	if (str) {
+	if (str !== '') {
 		return str;
 	}
 
@@ -7,7 +7,7 @@ export const strFunc = (str: string): string => {
 };
 
 export const numFunc = (num: number): number => {
-	if (num) {
+	if (num !== 0) {
 		return num;
 	}
 

@@ -140,6 +140,7 @@ export default {
 		'prefer-template': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		radix: 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'require-await': 'error',
+		'require-unicode-regexp': 'error',
 		strict: 'error',
 		'symbol-description': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		yoda: 'error', // eslint-config-airbnb-base@15.0.0; best-practices

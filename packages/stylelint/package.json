@@ -21,17 +21,17 @@
 	"dependencies": {
 		"stylelint-attribute-case-sensitivity": "^1.0.1",
 		"stylelint-config-concentric-order": "^5.2.1",
-		"stylelint-config-standard": "^37.0.0",
+		"stylelint-config-standard": "^39.0.0",
 		"stylelint-display-multi-keyword": "^1.0.2",
-		"stylelint-no-default-viewport": "^1.0.0",
-		"stylelint-plugin-logical-css": "^1.2.1",
+		"stylelint-no-default-viewport": "^1.0.1",
+		"stylelint-plugin-logical-css": "^1.2.3",
 		"stylelint-root-colors": "^1.0.1"
 	},
 	"devDependencies": {
-		"stylelint": "^16.15.0"
+		"stylelint": "^16.24.0"
 	},
 	"peerDependencies": {
-		"stylelint": "^16.15.0"
+		"stylelint": "^16.23.0"
 	},
 	"publishConfig": {
 		"access": "public"

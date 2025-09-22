@@ -38,8 +38,10 @@
 }
 
 /* custom-property-pattern */
---foo1-1: 1;
---_foo1-1: 1;
+:root {
+	--foo1-1: 1;
+	--_foo1-1: 1;
+}
 
 /* font-weight-notation */
 .font-weight-notation {

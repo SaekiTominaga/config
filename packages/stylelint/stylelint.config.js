@@ -272,9 +272,6 @@ export default {
 		'plugin/attribute-case-sensitivity': [
 			true,
 			{
-				default: false,
-				i: true,
-				s: false,
 				severity: 'warning',
 			},
 		],

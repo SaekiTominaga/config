@@ -18,6 +18,9 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
   - 🙂 `* {}`
   - 😨 `* > * {}`
   - 🙂 `* + * {}` (This is used in the "owl selector" in [stack layout](https://every-layout.dev/layouts/stack/))
+- The attribute selectors' case-sensitivity require the `i` identifier. See [`stylelint-attribute-case-sensitivity`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/attribute-case-sensitivity) for details.
+  - 🙁 `[type="foo"] { }`
+  - 🙂 `[type="foo" i] { }`
 - CSS nesting must use the `&` nesting selector.
   - 😨 `.foo { .bar {} }`
   - 🙂 `.foo { &.bar {} }`

@@ -15,6 +15,8 @@ export default {
 		/* Deprecated */
 		// ✅ at-rule-no-deprecated
 		// ✅ declaration-property-value-keyword-no-deprecated
+		// ✅ media-type-no-deprecated
+		// ✅ property-no-deprecated
 
 		/* Descending */
 		'no-descending-specificity': null, // ✅
@@ -41,8 +43,9 @@ export default {
 		// ✅ named-grid-areas-no-invalid
 		// ✅ no-invalid-double-slash-comments
 		// ✅ no-invalid-position-at-import-rule
+		// ✅ no-invalid-position-declaration
 		// ✅ string-no-newline
-		'syntax-string-no-invalid': true,
+		// ✅ syntax-string-no-invalid
 
 		/* Irregular */
 		// ✅ no-irregular-whitespace
@@ -50,6 +53,7 @@ export default {
 		/* Missing */
 		// ✅ custom-property-no-missing-var-function
 		// ✅ font-family-no-missing-generic-family-keyword
+		// ✅ nesting-selector-no-missing-scoping-root
 
 		/* Non-standard */
 		// function-linear-gradient-no-nonstandard-direction
@@ -182,6 +186,7 @@ export default {
 
 		/* Notation */
 		// ✅ alpha-value-notation
+		// ✅ color-function-alias-notation
 		// ✅ color-function-notation
 		// ✅ color-hex-length
 		'font-weight-notation': 'numeric',
@@ -195,9 +200,11 @@ export default {
 
 		/* Pattern */
 		// comment-pattern
+		// ✅ container-name-pattern
 		// ✅ custom-media-pattern
 		'custom-property-pattern': /^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$/, // ✅
 		// ✅ keyframes-name-pattern
+		// ✅ layer-name-pattern
 		// ✅ selector-class-pattern
 		// ✅ selector-id-pattern
 		'selector-nested-pattern': /&/,
@@ -208,6 +215,7 @@ export default {
 		// ✅ selector-attribute-quotes
 
 		/* Redundant */
+		// ✅ block-no-redundant-nested-style-rules
 		// ✅ declaration-block-no-redundant-longhand-properties
 		// ✅ shorthand-property-no-redundant-values
 

@@ -19,7 +19,7 @@
 		"test": "node __tests__/index.test.js"
 	},
 	"dependencies": {
-		"stylelint-attribute-case-sensitivity": "^2.0.1",
+		"stylelint-attribute-case-sensitivity": "^2.0.2",
 		"stylelint-config-concentric-order": "^5.2.1",
 		"stylelint-config-standard": "^39.0.0",
 		"stylelint-display-multi-keyword": "^1.0.2",

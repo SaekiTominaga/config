@@ -27,7 +27,7 @@
 	"dependencies": {
 		"@eslint/js": "^9.35.0",
 		"eslint-plugin-import": "^2.32.0",
-		"eslint-plugin-jsdoc": "^57.0.8",
+		"eslint-plugin-jsdoc": "^57.0.10",
 		"eslint-plugin-safely-storage": "^1.0.2",
 		"globals": "^16.4.0",
 		"typescript-eslint": "^8.43.0"

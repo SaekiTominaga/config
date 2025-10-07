@@ -23,6 +23,7 @@ export default {
 		'no-promise-executor-return': 'error', // eslint-config-airbnb-base@15.0.0; errors
 		'no-self-compare': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-template-curly-in-string': 'error', // eslint-config-airbnb-base@15.0.0; errors
+		'no-unassigned-vars': 'error', // ESLint 10 recommended candidate https://github.com/eslint/eslint/issues/19966
 		'no-unmodified-loop-condition': 'error',
 		'no-unsafe-optional-chaining': [
 			'error',

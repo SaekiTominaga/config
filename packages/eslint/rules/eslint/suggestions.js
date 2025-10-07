@@ -28,7 +28,6 @@ export default {
 		'no-array-constructor': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-bitwise': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-caller': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
-		'no-continue': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-else-return': 'error',
 		'no-empty': [
 			'error',

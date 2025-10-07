@@ -1,5 +1,5 @@
 {
-	"include": ["__tests__/**/*.ts", "__tests__/invalid/no-unassigned-vars.js"],
+	"include": ["__tests__/**/*.ts"],
 	"compilerOptions": {
 		/* Type Checking */
 		"strict": true,

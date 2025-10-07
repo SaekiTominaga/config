@@ -137,6 +137,7 @@ export default {
 		'prefer-rest-params': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'prefer-spread': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'prefer-template': 'error', // eslint-config-airbnb-base@15.0.0; es6
+		'preserve-caught-error': 'error', // ESLint 10 recommended candidate https://github.com/eslint/eslint/issues/19966
 		radix: 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'require-await': 'error',
 		'require-unicode-regexp': 'error',

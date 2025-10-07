@@ -87,6 +87,7 @@ test('invalid', async (t) => {
 				'no-unsafe-optional-chaining',
 				'no-unsafe-optional-chaining',
 				'no-unused-vars',
+				'no-useless-assignment',
 				'require-unicode-regexp',
 				'safely-storage/try-catch',
 				'unicode-bom',

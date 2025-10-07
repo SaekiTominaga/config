@@ -36,6 +36,7 @@ export default {
 				caughtErrors: 'none',
 			},
 		],
+		'no-useless-assignment': 'error', // ESLint 10 recommended candidate https://github.com/eslint/eslint/issues/19966
 		'valid-typeof': [
 			'error',
 			{

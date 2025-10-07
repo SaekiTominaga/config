@@ -10,6 +10,7 @@ export default {
 		'no-await-in-loop': 'error', // eslint-config-airbnb-base@15.0.0; errors
 		'no-cond-assign': ['error', 'always'], // eslint-config-airbnb-base@15.0.0; errors
 		'no-console': 'warn', // eslint-config-airbnb-base@15.0.0; errors
+		'no-continue': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-constructor-return': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-irregular-whitespace': [
 			'error',

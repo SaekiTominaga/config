@@ -78,6 +78,7 @@ test('invalid', async (t) => {
 				'no-cond-assign',
 				'no-constant-condition',
 				'no-constructor-return',
+				'no-continue',
 				'no-irregular-whitespace',
 				'no-self-compare',
 				'no-template-curly-in-string',

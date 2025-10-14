@@ -45,6 +45,9 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
 - Disallow default viewport-percentage units. The [`stylelint-no-default-viewport`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/no-default-viewport) plugin is used.
   - 😨 `inline-size: 10vi`
   - 🙂 `inline-size: 10lvi`
+- Do not use `white-space` shorthand property because its definition became complex in [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/#white-space-property).
+  - 😨 `white-space: pre-wrap`
+  - 🙂 `white-space-collapse: preserve;`
 - The `font-weight` value must be numbers.
   - 😨 `font-weight: normal`
   - 🙂 `font-weight: 500 /* Windows + Yu Gothic measures to be greater than 400 */`

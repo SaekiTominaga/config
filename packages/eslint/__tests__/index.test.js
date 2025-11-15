@@ -56,6 +56,7 @@ test('invalid', async (t) => {
 				'array-callback-return',
 				'consistent-return',
 				'constructor-super',
+				'functional/no-loop-statements',
 				'import/extensions',
 				'import/extensions',
 				'import/extensions',

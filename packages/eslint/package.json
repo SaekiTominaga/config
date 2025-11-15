@@ -25,16 +25,16 @@
 		"lint": "eslint __tests__/valid/**/*.{js,ts} __tests__/*.test.js rules/**/*.js eslint.config.js"
 	},
 	"dependencies": {
-		"@eslint/js": "^9.37.0",
+		"@eslint/js": "^9.39.1",
 		"eslint-plugin-import": "^2.32.0",
-		"eslint-plugin-jsdoc": "^60.8.3",
+		"eslint-plugin-jsdoc": "^61.2.1",
 		"eslint-plugin-safely-storage": "^1.0.2",
 		"globals": "^16.4.0",
-		"typescript-eslint": "^8.46.2"
+		"typescript-eslint": "^8.46.4"
 	},
 	"devDependencies": {
-		"@types/node": "^24.7.2",
-		"eslint": "^9.37.0"
+		"@types/node": "^24.10.1",
+		"eslint": "^9.39.1"
 	},
 	"peerDependencies": {
 		"eslint": "^9.35.0"

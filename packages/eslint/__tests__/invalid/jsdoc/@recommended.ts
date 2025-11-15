@@ -1,5 +1,5 @@
 export default class {
-	#foo = '';
+	readonly #foo = '';
 
 	/**
 	 * func

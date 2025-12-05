@@ -122,6 +122,7 @@ export default {
 		// property-allowed-list
 		'property-disallowed-list': ['overflow-block', 'overflow-inline', 'white-space'],
 		// ✅ property-no-vendor-prefix
+		// rule-nesting-at-rule-required-list
 		// rule-selector-property-disallowed-list
 		// selector-attribute-name-disallowed-list
 		// selector-attribute-operator-allowed-list

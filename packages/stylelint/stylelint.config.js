@@ -96,12 +96,7 @@ export default {
 		'color-named': 'never',
 		// color-no-hex
 		// comment-word-disallowed-list
-		'declaration-no-important': [
-			true,
-			{
-				severity: 'warning',
-			},
-		],
+		'declaration-no-important': true,
 		'declaration-property-unit-allowed-list': {
 			'line-height': [],
 		},
@@ -257,35 +252,19 @@ export default {
 			true,
 			{
 				ignore: ['overflow-x', 'overflow-y'],
-				severity: 'warning',
 			},
 		],
-		'plugin/use-logical-units': [
-			true,
-			{
-				severity: 'warning',
-			},
-		],
+		'plugin/use-logical-units': true,
 
 		/**
 		 * [plugin] stylelint-attribute-case-sensitivity
 		 */
-		'plugin/attribute-case-sensitivity': [
-			true,
-			{
-				severity: 'warning',
-			},
-		],
+		'plugin/attribute-case-sensitivity': true,
 
 		/**
 		 * [plugin] stylelint-display-multi-keyword
 		 */
-		'plugin/display-multi-keyword': [
-			true,
-			{
-				severity: 'warning',
-			},
-		],
+		'plugin/display-multi-keyword': true,
 
 		/**
 		 * [plugin] stylelint-no-default-viewport

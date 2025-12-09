@@ -19,7 +19,7 @@
 		"test": "node __tests__/index.test.js"
 	},
 	"devDependencies": {
-		"markuplint": "^4.13.1"
+		"markuplint": "^4.14.0"
 	},
 	"peerDependencies": {
 		"markuplint": "^4.8.1"

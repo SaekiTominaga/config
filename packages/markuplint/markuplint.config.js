@@ -30,7 +30,11 @@ export default {
 		'required-attr': true,
 		'required-element': false,
 		'label-has-control': true,
-		'landmark-roles': true,
+		'landmark-roles': {
+			options: {
+				ignoreRoles: ['complementary'],
+			},
+		},
 		'neighbor-popovers': true,
 		'no-ambiguous-navigable-target-names': true,
 		'no-consecutive-br': true,

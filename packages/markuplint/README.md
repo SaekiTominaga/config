@@ -24,66 +24,66 @@
 
 #### Conformance checking
 
-| ルール ID                   | 本設定ファイル              | `markuplint:recommended`    | 差異                             |
-| --------------------------- | --------------------------- | --------------------------- | -------------------------------- |
-| `attr-duplication`          | true                        | true                        |                                  |
-| `deprecated-attr`           | true                        | true                        |                                  |
-| `deprecated-element`        | true                        | true                        |                                  |
-| `disallowed-element`        | ["noscript", "embed"]       | ―                           | [⚠](#disallowed-element)        |
-| `doctype`                   | true                        | true                        |                                  |
-| `heading-levels`            | true                        | true                        |                                  |
-| `id-duplication`            | true                        | true                        |                                  |
-| `invalid-attr`              | { `accesskey`, `tabindex` } | { `accesskey`, `tabindex` } |                                  |
-| `no-duplicate-dt`           | true                        | true                        |                                  |
-| `no-empty-palpable-content` | true                        | ―                           | [⚠](#no-empty-palpable-content) |
-| `no-orphaned-end-tag`       | true                        | true                        |                                  |
-| `permitted-contents`        | true                        | true                        |                                  |
-| `placeholder-label-option`  | true                        | true                        |                                  |
-| `require-datetime`          | true                        | true                        |                                  |
-| `required-attr`             | true                        | true                        |                                  |
-| `required-element`          | false                       | ―                           |                                  |
+| ルール ID                   | 本設定ファイル                                                                                         | `markuplint:recommended` | 差異                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------ | -------------------------------- |
+| `attr-duplication`          | `true`                                                                                                 | `true`                   |                                  |
+| `deprecated-attr`           | `true`                                                                                                 | `true`                   |                                  |
+| `deprecated-element`        | `true`                                                                                                 | `true`                   |                                  |
+| `disallowed-element`        | `['noscript', 'embed']`                                                                                | ―                        | [⚠](#disallowed-element)        |
+| `doctype`                   | `true`                                                                                                 | `true`                   |                                  |
+| `heading-levels`            | `true`                                                                                                 | `true`                   |                                  |
+| `id-duplication`            | `true`                                                                                                 | `true`                   |                                  |
+| `invalid-attr`              | `allowAttrs: [ { name: 'tabindex', value: { enum: ['-1', '0'], }, }, ], disallowAttrs: ['accesskey'],` | Same as the left cell    |                                  |
+| `no-duplicate-dt`           | `true`                                                                                                 | `true`                   |                                  |
+| `no-empty-palpable-content` | `true`                                                                                                 | ―                        | [⚠](#no-empty-palpable-content) |
+| `no-orphaned-end-tag`       | `true`                                                                                                 | `true`                   |                                  |
+| `permitted-contents`        | `true`                                                                                                 | `true`                   |                                  |
+| `placeholder-label-option`  | `true`                                                                                                 | `true`                   |                                  |
+| `require-datetime`          | `true`                                                                                                 | `true`                   |                                  |
+| `required-attr`             | `true`                                                                                                 | `true`                   |                                  |
+| `required-element`          | `false`                                                                                                | ―                        |                                  |
 
 #### Accessibility
 
-| ルール ID                             | 本設定ファイル | `markuplint:recommended` | 差異                              |
-| ------------------------------------- | -------------- | ------------------------ | --------------------------------- |
-| `label-has-control`                   | true           | true                     |                                   |
-| `landmark-roles`                      | true           | true                     |                                   |
-| `neighbor-popovers`                   | true           | true                     |                                   |
-| `no-ambiguous-navigable-target-names` | true           | true                     |                                   |
-| `no-consecutive-br`                   | true           | true                     |                                   |
-| `no-refer-to-non-existent-id`         | true           | true                     |                                   |
-| `require-accessible-name`             | true           | true                     |                                   |
-| `required-h1`                         | true           | true                     |                                   |
-| `table-row-column-alignment`          | false          | true                     | [⚠](#table-row-column-alignment) |
-| `use-list`                            | false          | true                     | [⚠](#use-list)                   |
-| `wai-aria`                            | true           | true                     |                                   |
+| ルール ID                             | 本設定ファイル                       | `markuplint:recommended` | 差異                              |
+| ------------------------------------- | ------------------------------------ | ------------------------ | --------------------------------- |
+| `label-has-control`                   | `true`                               | `true`                   |                                   |
+| `landmark-roles`                      | `{ ignoreRoles: ['complementary'] }` | `true`                   | [⚠](#landmark-roles)             |
+| `neighbor-popovers`                   | `true`                               | `true`                   |                                   |
+| `no-ambiguous-navigable-target-names` | `true`                               | `true`                   |                                   |
+| `no-consecutive-br`                   | `true`                               | `true`                   |                                   |
+| `no-refer-to-non-existent-id`         | `true`                               | `true`                   |                                   |
+| `require-accessible-name`             | `true`                               | `true`                   |                                   |
+| `required-h1`                         | `true`                               | `true`                   |                                   |
+| `table-row-column-alignment`          | `false`                              | `true`                   | [⚠](#table-row-column-alignment) |
+| `use-list`                            | false                                | `true`                   | [⚠](#use-list)                   |
+| `wai-aria`                            | `true`                               | `true`                   |                                   |
 
 #### Naming Convention
 
 | ルール ID      | 本設定ファイル | `markuplint:recommended` | 差異 |
 | -------------- | -------------- | ------------------------ | ---- |
-| `class-naming` | false          | ―                        |      |
+| `class-naming` | `false`        | ―                        |      |
 
 #### Maintenability
 
 | ルール ID                   | 本設定ファイル | `markuplint:recommended` | 差異                             |
 | --------------------------- | -------------- | ------------------------ | -------------------------------- |
-| `no-hard-code-id`           | false          | ―                        |                                  |
-| `no-use-event-handler-attr` | true           | ―                        | [⚠](#no-use-event-handler-attr) |
+| `no-hard-code-id`           | `false`        | ―                        |                                  |
+| `no-use-event-handler-attr` | `true`         | ―                        | [⚠](#no-use-event-handler-attr) |
 
 #### Style
 
 | ルール ID                  | 本設定ファイル | `markuplint:recommended` | 差異                            |
 | -------------------------- | -------------- | ------------------------ | ------------------------------- |
-| `attr-value-quotes`        | false          | ―                        |                                 |
-| `case-sensitive-attr-name` | "lower"        | ―                        | [⚠](#case-sensitive-attr-name) |
-| `case-sensitive-tag-name`  | "lower"        | ―                        | [⚠](#case-sensitive-tag-name)  |
-| `character-reference`      | true           | true                     |                                 |
-| `end-tag`                  | true           | ―                        | [⚠](#end-tag)                  |
-| `ineffective-attr`         | true           | true                     |                                 |
-| `no-boolean-attr-value`    | false          | ―                        |                                 |
-| `no-default-value`         | true           | ―                        | [⚠](#no-default-value)         |
+| `attr-value-quotes`        | `false`        | ―                        |                                 |
+| `case-sensitive-attr-name` | `'lower'`      | ―                        | [⚠](#case-sensitive-attr-name) |
+| `case-sensitive-tag-name`  | `'lower'`      | ―                        | [⚠](#case-sensitive-tag-name)  |
+| `character-reference`      | `true`         | `true`                   |                                 |
+| `end-tag`                  | `true`         | ―                        | [⚠](#end-tag)                  |
+| `ineffective-attr`         | `true`         | `true`                   |                                 |
+| `no-boolean-attr-value`    | `false`        | ―                        |                                 |
+| `no-default-value`         | `true`         | ―                        | [⚠](#no-default-value)         |
 
 ### 差異のあるルールの理由
 
@@ -100,6 +100,12 @@
 #### [`no-empty-palpable-content`](https://markuplint.dev/ja/docs/rules/no-empty-palpable-content)
 
 `markuplint:recommended` ではこのルールは有効化されていないが、当サイトでは `<div></div>` のように `<div>` 要素や `<span>` 要素の中身を空にすることはないため有効にしている。
+
+#### [`landmark-roles`](https://markuplint.dev/ja/docs/rules/landmark-roles)
+
+このルールを有効化すると `<aside>` 要素はトップレベルに配置しなければならないと警告される。しかし2022年に HTML Accessibility API Mappings 仕様が改訂され、2023年〜2024年にかけて各ブラウザの対応も進んだため、トップレベル配置にこだわる必要は薄まった。このため `complementary` ロールのチェックを除外設定している。
+
+ちなみに Axe では2021年の axe-core 4.2 にて [`<main>` 要素内に `<aside>` 要素を配置できるようになり](https://github.com/dequelabs/axe-core/pull/2740)、さらに [`landmark-complementary-is-top-level` ルールそのものを廃止する提案](https://github.com/dequelabs/axe-core/issues/4950)も提出されている。
 
 #### [`table-row-column-alignment`](https://markuplint.dev/ja/docs/rules/table-row-column-alignment)
 

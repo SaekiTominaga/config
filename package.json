@@ -1,8 +1,5 @@
 {
 	"name": "config",
-	"scripts": {
-		"format": "prettier -w ."
-	},
 	"devDependencies": {
 		"prettier": "^3.6.2"
 	},

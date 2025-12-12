@@ -15,8 +15,8 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
-		"test": "tsc --project __tests__/tsconfig-valid.json",
-		"test-invalid": "tsc --project __tests__/tsconfig-invalid.json"
+		"test": "tsc -p __tests__/tsconfig-valid.json",
+		"test:invalid": "tsc -p __tests__/tsconfig-invalid.json"
 	},
 	"devDependencies": {
 		"typescript": "^5.9.3"

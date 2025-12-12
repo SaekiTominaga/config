@@ -3,10 +3,8 @@ name: Markuplint
 on:
   pull_request:
     paths:
-      - 'packages/markuplint/__tests__/*.test.js'
-      - 'packages/markuplint/__tests__/valid/**/*.html'
-      - 'packages/markuplint/markuplint.config.js'
-      - 'packages/markuplint/package.json'
+      - 'packages/markuplint/**'
+      - '!packages/markuplint/**/*.md'
   workflow_dispatch:
 
 permissions: {}

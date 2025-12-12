@@ -3,10 +3,8 @@ name: Stylelint
 on:
   pull_request:
     paths:
-      - 'packages/stylelint/__tests__/*.test.js'
-      - 'packages/stylelint/__tests__/**/*.css'
-      - 'packages/stylelint/package.json'
-      - 'packages/stylelint/stylelint.config.js'
+      - 'packages/stylelint/**'
+      - '!packages/stylelint/**/*.md'
   workflow_dispatch:
 
 permissions: {}

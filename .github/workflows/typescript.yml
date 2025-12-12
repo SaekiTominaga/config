@@ -3,11 +3,10 @@ name: TypeScript
 on:
   pull_request:
     paths:
-      - 'packages/typescript/__tests__/@types/*.d.ts'
-      - 'packages/typescript/__tests__/valid/**/*.ts'
-      - 'packages/typescript/__tests__/tsconfig-valid.json'
-      - 'packages/typescript/package.json'
-      - 'packages/typescript/tsconfig.json'
+      - 'packages/typescript/**'
+      - '!packages/typescript/__tests__/invalid/**'
+      - '!packages/typescript/__tests__/tsconfig-invalid.json'
+      - '!packages/typescript/**/*.md'
   workflow_dispatch:
 
 permissions: {}

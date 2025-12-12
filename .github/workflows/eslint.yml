@@ -3,11 +3,8 @@ name: ESLint
 on:
   pull_request:
     paths:
-      - 'packages/eslint/__tests__/**/*.{js,ts}'
-      - 'packages/eslint/rules/**/*.js'
-      - 'packages/eslint/eslint.config.js'
-      - 'packages/eslint/package.json'
-      - 'packages/eslint/tsconfig.json'
+      - 'packages/eslint/**'
+      - '!packages/eslint/**/*.md'
   workflow_dispatch:
 
 permissions: {}

@@ -24,40 +24,40 @@
 
 #### Conformance checking
 
-| ルール ID                   | 本設定ファイル                                                                                         | `markuplint:recommended` | 差異                             |
-| --------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------ | -------------------------------- |
-| `attr-duplication`          | `true`                                                                                                 | `true`                   |                                  |
-| `deprecated-attr`           | `true`                                                                                                 | `true`                   |                                  |
-| `deprecated-element`        | `true`                                                                                                 | `true`                   |                                  |
+| ルール ID                   | 本設定ファイル                                                                                         | `markuplint:recommended` | 差異                            |
+| --------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------ | ------------------------------- |
+| `attr-duplication`          | `true`                                                                                                 | `true`                   |                                 |
+| `deprecated-attr`           | `true`                                                                                                 | `true`                   |                                 |
+| `deprecated-element`        | `true`                                                                                                 | `true`                   |                                 |
 | `disallowed-element`        | `['noscript', 'embed']`                                                                                | ―                        | [⚠](#disallowed-element)        |
-| `doctype`                   | `true`                                                                                                 | `true`                   |                                  |
-| `heading-levels`            | `true`                                                                                                 | `true`                   |                                  |
-| `id-duplication`            | `true`                                                                                                 | `true`                   |                                  |
-| `invalid-attr`              | `allowAttrs: [ { name: 'tabindex', value: { enum: ['-1', '0'], }, }, ], disallowAttrs: ['accesskey'],` | Same as the left cell    |                                  |
-| `no-duplicate-dt`           | `true`                                                                                                 | `true`                   |                                  |
+| `doctype`                   | `true`                                                                                                 | `true`                   |                                 |
+| `heading-levels`            | `true`                                                                                                 | `true`                   |                                 |
+| `id-duplication`            | `true`                                                                                                 | `true`                   |                                 |
+| `invalid-attr`              | `allowAttrs: [ { name: 'tabindex', value: { enum: ['-1', '0'], }, }, ], disallowAttrs: ['accesskey'],` | Same as the left cell    |                                 |
+| `no-duplicate-dt`           | `true`                                                                                                 | `true`                   |                                 |
 | `no-empty-palpable-content` | `true`                                                                                                 | ―                        | [⚠](#no-empty-palpable-content) |
-| `no-orphaned-end-tag`       | `true`                                                                                                 | `true`                   |                                  |
-| `permitted-contents`        | `true`                                                                                                 | `true`                   |                                  |
-| `placeholder-label-option`  | `true`                                                                                                 | `true`                   |                                  |
-| `require-datetime`          | `true`                                                                                                 | `true`                   |                                  |
-| `required-attr`             | `true`                                                                                                 | `true`                   |                                  |
-| `required-element`          | `false`                                                                                                | ―                        |                                  |
+| `no-orphaned-end-tag`       | `true`                                                                                                 | `true`                   |                                 |
+| `permitted-contents`        | `true`                                                                                                 | `true`                   |                                 |
+| `placeholder-label-option`  | `true`                                                                                                 | `true`                   |                                 |
+| `require-datetime`          | `true`                                                                                                 | `true`                   |                                 |
+| `required-attr`             | `true`                                                                                                 | `true`                   |                                 |
+| `required-element`          | `false`                                                                                                | ―                        |                                 |
 
 #### Accessibility
 
-| ルール ID                             | 本設定ファイル                       | `markuplint:recommended` | 差異                              |
-| ------------------------------------- | ------------------------------------ | ------------------------ | --------------------------------- |
-| `label-has-control`                   | `true`                               | `true`                   |                                   |
+| ルール ID                             | 本設定ファイル                       | `markuplint:recommended` | 差異                             |
+| ------------------------------------- | ------------------------------------ | ------------------------ | -------------------------------- |
+| `label-has-control`                   | `true`                               | `true`                   |                                  |
 | `landmark-roles`                      | `{ ignoreRoles: ['complementary'] }` | `true`                   | [⚠](#landmark-roles)             |
-| `neighbor-popovers`                   | `true`                               | `true`                   |                                   |
-| `no-ambiguous-navigable-target-names` | `true`                               | `true`                   |                                   |
-| `no-consecutive-br`                   | `true`                               | `true`                   |                                   |
-| `no-refer-to-non-existent-id`         | `true`                               | `true`                   |                                   |
-| `require-accessible-name`             | `true`                               | `true`                   |                                   |
-| `required-h1`                         | `true`                               | `true`                   |                                   |
+| `neighbor-popovers`                   | `true`                               | `true`                   |                                  |
+| `no-ambiguous-navigable-target-names` | `true`                               | `true`                   |                                  |
+| `no-consecutive-br`                   | `true`                               | `true`                   |                                  |
+| `no-refer-to-non-existent-id`         | `true`                               | `true`                   |                                  |
+| `require-accessible-name`             | `true`                               | `true`                   |                                  |
+| `required-h1`                         | `true`                               | `true`                   |                                  |
 | `table-row-column-alignment`          | `false`                              | `true`                   | [⚠](#table-row-column-alignment) |
 | `use-list`                            | false                                | `true`                   | [⚠](#use-list)                   |
-| `wai-aria`                            | `true`                               | `true`                   |                                   |
+| `wai-aria`                            | `true`                               | `true`                   |                                  |
 
 #### Naming Convention
 
@@ -67,22 +67,22 @@
 
 #### Maintenability
 
-| ルール ID                   | 本設定ファイル | `markuplint:recommended` | 差異                             |
-| --------------------------- | -------------- | ------------------------ | -------------------------------- |
-| `no-hard-code-id`           | `false`        | ―                        |                                  |
+| ルール ID                   | 本設定ファイル | `markuplint:recommended` | 差異                            |
+| --------------------------- | -------------- | ------------------------ | ------------------------------- |
+| `no-hard-code-id`           | `false`        | ―                        |                                 |
 | `no-use-event-handler-attr` | `true`         | ―                        | [⚠](#no-use-event-handler-attr) |
 
 #### Style
 
-| ルール ID                  | 本設定ファイル | `markuplint:recommended` | 差異                            |
-| -------------------------- | -------------- | ------------------------ | ------------------------------- |
-| `attr-value-quotes`        | `false`        | ―                        |                                 |
+| ルール ID                  | 本設定ファイル | `markuplint:recommended` | 差異                           |
+| -------------------------- | -------------- | ------------------------ | ------------------------------ |
+| `attr-value-quotes`        | `false`        | ―                        |                                |
 | `case-sensitive-attr-name` | `'lower'`      | ―                        | [⚠](#case-sensitive-attr-name) |
 | `case-sensitive-tag-name`  | `'lower'`      | ―                        | [⚠](#case-sensitive-tag-name)  |
-| `character-reference`      | `true`         | `true`                   |                                 |
+| `character-reference`      | `true`         | `true`                   |                                |
 | `end-tag`                  | `true`         | ―                        | [⚠](#end-tag)                  |
-| `ineffective-attr`         | `true`         | `true`                   |                                 |
-| `no-boolean-attr-value`    | `false`        | ―                        |                                 |
+| `ineffective-attr`         | `true`         | `true`                   |                                |
+| `no-boolean-attr-value`    | `false`        | ―                        |                                |
 | `no-default-value`         | `true`         | ―                        | [⚠](#no-default-value)         |
 
 ### 差異のあるルールの理由

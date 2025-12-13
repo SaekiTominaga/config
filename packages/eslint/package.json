@@ -20,8 +20,8 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"scripts": {
+		"pretest": "tsc",
 		"test": "node __tests__/index.test.js",
-		"prelint": "tsc",
 		"lint": "eslint __tests__/valid/**/*.{js,ts} __tests__/*.test.js rules/**/*.js eslint.config.js"
 	},
 	"devDependencies": {

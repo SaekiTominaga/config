@@ -18,7 +18,8 @@
 	"scripts": {
 		"test": "node __tests__/index.test.js"
 	},
-	"dependencies": {
+	"devDependencies": {
+		"stylelint": "^16.26.1",
 		"stylelint-attribute-case-sensitivity": "^2.1.0",
 		"stylelint-config-concentric-order": "^5.2.1",
 		"stylelint-config-standard": "^39.0.1",
@@ -27,11 +28,15 @@
 		"stylelint-plugin-logical-css": "^1.2.3",
 		"stylelint-root-colors": "^1.0.1"
 	},
-	"devDependencies": {
-		"stylelint": "^16.26.1"
-	},
 	"peerDependencies": {
-		"stylelint": "^16.23.0"
+		"stylelint": "^16.23.0",
+		"stylelint-attribute-case-sensitivity": "^2.1.0",
+		"stylelint-config-concentric-order": "^5.2.0",
+		"stylelint-config-standard": "^39.0.0",
+		"stylelint-display-multi-keyword": "^1.0.0",
+		"stylelint-no-default-viewport": "^1.0.0",
+		"stylelint-plugin-logical-css": "^1.2.0",
+		"stylelint-root-colors": "^1.0.0"
 	},
 	"publishConfig": {
 		"access": "public"

@@ -26,14 +26,14 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.39.2",
-		"@types/node": "^24.10.3",
+		"@types/node": "^24.10.4",
 		"eslint": "^9.39.2",
 		"eslint-plugin-functional": "^9.0.2",
 		"eslint-plugin-import": "^2.32.0",
 		"eslint-plugin-jsdoc": "^61.5.0",
 		"eslint-plugin-safely-storage": "^1.0.3",
-		"globals": "^16.4.0",
-		"typescript-eslint": "^8.49.0"
+		"globals": "^16.5.0",
+		"typescript-eslint": "^8.50.1"
 	},
 	"peerDependencies": {
 		"@eslint/js": "^9.35.0",

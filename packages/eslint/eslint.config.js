@@ -110,6 +110,7 @@ export default defineConfig(
 			'no-new': 'off',
 			'no-unused-expressions': 'off',
 			'import/no-extraneous-dependencies': 'off',
+			'safely-storage/try-catch': 'off',
 		},
 	},
 	{

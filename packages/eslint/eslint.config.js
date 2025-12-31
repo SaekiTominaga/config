@@ -16,7 +16,6 @@ import configFunctional from './rules/functional.js';
 import configImport from './rules/import.js';
 import configJsdoc from './rules/jsdoc.js';
 
-/** @type {import("eslint").Linter.Config[]} */
 export default defineConfig(
 	eslint.configs.recommended,
 	configEslintPossibleProblems,
@@ -39,9 +38,13 @@ export default defineConfig(
 			globals: globals.nodeBuiltin,
 		},
 		extends: [
+			// @ts-expect-error: ts(2322)
 			pluginFunctional.configs.externalVanillaRecommended,
+			// @ts-expect-error: ts(2322)
 			pluginFunctional.configs.recommended,
+			// @ts-expect-error: ts(2322)
 			pluginFunctional.configs.stylistic,
+			// @ts-expect-error: ts(2322)
 			pluginFunctional.configs.disableTypeChecked,
 		],
 		rules: {

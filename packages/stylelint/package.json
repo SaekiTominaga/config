@@ -20,7 +20,7 @@
 	},
 	"devDependencies": {
 		"stylelint": "^16.26.1",
-		"stylelint-attribute-case-sensitivity": "^2.1.0",
+		"stylelint-attribute-case-sensitivity": "^2.1.2",
 		"stylelint-config-concentric-order": "^5.2.1",
 		"stylelint-config-standard": "^39.0.1",
 		"stylelint-display-multi-keyword": "^1.0.2",
@@ -30,7 +30,7 @@
 	},
 	"peerDependencies": {
 		"stylelint": "^16.23.0",
-		"stylelint-attribute-case-sensitivity": "^2.1.0",
+		"stylelint-attribute-case-sensitivity": "^2.1.2",
 		"stylelint-config-concentric-order": "^5.2.0",
 		"stylelint-config-standard": "^39.0.0",
 		"stylelint-display-multi-keyword": "^1.0.0",

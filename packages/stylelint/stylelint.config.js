@@ -274,6 +274,11 @@ export default {
 		/**
 		 * [plugin] stylelint-root-colors
 		 */
-		'plugin/root-colors': true,
+		'plugin/root-colors': [
+			true,
+			{
+				required: true,
+			},
+		],
 	},
 };

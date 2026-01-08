@@ -115,7 +115,7 @@ export default {
 		// media-feature-name-unit-allowed-list
 		// media-feature-name-value-allowed-list
 		// property-allowed-list
-		'property-disallowed-list': ['overflow-block', 'overflow-inline', 'white-space'],
+		'property-disallowed-list': ['white-space'],
 		// ✅ property-no-vendor-prefix
 		// rule-nesting-at-rule-required-list
 		// rule-selector-property-disallowed-list

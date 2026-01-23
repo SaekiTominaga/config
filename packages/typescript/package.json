@@ -5,15 +5,15 @@
 	"keywords": [
 		"tsconfig"
 	],
-	"license": "MIT",
-	"author": "Saeki Tominaga",
-	"files": [],
-	"type": "module",
-	"main": "tsconfig.json",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
+	"license": "MIT",
+	"author": "Saeki Tominaga",
+	"type": "module",
+	"main": "tsconfig.json",
+	"files": [],
 	"scripts": {
 		"test": "tsc -p __tests__/tsconfig-valid.json",
 		"test:invalid": "tsc -p __tests__/tsconfig-invalid.json"

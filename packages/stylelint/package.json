@@ -6,15 +6,15 @@
 		"stylelint",
 		"stylelint-config"
 	],
-	"license": "MIT",
-	"author": "Saeki Tominaga",
-	"files": [],
-	"type": "module",
-	"main": "stylelint.config.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
+	"license": "MIT",
+	"author": "Saeki Tominaga",
+	"type": "module",
+	"main": "stylelint.config.js",
+	"files": [],
 	"scripts": {
 		"test": "node __tests__/index.test.js"
 	},

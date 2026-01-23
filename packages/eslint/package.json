@@ -8,17 +8,17 @@
 		"eslint-config",
 		"styleguide"
 	],
-	"license": "MIT",
-	"author": "Saeki Tominaga",
-	"files": [
-		"rules"
-	],
-	"type": "module",
-	"main": "eslint.config.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
+	"license": "MIT",
+	"author": "Saeki Tominaga",
+	"type": "module",
+	"main": "eslint.config.js",
+	"files": [
+		"rules"
+	],
 	"scripts": {
 		"pretest": "tsc",
 		"test": "node __tests__/index.test.js",

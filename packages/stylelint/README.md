@@ -30,16 +30,16 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
 - The order of properties within declaration blocks follows [`stylelint-config-concentric-order`](https://github.com/chaucerbao/stylelint-config-concentric-order).
   - 😨 `.foo { padding: 1em; margin: 1em }`
   - 🙂 `.foo { margin: 1em; padding: 1em }`
-- [Multi-keyword syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display) is recommended for the `display` property. The [`stylelint-display-multi-keyword`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/display-multi-keyword) plugin is used.
+- The display property must use [multi keyword syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display).
   - 😨 `display: block`
   - 🙂 `display: block flow`
-- Use of CSS physical properties and values is not recommended. Use [logical properties and values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values). The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
+- Use [logical properties and values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values) instead of physical properties. The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
   - 😨 `margin-top: 1em`
   - 🙂 `margin-block-start: 1em`
   - 😨 `text-align: right`
   - 🙂 `text-align: end`
   - 🙂 `overflow-x: visible` (The `overflow-*` logical properties is not well supported by browsers)
-- Use of CSS physical utils is not recommended. Use logical utils. The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
+- Use logical properties and values instead of physical properties and values. The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
   - 😨 `inline-size: 100lvw`
   - 🙂 `inline-size: 100lvi`
 - Disallow default viewport-percentage units. The [`stylelint-no-default-viewport`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/no-default-viewport) plugin is used.

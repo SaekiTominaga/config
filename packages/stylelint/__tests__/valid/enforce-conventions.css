@@ -43,6 +43,11 @@
 	--_foo1-1: 1;
 }
 
+/* display-notation */
+.display-notation {
+	display: block flow;
+}
+
 /* font-weight-notation */
 .font-weight-notation {
 	font-weight: 500;

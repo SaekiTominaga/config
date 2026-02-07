@@ -1,13 +1,7 @@
 /** @type {import('stylelint').Config} */
 export default {
 	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order'],
-	plugins: [
-		'stylelint-attribute-case-sensitivity',
-		'stylelint-display-multi-keyword',
-		'stylelint-no-default-viewport',
-		'stylelint-plugin-logical-css',
-		'stylelint-root-colors',
-	],
+	plugins: ['stylelint-attribute-case-sensitivity', 'stylelint-no-default-viewport', 'stylelint-plugin-logical-css', 'stylelint-root-colors'],
 	rules: {
 		/**
 		 * Avoid errors
@@ -185,6 +179,7 @@ export default {
 		// ✅ color-function-alias-notation
 		// ✅ color-function-notation
 		// ✅ color-hex-length
+		'display-notation': 'full',
 		'font-weight-notation': 'numeric',
 		// ✅ hue-degree-notation
 		// ✅ import-notation
@@ -260,11 +255,6 @@ export default {
 		 * [plugin] stylelint-attribute-case-sensitivity
 		 */
 		'plugin/attribute-case-sensitivity': true,
-
-		/**
-		 * [plugin] stylelint-display-multi-keyword
-		 */
-		'plugin/display-multi-keyword': true,
 
 		/**
 		 * [plugin] stylelint-no-default-viewport

@@ -9,7 +9,7 @@ test('valid', async (t) => {
 	t.beforeEach(async () => {
 		linterResult = await stylelint.lint({
 			config: config,
-			files: '__tests__/valid/*.css',
+			files: '__tests__/valid/**/*.css',
 		});
 	});
 
@@ -31,7 +31,7 @@ test('invalid', async (t) => {
 	t.beforeEach(async () => {
 		linterResult = await stylelint.lint({
 			config: config,
-			files: '__tests__/invalid/*.css',
+			files: '__tests__/invalid/**/*.css',
 		});
 	});
 

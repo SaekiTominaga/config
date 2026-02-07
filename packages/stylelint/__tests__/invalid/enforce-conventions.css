@@ -36,6 +36,11 @@
 * > * {
 }
 
+/* display-notation */
+.display-notation {
+	display: block;
+}
+
 /* font-weight-notation */
 .font-weight-notation {
 	font-weight: normal;

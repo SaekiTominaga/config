@@ -147,6 +147,17 @@ export default {
 			},
 		},
 		{
+			selector: 'table',
+			rules: {
+				'required-element': {
+					value: ['tbody'],
+					options: {
+						ignoreOmittedElements: true,
+					},
+				},
+			},
+		},
+		{
 			selector: 'thead th',
 			rules: {
 				'required-attr': [

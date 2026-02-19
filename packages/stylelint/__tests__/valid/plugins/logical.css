@@ -1,9 +1,4 @@
-.property {
-	overflow-x: visible;
-	overflow-inline: visible;
-}
-
-.value {
+.keywords {
 	float: inline-start;
 	clear: inline-start;
 	resize: inline;
@@ -11,6 +6,11 @@
 	text-align: start;
 }
 
-.unit {
+.properties {
+	overflow-x: visible;
+	overflow-inline: visible;
+}
+
+.units {
 	inline-size: 10dvi;
 }

@@ -1,4 +1,11 @@
-.property {
+.keywords {
+	float: left;
+	clear: left;
+	resize: horizontal;
+	text-align: left;
+}
+
+.properties {
 	top: 0;
 	margin-top: 0;
 	border-top: 0;
@@ -15,13 +22,6 @@
 	overscroll-behavior-x: auto;
 }
 
-.value {
-	float: left;
-	clear: left;
-	resize: horizontal;
-	text-align: left;
-}
-
-.unit {
+.units {
 	inline-size: 10dvw;
 }

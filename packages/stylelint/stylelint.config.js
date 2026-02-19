@@ -1,7 +1,7 @@
 /** @type {import('stylelint').Config} */
 export default {
-	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order'],
 	plugins: ['stylelint-attribute-case-sensitivity', 'stylelint-no-default-viewport', 'stylelint-plugin-logical-css', 'stylelint-root-colors'],
+	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order', 'stylelint-plugin-logical-css/configs/recommended'],
 	rules: {
 		/**
 		 * Avoid errors
@@ -243,13 +243,12 @@ export default {
 		/**
 		 * [plugin] stylelint-plugin-logical-css
 		 */
-		'plugin/use-logical-properties-and-values': [
+		'logical-css/require-logical-properties': [
 			true,
 			{
 				ignore: ['overflow-x', 'overflow-y'],
 			},
 		],
-		'plugin/use-logical-units': true,
 
 		/**
 		 * [plugin] stylelint-attribute-case-sensitivity

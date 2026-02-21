@@ -16,7 +16,10 @@
 		".": "./tsconfig.json",
 		"./*": "./tsconfig-*.json"
 	},
-	"files": [],
+	"files": [
+		"tsconfig.json",
+		"tsconfig-*.json"
+	],
 	"scripts": {
 		"test": "tsc -p __tests__/tsconfig-valid.json",
 		"test:invalid": "tsc -p __tests__/tsconfig-invalid.json"

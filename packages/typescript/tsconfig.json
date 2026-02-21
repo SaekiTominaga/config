@@ -3,7 +3,6 @@
 		/* Type Checking */
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
-		"alwaysStrict": false,
 		"exactOptionalPropertyTypes": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitOverride": true,

@@ -1,13 +1,14 @@
 /** @type {import('@markuplint/ml-config').Config} */
 export default {
 	rules: {
-		'attr-duplication': true,
-		'deprecated-attr': true,
-		'deprecated-element': true,
+		/* Conformance checking */
+		'attr-duplication': true, // ✅ preset.html-standard
+		'deprecated-attr': true, // ✅ preset.html-standard
+		'deprecated-element': true, // ✅ preset.html-standard
 		'disallowed-element': ['noscript', 'embed'],
-		doctype: true,
-		'heading-levels': true,
-		'id-duplication': true,
+		doctype: true, // ✅ preset.html-standard
+		'heading-levels': true, // ✅ preset.html-standard
+		'id-duplication': true, // ✅ preset.html-standard / preset.a11y
 		'invalid-attr': {
 			options: {
 				allowAttrs: [
@@ -20,41 +21,64 @@ export default {
 				],
 				disallowAttrs: ['accesskey'],
 			},
-		},
-		'no-duplicate-dt': true,
+		}, // ✅ preset.a11y
+		'no-duplicate-dt': true, // ✅ preset.html-standard
 		'no-empty-palpable-content': true,
-		'no-orphaned-end-tag': true,
-		'permitted-contents': true,
-		'placeholder-label-option': true,
-		'require-datetime': true,
-		'required-attr': true,
+		'no-orphaned-end-tag': true, // ✅ preset.html-standard
+		'permitted-contents': true, // ✅ preset.html-standard
+		'placeholder-label-option': true, // ✅ preset.html-standard
+		'require-datetime': true, // ✅ preset.html-standard
+		'required-attr': true, // ✅ preset.html-standard
 		'required-element': false,
-		'label-has-control': true,
+
+		/* Accessibility */
+		'label-has-control': true, // ✅ preset.a11y
 		'landmark-roles': {
 			options: {
 				ignoreRoles: ['complementary'],
 			},
-		},
-		'neighbor-popovers': true,
-		'no-ambiguous-navigable-target-names': true,
-		'no-consecutive-br': true,
-		'no-refer-to-non-existent-id': true,
-		'require-accessible-name': true,
-		'required-h1': true,
-		'table-row-column-alignment': false,
-		'use-list': false,
-		'wai-aria': true,
+		}, // preset.a11y: true
+		'neighbor-popovers': true, // ✅ preset.a11y
+		'no-ambiguous-navigable-target-names': true, // ✅ preset.a11y
+		'no-consecutive-br': true, // ✅ preset.a11y
+		'no-refer-to-non-existent-id': true, // ✅ preset.html-standard / preset.a11y
+		'require-accessible-name': true, // ✅ preset.a11y
+		'required-h1': true, // ✅ preset.a11y
+		'table-row-column-alignment': false, // preset.a11y: true
+		'use-list': false, // preset.a11y: true
+		'wai-aria': true, // ✅ preset.a11y
+
+		/* Naming Convention */
 		'class-naming': false,
+
+		/* Maintenability */
 		'no-hard-code-id': false,
 		'no-use-event-handler-attr': true,
+
+		/* Style */
 		'attr-value-quotes': false,
 		'case-sensitive-attr-name': 'lower',
 		'case-sensitive-tag-name': 'lower',
 		'character-reference': true,
 		'end-tag': true,
-		'ineffective-attr': true,
+		'ineffective-attr': true, // ✅ preset.html-standard
 		'no-boolean-attr-value': false,
 		'no-default-value': true,
+
+		/* v5 */
+		'no-unsupported-features': {
+			options: {
+				checkNonStandard: true,
+			},
+		}, // ✅ preset.compat
+		'redundant-accessible-name': true, // ✅ preset.a11y
+		'require-dialog-autofocus': true, // ✅ preset.a11y
+		'srcset-sizes-constraint': true, // ✅ preset.html-standard
+		'link-types': {
+			options: {
+				allowMicroformats: true,
+			},
+		}, // ✅ preset.html-standard
 	},
 	nodeRules: [
 		{
@@ -65,7 +89,7 @@ export default {
 						ignoreAttrNamePrefix: ['prefix'],
 					},
 				},
-				'required-attr': ['lang'],
+				'required-attr': ['lang'], // ✅ preset.a11y
 			},
 		},
 		{
@@ -82,14 +106,12 @@ export default {
 							},
 							{
 								name: 'content',
-								value: {
-									type: 'NoEmptyAny',
-								},
+								value: 'NoEmptyAny',
 							},
 						],
 					},
 				},
-				'required-attr': false,
+				'required-attr': false, // ✅ preset.rdfa
 			},
 		},
 		{
@@ -126,11 +148,11 @@ export default {
 			rules: {
 				'required-attr': ['alt'],
 			},
-		},
+		}, // https://github.com/markuplint/markuplint/issues/2451
 		{
 			selector: 'iframe',
 			rules: {
-				'required-attr': ['title'],
+				'required-attr': ['title'], // ✅ preset.performance
 			},
 		},
 		{
@@ -145,16 +167,11 @@ export default {
 				'disallowed-element': ['caption'],
 				'require-accessible-name': false,
 			},
-		},
+		}, // ✅ preset.html-standard
 		{
 			selector: 'table',
 			rules: {
-				'required-element': {
-					value: ['tbody'],
-					options: {
-						ignoreOmittedElements: true,
-					},
-				},
+				'required-element': ['tbody'],
 			},
 		},
 		{
@@ -196,7 +213,7 @@ export default {
 					],
 				},
 			},
-		},
+		}, // ✅ preset.html-standard
 		{
 			regexSelector: {
 				nodeName: 'details',
@@ -210,16 +227,18 @@ export default {
 			rules: {
 				'invalid-attr': {
 					options: {
-						disallowAttrs: {
-							name: {
-								pattern: '{{ value }}',
+						disallowAttrs: [
+							{
+								name: 'name',
+								value: {
+									pattern: '{{ value }}',
+								},
 							},
-						},
+						],
 					},
-					reason: 'A document must not contain a details element that is a descendant of another details element in the same details name group.',
 				},
 			},
-		},
+		}, // ✅ preset.html-standard
 		{
 			/* https://github.com/markuplint/markuplint/issues/1948 */
 			selector: 'template *',

@@ -18,7 +18,7 @@
 
 ## `rules`
 
-`markuplint:recommended`（v4.14.1 時点）との差異一覧と、その理由を記す。
+`markuplint:recommended`（v5.0.0-alpha.0 時点）との差異一覧と、その理由を記す。
 
 ### `markuplint:recommended` との差異一覧
 

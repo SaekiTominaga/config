@@ -18,46 +18,46 @@
 
 ## `rules`
 
-`markuplint:recommended`（v4.14.1 時点）との差異一覧と、その理由を記す。
+`markuplint:recommended`（v5.0.0-alpha.0 時点）との差異一覧と、その理由を記す。
 
 ### `markuplint:recommended` との差異一覧
 
 #### Conformance checking
 
-| ルール ID                   | 本設定ファイル                                                                                         | `markuplint:recommended` | 差異                            |
-| --------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------ | ------------------------------- |
-| `attr-duplication`          | `true`                                                                                                 | `true`                   |                                 |
-| `deprecated-attr`           | `true`                                                                                                 | `true`                   |                                 |
-| `deprecated-element`        | `true`                                                                                                 | `true`                   |                                 |
-| `disallowed-element`        | `['noscript', 'embed']`                                                                                | ―                        | [⚠](#disallowed-element)        |
-| `doctype`                   | `true`                                                                                                 | `true`                   |                                 |
-| `heading-levels`            | `true`                                                                                                 | `true`                   |                                 |
-| `id-duplication`            | `true`                                                                                                 | `true`                   |                                 |
-| `invalid-attr`              | `allowAttrs: [ { name: 'tabindex', value: { enum: ['-1', '0'], }, }, ], disallowAttrs: ['accesskey'],` | Same as the left cell    |                                 |
-| `no-duplicate-dt`           | `true`                                                                                                 | `true`                   |                                 |
-| `no-empty-palpable-content` | `true`                                                                                                 | ―                        | [⚠](#no-empty-palpable-content) |
-| `no-orphaned-end-tag`       | `true`                                                                                                 | `true`                   |                                 |
-| `permitted-contents`        | `true`                                                                                                 | `true`                   |                                 |
-| `placeholder-label-option`  | `true`                                                                                                 | `true`                   |                                 |
-| `require-datetime`          | `true`                                                                                                 | `true`                   |                                 |
-| `required-attr`             | `true`                                                                                                 | `true`                   |                                 |
-| `required-element`          | `false`                                                                                                | ―                        |                                 |
+| ルール ID                   | 本設定ファイル                                                                                     | `markuplint:recommended`                | 差異                            |
+| --------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------- |
+| `attr-duplication`          | `true`                                                                                             | `true`                                  |                                 |
+| `deprecated-attr`           | `true`                                                                                             | `true`                                  |                                 |
+| `deprecated-element`        | `true`                                                                                             | `true`                                  |                                 |
+| `disallowed-element`        | `['noscript', 'embed']`                                                                            | ―                                       | [⚠](#disallowed-element)        |
+| `doctype`                   | `true`                                                                                             | `true`                                  |                                 |
+| `heading-levels`            | `true`                                                                                             | `true`                                  |                                 |
+| `id-duplication`            | `true`                                                                                             | `true`                                  |                                 |
+| `invalid-attr`              | `allowAttrs: [ { name: 'tabindex', value: { enum: ['-1', '0'] } } ], disallowAttrs: ['accesskey']` | Approximately the same as the left cell |                                 |
+| `no-duplicate-dt`           | `true`                                                                                             | `true`                                  |                                 |
+| `no-empty-palpable-content` | `true`                                                                                             | ―                                       | [⚠](#no-empty-palpable-content) |
+| `no-orphaned-end-tag`       | `true`                                                                                             | `true`                                  |                                 |
+| `permitted-contents`        | `true`                                                                                             | `true`                                  |                                 |
+| `placeholder-label-option`  | `true`                                                                                             | `true`                                  |                                 |
+| `require-datetime`          | `true`                                                                                             | `true`                                  |                                 |
+| `required-attr`             | `true`                                                                                             | `true`                                  |                                 |
+| `required-element`          | `false`                                                                                            | ―                                       |                                 |
 
 #### Accessibility
 
-| ルール ID                             | 本設定ファイル                       | `markuplint:recommended` | 差異                             |
-| ------------------------------------- | ------------------------------------ | ------------------------ | -------------------------------- |
-| `label-has-control`                   | `true`                               | `true`                   |                                  |
-| `landmark-roles`                      | `{ ignoreRoles: ['complementary'] }` | `true`                   | [⚠](#landmark-roles)             |
-| `neighbor-popovers`                   | `true`                               | `true`                   |                                  |
-| `no-ambiguous-navigable-target-names` | `true`                               | `true`                   |                                  |
-| `no-consecutive-br`                   | `true`                               | `true`                   |                                  |
-| `no-refer-to-non-existent-id`         | `true`                               | `true`                   |                                  |
-| `require-accessible-name`             | `true`                               | `true`                   |                                  |
-| `required-h1`                         | `true`                               | `true`                   |                                  |
-| `table-row-column-alignment`          | `false`                              | `true`                   | [⚠](#table-row-column-alignment) |
-| `use-list`                            | false                                | `true`                   | [⚠](#use-list)                   |
-| `wai-aria`                            | `true`                               | `true`                   |                                  |
+| ルール ID                             | 本設定ファイル                                                     | `markuplint:recommended` | 差異                             |
+| ------------------------------------- | ------------------------------------------------------------------ | ------------------------ | -------------------------------- |
+| `label-has-control`                   | `true`                                                             | `true`                   |                                  |
+| `landmark-roles`                      | `ignoreRoles: ['complementary']`                                   | `true`                   | [⚠](#landmark-roles)             |
+| `neighbor-popovers`                   | `true`                                                             | `true`                   |                                  |
+| `no-ambiguous-navigable-target-names` | `true`                                                             | `true`                   |                                  |
+| `no-consecutive-br`                   | `true`                                                             | `true`                   |                                  |
+| `no-refer-to-non-existent-id`         | `true`                                                             | `true`                   |                                  |
+| `require-accessible-name`             | `true`                                                             | `true`                   |                                  |
+| `required-h1`                         | `true`                                                             | `true`                   |                                  |
+| `table-row-column-alignment`          | `false`                                                            | `true`                   | [⚠](#table-row-column-alignment) |
+| `use-list`                            | `false`                                                            | `true`                   | [⚠](#use-list)                   |
+| `wai-aria`                            | `checkingPresentationalChildren: true, disallowDefaultValue: true` | `true`                   |                                  |
 
 #### Naming Convention
 
@@ -84,6 +84,17 @@
 | `ineffective-attr`         | `true`         | `true`                   |                                |
 | `no-boolean-attr-value`    | `false`        | ―                        |                                |
 | `no-default-value`         | `true`         | ―                        | [⚠](#no-default-value)         |
+
+#### v5 で追加された新しいルール
+
+| ルール ID                   | 本設定ファイル            | `markuplint:recommended` | 差異 |
+| --------------------------- | ------------------------- | ------------------------ | ---- |
+| `no-unsupported-features`   | `checkNonStandard: true`  | Same as the left cell    |      |
+| `redundant-accessible-name` | `true`                    | `true`                   |      |
+| `require-dialog-autofocus`  | `true`                    | `true`                   |      |
+| `srcset-sizes-constraint`   | `true`                    | `true`                   |      |
+| `correct-aspect-ratio`      | ―                         | ―                        |      |
+| `link-types`                | `allowMicroformats: true` | Same as the left cell    |      |
 
 ### 差異のあるルールの理由
 

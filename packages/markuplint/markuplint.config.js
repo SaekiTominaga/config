@@ -46,7 +46,12 @@ export default {
 		'required-h1': true, // ✅ preset.a11y
 		'table-row-column-alignment': false, // preset.a11y: true
 		'use-list': false, // preset.a11y: true
-		'wai-aria': true, // ✅ preset.a11y
+		'wai-aria': {
+			options: {
+				checkingPresentationalChildren: true,
+				disallowDefaultValue: true,
+			},
+		}, // ✅ preset.a11y
 
 		/* Naming Convention */
 		'class-naming': false,

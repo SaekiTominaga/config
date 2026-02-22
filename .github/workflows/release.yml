@@ -46,9 +46,7 @@ jobs:
             npm_tag="latest"
           fi
 
-          echo "package=$package" >> "$GITHUB_OUTPUT"
-          echo "version=$version" >> "$GITHUB_OUTPUT"
-          echo "npm-tag=$npm_tag" >> "$GITHUB_OUTPUT"
+          echo "package=$package" "version=$version" "npm-tag=$npm_tag" >> "$GITHUB_OUTPUT"
 
           npm version "$version" -w "$package" --no-git-tag-version
 

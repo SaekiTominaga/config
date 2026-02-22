@@ -41,15 +41,15 @@ jobs:
           version="${tag##*@}"
           if [[ "$version" =~ -([a-z]+)\. ]]; then
             prerelease="${BASH_REMATCH[1]}"
-            npm_tag="${prerelease^}"
+            npmtag="${prerelease^}"
           else
-            npm_tag="latest"
+            npmtag="latest"
           fi
 
           {
             echo "package=$package"
             echo "version=$version"
-            echo "npm-tag=$npm_tag"
+            echo "npmtag=$npmtag"
           } >> "$GITHUB_OUTPUT"
 
           npm version "$version" -w "$package" --no-git-tag-version
@@ -62,4 +62,4 @@ jobs:
           git push
 
       - name: Publish
-        run: npm publish --provenance --tag ${{ steps.extract.outputs.npm-tag }} -w ${{ steps.extract.outputs.package }}
+        run: npm publish --provenance --tag ${{ steps.extract.outputs.npmtag }} -w ${{ steps.extract.outputs.package }}

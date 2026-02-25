@@ -18,7 +18,7 @@
 
 ## `rules`
 
-`markuplint:recommended`（v5.0.0-alpha.0 時点）との差異一覧と、その理由を記す。
+`markuplint:recommended`（v5.0.0-alpha.2 時点）との差異一覧と、その理由を記す。
 
 ### `markuplint:recommended` との差異一覧
 
@@ -48,7 +48,7 @@
 | ルール ID                             | 本設定ファイル                                                     | `markuplint:recommended` | 差異                             |
 | ------------------------------------- | ------------------------------------------------------------------ | ------------------------ | -------------------------------- |
 | `label-has-control`                   | `true`                                                             | `true`                   |                                  |
-| `landmark-roles`                      | `ignoreRoles: ['complementary']`                                   | `true`                   | [⚠](#landmark-roles)             |
+| `landmark-roles`                      | `true`                                                             | `true`                   |                                  |
 | `neighbor-popovers`                   | `true`                                                             | `true`                   |                                  |
 | `no-ambiguous-navigable-target-names` | `true`                                                             | `true`                   |                                  |
 | `no-consecutive-br`                   | `true`                                                             | `true`                   |                                  |
@@ -111,12 +111,6 @@
 #### [`no-empty-palpable-content`](https://markuplint.dev/ja/docs/rules/no-empty-palpable-content)
 
 `markuplint:recommended` ではこのルールは有効化されていないが、当サイトでは `<div></div>` のように `<div>` 要素や `<span>` 要素の中身を空にすることはないため有効にしている。
-
-#### [`landmark-roles`](https://markuplint.dev/ja/docs/rules/landmark-roles)
-
-このルールを有効化すると `<aside>` 要素はトップレベルに配置しなければならないと警告される。しかし2022年に HTML Accessibility API Mappings 仕様が改訂され、2023年〜2024年にかけて各ブラウザの対応も進んだため、トップレベル配置にこだわる必要は薄まった。このため `complementary` ロールのチェックを除外設定している。
-
-ちなみに Axe では2021年の axe-core 4.2 にて [`<main>` 要素内に `<aside>` 要素を配置できるようになり](https://github.com/dequelabs/axe-core/pull/2740)、さらに [`landmark-complementary-is-top-level` ルールそのものを廃止する提案](https://github.com/dequelabs/axe-core/issues/4950)も提出されている。
 
 #### [`table-row-column-alignment`](https://markuplint.dev/ja/docs/rules/table-row-column-alignment)
 

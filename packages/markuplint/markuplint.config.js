@@ -33,11 +33,7 @@ export default {
 
 		/* Accessibility */
 		'label-has-control': true, // ✅ preset.a11y
-		'landmark-roles': {
-			options: {
-				ignoreRoles: ['complementary'],
-			},
-		}, // preset.a11y: true
+		'landmark-roles': true, // ✅ preset.a11y
 		'neighbor-popovers': true, // ✅ preset.a11y
 		'no-ambiguous-navigable-target-names': true, // ✅ preset.a11y
 		'no-consecutive-br': true, // ✅ preset.a11y

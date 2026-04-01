@@ -25,7 +25,7 @@
 		"lint": "eslint __tests__/valid/**/*.{js,ts} __tests__/*.test.js rules/**/*.js eslint.config.js"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.39.2",
+		"@eslint/js": "^9.39.4",
 		"@types/node": "^24.10.4",
 		"eslint": "^9.39.2",
 		"eslint-plugin-functional": "^9.0.2",

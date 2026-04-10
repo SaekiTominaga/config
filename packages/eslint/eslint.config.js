@@ -89,6 +89,7 @@ export default defineConfig(
 					allowString: false,
 				},
 			],
+			'@typescript-eslint/strict-void-return': 'error',
 			'@typescript-eslint/switch-exhaustiveness-check': [
 				'error',
 				{

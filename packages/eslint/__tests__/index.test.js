@@ -53,6 +53,7 @@ test('invalid', async (t) => {
 				'@typescript-eslint/strict-boolean-expressions',
 				'@typescript-eslint/strict-boolean-expressions',
 				'@typescript-eslint/strict-boolean-expressions',
+				'@typescript-eslint/strict-void-return',
 				'array-callback-return',
 				'consistent-return',
 				'constructor-super',

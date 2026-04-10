@@ -38,13 +38,9 @@ export default defineConfig(
 			globals: globals.nodeBuiltin,
 		},
 		extends: [
-			// @ts-expect-error: ts(2322)
 			pluginFunctional.configs.externalVanillaRecommended,
-			// @ts-expect-error: ts(2322)
 			pluginFunctional.configs.recommended,
-			// @ts-expect-error: ts(2322)
 			pluginFunctional.configs.stylistic,
-			// @ts-expect-error: ts(2322)
 			pluginFunctional.configs.disableTypeChecked,
 		],
 		rules: {
@@ -93,6 +89,7 @@ export default defineConfig(
 					allowString: false,
 				},
 			],
+			'@typescript-eslint/strict-void-return': 'error',
 			'@typescript-eslint/switch-exhaustiveness-check': [
 				'error',
 				{

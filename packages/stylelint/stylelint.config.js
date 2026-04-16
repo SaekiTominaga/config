@@ -11,6 +11,7 @@ export default {
 		// ✅ declaration-property-value-keyword-no-deprecated
 		// ✅ media-type-no-deprecated
 		// ✅ property-no-deprecated
+		'selector-no-deprecated': true,
 
 		/* Descending */
 		'no-descending-specificity': null, // ✅

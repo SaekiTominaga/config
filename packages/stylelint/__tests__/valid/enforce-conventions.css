@@ -30,6 +30,13 @@
 	fill: currentColor;
 }
 
+/* property-layout-mappings */
+.property-layout-mappings {
+	margin-inline-start: 0;
+	overflow-x: visible;
+	overflow-inline: visible;
+}
+
 /* selector-max-universal */
 * {
 }

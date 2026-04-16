@@ -51,8 +51,8 @@
 	font-weight: normal;
 }
 
-/* selector-nested-pattern */
-.selector-nested-pattern {
+/* relative-selector-nesting-notation */
+.relative-selector-nesting-notation {
 	.foo {
 	}
 }

@@ -194,6 +194,7 @@ export default {
 		// ✅ keyframe-selector-notation
 		// ✅ lightness-notation
 		// ✅ media-feature-range-notation
+		'relative-selector-nesting-notation': 'explicit',
 		// ✅ selector-not-notation
 		// ✅ selector-pseudo-element-colon-notation
 
@@ -206,7 +207,7 @@ export default {
 		// ✅ layer-name-pattern
 		// ✅ selector-class-pattern
 		// ✅ selector-id-pattern
-		'selector-nested-pattern': /&/,
+		// selector-nested-pattern
 
 		/* Quotes */
 		// ✅ font-family-name-quotes

@@ -25,10 +25,10 @@
 		"test:invalid": "tsc -p __tests__/tsconfig-invalid.json"
 	},
 	"devDependencies": {
-		"typescript": "^5.9.3"
+		"typescript": "^6.0.2"
 	},
 	"peerDependencies": {
-		"typescript": "^5.8.0"
+		"typescript": "^6.0.0"
 	},
 	"publishConfig": {
 		"access": "public"

@@ -2,7 +2,7 @@
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
 		/* Modules */
-		"module": "es2022",
+		"module": "esnext", // default <https://www.typescriptlang.org/docs/handbook/release-notes/typescript-6-0.html#simple-default-changes>
 		"moduleResolution": "bundler"
 	}
 }

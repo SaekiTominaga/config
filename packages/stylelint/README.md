@@ -41,8 +41,8 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
   - 😨 `text-align: right`
   - 🙂 `text-align: end`
 - Use logical units instead of physical units. The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
-  - 😨 `inline-size: 100lvw`
-  - 🙂 `inline-size: 100lvi`
+  - 😨 `inline-size: 10lvw`
+  - 🙂 `inline-size: 10lvi`
 - Disallow default viewport-percentage units. The [`stylelint-no-default-viewport`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/no-default-viewport) plugin is used.
   - 😨 `inline-size: 10vi`
   - 🙂 `inline-size: 10lvi`

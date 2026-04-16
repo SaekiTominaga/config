@@ -157,7 +157,7 @@ export default {
 		'property-layout-mappings': [
 			'flow-relative',
 			{
-				ignoreProperties: ['overflow-x', 'overflow-y'], // for Safari 18.7
+				ignoreProperties: ['overflow-x', 'overflow-y'], // for Safari 18.7-
 			},
 		],
 

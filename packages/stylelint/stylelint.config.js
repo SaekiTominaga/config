@@ -153,6 +153,14 @@ export default {
 		// ✅ declaration-empty-line-before
 		// ✅ rule-empty-line-before
 
+		/* Layout mappings */
+		'property-layout-mappings': [
+			'flow-relative',
+			{
+				ignoreProperties: ['overflow-x', 'overflow-y'], // for Safari 18.7
+			},
+		],
+
 		/* Max & min */
 		// ✅ declaration-block-single-line-max-declarations
 		// declaration-property-max-values
@@ -243,12 +251,7 @@ export default {
 		/**
 		 * [plugin] stylelint-plugin-logical-css
 		 */
-		'logical-css/require-logical-properties': [
-			true,
-			{
-				ignore: ['overflow-x', 'overflow-y'],
-			},
-		],
+		'logical-css/require-logical-properties': null,
 
 		/**
 		 * [plugin] stylelint-attribute-case-sensitivity

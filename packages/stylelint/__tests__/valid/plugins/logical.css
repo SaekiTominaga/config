@@ -2,13 +2,8 @@
 	float: inline-start;
 	clear: inline-start;
 	resize: inline;
-	caption-side: top;
+	caption-side: top; /* https://github.com/yuschick/stylelint-plugin-logical-css/issues/30 */
 	text-align: start;
-}
-
-.properties {
-	overflow-x: visible;
-	overflow-inline: visible;
 }
 
 .units {

@@ -19,16 +19,16 @@
 		"test": "node __tests__/index.test.js"
 	},
 	"devDependencies": {
-		"stylelint": "^17.3.0",
+		"stylelint": "^17.8.0",
 		"stylelint-attribute-case-sensitivity": "^3.0.1",
-		"stylelint-config-concentric-order": "^5.3.0",
+		"stylelint-config-concentric-order": "^5.5.0",
 		"stylelint-config-standard": "^40.0.0",
 		"stylelint-no-default-viewport": "^2.0.1",
-		"stylelint-plugin-logical-css": "^2.0.2",
+		"stylelint-plugin-logical-css": "^2.1.0",
 		"stylelint-root-colors": "^3.0.1"
 	},
 	"peerDependencies": {
-		"stylelint": "^17.1.1",
+		"stylelint": "^17.8.0",
 		"stylelint-attribute-case-sensitivity": "^3.0.0",
 		"stylelint-config-concentric-order": "^5.3.0",
 		"stylelint-config-standard": "^40.0.0",

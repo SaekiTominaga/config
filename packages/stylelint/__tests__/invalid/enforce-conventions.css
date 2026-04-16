@@ -28,6 +28,11 @@
 	background-image: url("//example.com/file.jpg");
 }
 
+/* property-layout-mappings */
+.property-layout-mappings {
+	margin-left: 0;
+}
+
 /* selector-max-id */
 #selector-max-id {
 }
@@ -46,8 +51,8 @@
 	font-weight: normal;
 }
 
-/* selector-nested-pattern */
-.selector-nested-pattern {
+/* relative-selector-nesting-notation */
+.relative-selector-nesting-notation {
 	.foo {
 	}
 }

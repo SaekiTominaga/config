@@ -5,23 +5,6 @@
 	text-align: left;
 }
 
-.properties {
-	top: 0;
-	margin-top: 0;
-	border-top: 0;
-	border-right-width: 0;
-	border-right-style: none;
-	border-top-right-radius: 0;
-	padding-top: 0;
-	width: 0;
-	min-width: 0;
-	max-width: 0;
-	height: 0;
-	min-height: 0;
-	max-height: 0;
-	overscroll-behavior-x: auto;
-}
-
 .units {
 	inline-size: 10dvw;
 }

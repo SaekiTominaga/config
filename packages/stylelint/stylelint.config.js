@@ -11,6 +11,7 @@ export default {
 		// ✅ declaration-property-value-keyword-no-deprecated
 		// ✅ media-type-no-deprecated
 		// ✅ property-no-deprecated
+		'selector-no-deprecated': true,
 
 		/* Descending */
 		'no-descending-specificity': null, // ✅
@@ -153,6 +154,14 @@ export default {
 		// ✅ declaration-empty-line-before
 		// ✅ rule-empty-line-before
 
+		/* Layout mappings */
+		'property-layout-mappings': [
+			'flow-relative',
+			{
+				ignoreProperties: ['overflow-x', 'overflow-y'], // for Safari 18.7-
+			},
+		],
+
 		/* Max & min */
 		// ✅ declaration-block-single-line-max-declarations
 		// declaration-property-max-values
@@ -186,6 +195,7 @@ export default {
 		// ✅ keyframe-selector-notation
 		// ✅ lightness-notation
 		// ✅ media-feature-range-notation
+		'relative-selector-nesting-notation': 'explicit',
 		// ✅ selector-not-notation
 		// ✅ selector-pseudo-element-colon-notation
 
@@ -198,7 +208,7 @@ export default {
 		// ✅ layer-name-pattern
 		// ✅ selector-class-pattern
 		// ✅ selector-id-pattern
-		'selector-nested-pattern': /&/,
+		// selector-nested-pattern
 
 		/* Quotes */
 		// ✅ font-family-name-quotes
@@ -243,12 +253,7 @@ export default {
 		/**
 		 * [plugin] stylelint-plugin-logical-css
 		 */
-		'logical-css/require-logical-properties': [
-			true,
-			{
-				ignore: ['overflow-x', 'overflow-y'],
-			},
-		],
+		'logical-css/require-logical-properties': null,
 
 		/**
 		 * [plugin] stylelint-attribute-case-sensitivity

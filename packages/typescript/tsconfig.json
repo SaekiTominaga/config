@@ -11,22 +11,18 @@
 		"noUncheckedIndexedAccess": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"strict": true,
 
 		/* Modules */
 		"rewriteRelativeImportExtensions": true,
 
-		/* Emit */
-		"newLine": "lf",
-
 		/* Interop Constraints */
 		"erasableSyntaxOnly": true,
-		"esModuleInterop": true,
+		"esModuleInterop": true, // default <https://www.typescriptlang.org/docs/handbook/release-notes/typescript-6-0.html#deprecated---esmoduleinterop-false-and---allowsyntheticdefaultimports-false>
 		"forceConsistentCasingInFileNames": true,
 		"verbatimModuleSyntax": true,
 
 		/* Language and Environment */
-		"target": "es2024",
+		"target": "es2025",
 
 		/* Projects */
 		"incremental": true,

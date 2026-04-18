@@ -63,7 +63,7 @@ export default {
 		'import/newline-after-import': 'error',
 		/* import/no-anonymous-default-export */
 		/* import/no-default-export */
-		/* ✅ import/no-duplicates */
+		'import/no-duplicates': 'off', // ✅ → no-duplicate-imports
 		'import/no-named-default': 'error',
 		/* import/no-named-export */
 		/* import/no-namespace */

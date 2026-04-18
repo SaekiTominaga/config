@@ -36,7 +36,6 @@ export default {
 			},
 		], // ✅
 		'no-empty-function': 'error',
-		'no-empty-static-block': 'error',
 		'no-eval': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-extend-native': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-extra-bind': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
@@ -59,12 +58,7 @@ export default {
 		'no-new-wrappers': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-object-constructor': 'error',
 		'no-octal-escape': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
-		'no-param-reassign': [
-			'error',
-			{
-				props: false,
-			},
-		],
+		'no-param-reassign': 'error',
 		'no-plusplus': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-proto': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-restricted-globals': ['error', 'isFinite', 'isNaN'], // eslint-config-airbnb-base@15.0.0; variables
@@ -82,14 +76,7 @@ export default {
 				defaultAssignment: false,
 			},
 		], // eslint-config-airbnb-base@15.0.0; style
-		'no-unused-expressions': [
-			'error',
-			{
-				allowShortCircuit: false,
-				allowTernary: false,
-				allowTaggedTemplates: false,
-			},
-		], // eslint-config-airbnb-base@15.0.0; best-practices
+		'no-unused-expressions': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-use-before-define': 'error', // eslint-config-airbnb-base@15.0.0; variables
 		'no-useless-computed-key': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'no-useless-constructor': 'error', // eslint-config-airbnb-base@15.0.0; es6
@@ -101,12 +88,11 @@ export default {
 		'no-void': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'object-shorthand': ['error', 'methods'],
 		'one-var': ['error', 'never'], // eslint-config-airbnb-base@15.0.0; style
-		'operator-assignment': ['error', 'always'], // eslint-config-airbnb-base@15.0.0; style
+		'operator-assignment': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'prefer-arrow-callback': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		'prefer-const': [
 			'error',
 			{
-				destructuring: 'any',
 				ignoreReadBeforeAssign: true,
 			},
 		], // eslint-config-airbnb-base@15.0.0; es6

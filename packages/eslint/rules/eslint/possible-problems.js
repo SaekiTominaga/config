@@ -8,7 +8,7 @@ export default {
 			},
 		], // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-await-in-loop': 'error', // eslint-config-airbnb-base@15.0.0; errors
-		'no-cond-assign': ['error', 'always'], // eslint-config-airbnb-base@15.0.0; errors
+		'no-cond-assign': ['error', 'always'], // ✅ eslint-config-airbnb-base@15.0.0; errors
 		'no-console': 'warn', // eslint-config-airbnb-base@15.0.0; errors
 		'no-continue': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-constructor-return': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
@@ -20,7 +20,7 @@ export default {
 				skipRegExps: true,
 				skipTemplates: true,
 			},
-		],
+		], // ✅
 		'no-promise-executor-return': 'error', // eslint-config-airbnb-base@15.0.0; errors
 		'no-self-compare': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'no-template-curly-in-string': 'error', // eslint-config-airbnb-base@15.0.0; errors
@@ -31,14 +31,13 @@ export default {
 			{
 				disallowArithmeticOperators: true,
 			},
-		], // eslint-config-airbnb-base@15.0.0; errors
-		'no-unused-vars': 'error',
+		], // ✅ eslint-config-airbnb-base@15.0.0; errors
 		'no-useless-assignment': 'error', // ESLint 10 recommended candidate https://github.com/eslint/eslint/issues/19966
 		'valid-typeof': [
 			'error',
 			{
 				requireStringLiterals: true,
 			},
-		], // eslint-config-airbnb-base@15.0.0; errors
+		], // ✅ eslint-config-airbnb-base@15.0.0; errors
 	},
 };

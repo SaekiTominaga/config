@@ -7,7 +7,7 @@ export default {
 				position: 'beside',
 				ignorePattern: '@ts-',
 			},
-		],
+		], // ❌ deprecated
 		'unicode-bom': 'error',
 	},
 };

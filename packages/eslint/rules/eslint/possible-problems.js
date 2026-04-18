@@ -12,6 +12,7 @@ export default {
 		'no-console': 'warn', // eslint-config-airbnb-base@15.0.0; errors
 		'no-continue': 'error', // eslint-config-airbnb-base@15.0.0; style
 		'no-constructor-return': 'error', // eslint-config-airbnb-base@15.0.0; best-practices
+		'no-duplicate-imports': 'error',
 		'no-irregular-whitespace': [
 			'error',
 			{

@@ -1,3 +1,5 @@
+export type TypeSample = 'foo';
+
 /**
  * @returns empty string
  */

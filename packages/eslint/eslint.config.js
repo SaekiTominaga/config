@@ -74,12 +74,7 @@ export default defineConfig(
 				},
 			],
 			'import/no-unresolved': 'off',
-			'@typescript-eslint/no-unused-vars': [
-				'error',
-				{
-					caughtErrors: 'none',
-				},
-			],
+			'@typescript-eslint/no-unused-vars': 'error',
 			'@typescript-eslint/strict-boolean-expressions': [
 				'error',
 				{

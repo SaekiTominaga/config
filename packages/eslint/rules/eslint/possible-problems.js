@@ -32,12 +32,7 @@ export default {
 				disallowArithmeticOperators: true,
 			},
 		], // eslint-config-airbnb-base@15.0.0; errors
-		'no-unused-vars': [
-			'error',
-			{
-				caughtErrors: 'none',
-			},
-		],
+		'no-unused-vars': 'error',
 		'no-useless-assignment': 'error', // ESLint 10 recommended candidate https://github.com/eslint/eslint/issues/19966
 		'valid-typeof': [
 			'error',

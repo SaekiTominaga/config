@@ -94,6 +94,7 @@ test('invalid', async (t) => {
 				'prefer-const',
 				'require-unicode-regexp',
 				'safely-storage/try-catch',
+				'sort-imports',
 				'unicode-bom',
 				'valid-typeof',
 			],

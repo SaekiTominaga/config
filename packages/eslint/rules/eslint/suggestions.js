@@ -127,6 +127,12 @@ export default {
 		radix: 'error', // eslint-config-airbnb-base@15.0.0; best-practices
 		'require-await': 'error',
 		'require-unicode-regexp': 'error',
+		'sort-imports': [
+			'error',
+			{
+				ignoreDeclarationSort: true,
+			},
+		],
 		strict: 'error',
 		'symbol-description': 'error', // eslint-config-airbnb-base@15.0.0; es6
 		yoda: 'error', // eslint-config-airbnb-base@15.0.0; best-practices

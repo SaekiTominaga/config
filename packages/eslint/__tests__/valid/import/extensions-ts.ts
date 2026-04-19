@@ -1,3 +1,3 @@
-import { exportSample } from '../@export-sample-ts.ts';
+import { func1 } from '../@export-sample-ts.ts';
 
-exportSample();
+func1();

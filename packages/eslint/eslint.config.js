@@ -74,6 +74,7 @@ export default defineConfig(
 				},
 			],
 			'import/no-unresolved': 'off',
+			'@typescript-eslint/consistent-type-imports': 'error',
 			'@typescript-eslint/no-unused-vars': 'error',
 			'@typescript-eslint/strict-boolean-expressions': [
 				'error',

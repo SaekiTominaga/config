@@ -1,3 +1,3 @@
-import { exportSample } from '../@export-sample-js.js';
+import { func1 } from '../@export-sample-js.js';
 
-exportSample();
+func1();

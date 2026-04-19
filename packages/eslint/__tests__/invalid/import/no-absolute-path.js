@@ -1,3 +1,3 @@
-import { exportSample } from '/__tests__/invalid/import/@export-sample-js.js';
+import { func1 } from '/__tests__/invalid/import/@export-sample-js.js';
 
-export default exportSample;
+export default func1;

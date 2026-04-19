@@ -1,6 +1,6 @@
-import { exportSample } from './@export-sample-ts.ts';
-import type { TypeSample } from './@export-sample-ts.ts';
+import { func1 } from './@export-sample-ts.ts';
+import type { Type1 } from './@export-sample-ts.ts';
 
-exportSample();
+func1();
 
-export const foo: TypeSample = 'foo';
+export const foo: Type1 = 'foo';

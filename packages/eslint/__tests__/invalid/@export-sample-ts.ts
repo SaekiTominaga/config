@@ -1,12 +1,17 @@
-export type TypeSample = 'foo';
+export type Type1 = 'foo';
 
-/**
- * @returns empty string
- */
-export const exportSample = () => '';
+export const func1 = () => '';
 
 /**
  * @deprecated need to restart the experiment
  * @returns empty string
  */
-export const deprecatedSample = () => '';
+export const funcDeprecated = () => '';
+
+export class Class1 {
+	readonly #foo = 'foo';
+
+	get foo() {
+		return this.#foo;
+	}
+}

@@ -1,4 +1,4 @@
-import { exportSample, exportSample as exportSample2 } from '../@export-sample-js.js';
+import { func1, func1 as func11 } from '../@export-sample-js.js';
 
-export const bar1 = exportSample();
-export const bar2 = exportSample2();
+export const bar1 = func1();
+export const bar2 = func11();

@@ -1,4 +1,4 @@
-import { exportSample as bFunc, exportSample2 as aFunc } from './@export-sample-js.js'; // ignoreMemberSort
+import { func1 as funcB, func2 as funcA } from './@export-sample-js.js'; // ignoreMemberSort
 
-export const a = aFunc();
-export const b = bFunc();
+export const a = funcA();
+export const b = funcB();

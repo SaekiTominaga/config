@@ -1,0 +1,9 @@
+.flex-wrap {
+	display: block flex;
+	flex-wrap: wrap;
+}
+
+.flex-nowrap {
+	display: block flex;
+	flex-wrap: nowrap;
+}

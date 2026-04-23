@@ -27,9 +27,6 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
 - Disallow `!important` within declarations.
   - 😨 `color: #000 !important`
   - 🙂 `color: #000`
-- The order of properties within declaration blocks follows [`stylelint-config-concentric-order`](https://github.com/chaucerbao/stylelint-config-concentric-order).
-  - 😨 `.foo { padding: 1em; margin: 1em }`
-  - 🙂 `.foo { margin: 1em; padding: 1em }`
 - The display property must use [multi keyword syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display).
   - 😨 `display: block`
   - 🙂 `display: block flow`
@@ -52,9 +49,15 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
 - The `font-weight` value must be numbers.
   - 😨 `font-weight: normal`
   - 🙂 `font-weight: 500 /* Windows + Yu Gothic measures to be greater than 400 */`
-- For the root element, `color` and `background-color` must be specified as a set. See [`stylelint-root-colors`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/root-colors) for details.
+- Flex containers require an explicit `flex-wrap` property. The [`stylelint-plugin-defensive-css`](https://github.com/yuschick/stylelint-plugin-defensive-css) plugin is used.
+  - 😨 `display: block flex`
+  - 🙂 `display: block flex; flex-wrap: nowrap`
+- For the root element, `color` and `background-color` must be specified as a set. The [`stylelint-root-colors`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/root-colors) plugin is used.
   - 😨 `:root { color: #000 }`
   - 🙂 `:root { background-color: #fff; color: #000 }`
+- The order of properties within declaration blocks follows [`stylelint-config-concentric-order`](https://github.com/chaucerbao/stylelint-config-concentric-order).
+  - 😨 `.foo { padding: 1em; margin: 1em }`
+  - 🙂 `.foo { margin: 1em; padding: 1em }`
 
 See [source code](https://github.com/SaekiTominaga/config/blob/main/packages/stylelint/stylelint.config.js) for other details.
 

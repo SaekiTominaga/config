@@ -1,6 +1,12 @@
 /** @type {import('stylelint').Config} */
 export default {
-	plugins: ['stylelint-attribute-case-sensitivity', 'stylelint-no-default-viewport', 'stylelint-plugin-logical-css', 'stylelint-root-colors'],
+	plugins: [
+		'stylelint-attribute-case-sensitivity',
+		'stylelint-no-default-viewport',
+		'stylelint-plugin-defensive-css',
+		'stylelint-plugin-logical-css',
+		'stylelint-root-colors',
+	],
 	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order', 'stylelint-plugin-logical-css/configs/recommended'],
 	rules: {
 		/**
@@ -224,7 +230,7 @@ export default {
 		// ✅ comment-whitespace-inside
 
 		/**
-		 * stylelint-order
+		 * [plugin] stylelint-order
 		 */
 		'order/order': [
 			[
@@ -249,6 +255,11 @@ export default {
 			],
 			{ unspecified: 'bottom' },
 		],
+
+		/**
+		 * [plugin] stylelint-plugin-defensive-css
+		 */
+		'defensive-css/require-flex-wrap': true,
 
 		/**
 		 * [plugin] stylelint-plugin-logical-css

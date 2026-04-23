@@ -28,6 +28,11 @@
 	background-image: url("//example.com/file.jpg");
 }
 
+/* property-disallowed-list */
+.property-disallowed-list {
+	white-space: nowrap;
+}
+
 /* property-layout-mappings */
 .property-layout-mappings {
 	margin-left: 0;
@@ -55,4 +60,10 @@
 .relative-selector-nesting-notation {
 	.foo {
 	}
+}
+
+/* declaration-block-no-redundant-longhand-properties */
+.declaration-block-no-redundant-longhand-properties {
+	padding-block-start: 10px;
+	padding-block-end: 10px;
 }

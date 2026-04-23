@@ -27,6 +27,9 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
 - Disallow `!important` within declarations.
   - 😨 `color: #000 !important`
   - 🙂 `color: #000`
+- Disallow complex shorthand properties such as `background` and `font`.
+  - 😨 `white-space: pre-wrap`
+  - 🙂 `white-space-collapse: preserve`
 - The display property must use [multi keyword syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display).
   - 😨 `display: block`
   - 🙂 `display: block flow`
@@ -43,9 +46,6 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
 - Disallow default viewport-percentage units. The [`stylelint-no-default-viewport`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/no-default-viewport) plugin is used.
   - 😨 `inline-size: 10vi`
   - 🙂 `inline-size: 10lvi`
-- Do not use `white-space` shorthand property because its definition became complex in [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/#white-space-property).
-  - 😨 `white-space: pre-wrap`
-  - 🙂 `white-space-collapse: preserve;`
 - The `font-weight` value must be numbers.
   - 😨 `font-weight: normal`
   - 🙂 `font-weight: 500 /* Windows + Yu Gothic measures to be greater than 400 */`

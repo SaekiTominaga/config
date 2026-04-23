@@ -25,6 +25,11 @@
 	color: #010101;
 }
 
+/* property-disallowed-list */
+.property-disallowed-list {
+	white-space-collapse: preserve;
+}
+
 /* value-keyword-case */
 .value-keyword-case {
 	fill: currentColor;
@@ -64,4 +69,15 @@
 .relative-selector-nesting-notation {
 	&.foo {
 	}
+}
+
+/* declaration-block-no-redundant-longhand-properties */
+.declaration-block-no-redundant-longhand-properties {
+	line-height: 1;
+	font-family: serif;
+	font-size: 10px;
+	font-stretch: condensed;
+	font-weight: 100;
+	font-variant: small-caps;
+	font-style: italic;
 }

@@ -1,3 +1,20 @@
+const disallowedShothands = [
+	'animation',
+	'background',
+	'caret',
+	'font',
+	'flex',
+	'flex-flow',
+	'mask',
+	'mask-border',
+	'list-style',
+	'scroll-timeline',
+	'text-decoration',
+	'text-emphasis',
+	'transition',
+	'white-space',
+];
+
 /** @type {import('stylelint').Config} */
 export default {
 	plugins: [
@@ -116,7 +133,7 @@ export default {
 		// media-feature-name-unit-allowed-list
 		// media-feature-name-value-allowed-list
 		// property-allowed-list
-		'property-disallowed-list': ['white-space'],
+		'property-disallowed-list': [...disallowedShothands],
 		// ✅ property-no-vendor-prefix
 		// rule-nesting-at-rule-required-list
 		// rule-selector-property-disallowed-list
@@ -223,7 +240,12 @@ export default {
 
 		/* Redundant */
 		// ✅ block-no-redundant-nested-style-rules
-		// ✅ declaration-block-no-redundant-longhand-properties
+		'declaration-block-no-redundant-longhand-properties': [
+			true,
+			{
+				ignoreShorthands: disallowedShothands,
+			},
+		], // ✅
 		// ✅ shorthand-property-no-redundant-values
 
 		/* Whitespace inside */

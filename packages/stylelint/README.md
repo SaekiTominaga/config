@@ -46,7 +46,10 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
 - Disallow default viewport-percentage units. The [`stylelint-no-default-viewport`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/no-default-viewport) plugin is used.
   - 😨 `inline-size: 10vi`
   - 🙂 `inline-size: 10lvi`
-- The `font-weight` value must be numbers.
+- The `text-indent` value must be 0 or greater.
+  - 😨 `margin-inline-start: 1em; text-indent: -1em`
+  - 🙂 `text-indent: 1em hanging`
+- The `font-weight` value must be a number.
   - 😨 `font-weight: normal`
   - 🙂 `font-weight: 500 /* Windows + Yu Gothic measures to be greater than 400 */`
 - Flex containers require an explicit `flex-wrap` property. The [`stylelint-plugin-defensive-css`](https://github.com/yuschick/stylelint-plugin-defensive-css) plugin is used.

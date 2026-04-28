@@ -2,12 +2,12 @@ const disallowedShothands = [
 	'animation',
 	'background',
 	'caret',
-	'font',
 	'flex',
 	'flex-flow',
+	'font',
+	'list-style',
 	'mask',
 	'mask-border',
-	'list-style',
 	'scroll-timeline',
 	'text-decoration',
 	'text-emphasis',
@@ -120,7 +120,9 @@ export default {
 		},
 		// declaration-property-unit-disallowed-list
 		// declaration-property-value-allowed-list
-		// declaration-property-value-disallowed-list
+		'declaration-property-value-disallowed-list': {
+			'text-indent': ['/^-/'], // Use `hanging` keyword instead
+		},
 		// function-allowed-list
 		// function-disallowed-list
 		'function-url-no-scheme-relative': true,

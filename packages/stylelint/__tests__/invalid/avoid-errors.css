@@ -1,3 +1,7 @@
 /* selector-no-deprecated */
 :focus-ring {
 }
+
+/* selector-no-invalid */
+[.selector-no-invalid] {
+}

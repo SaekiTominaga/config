@@ -62,6 +62,7 @@ export default {
 		// ✅ no-invalid-double-slash-comments
 		// ✅ no-invalid-position-at-import-rule
 		// ✅ no-invalid-position-declaration
+		'selector-no-invalid': true,
 		// ✅ string-no-newline
 		// ✅ syntax-string-no-invalid
 

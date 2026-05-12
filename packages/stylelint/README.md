@@ -37,12 +37,13 @@ It is based on [`stylelint-config-standard`](https://github.com/stylelint/stylel
   - 😨 `margin-top: 1em`
   - 🙂 `margin-block-start: 1em`
   - 🙂 `overflow-x: visible` (The `overflow-*` logical properties is not well supported by browsers)
-- Use logical values instead of physical values. The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
-  - 😨 `text-align: right`
-  - 🙂 `text-align: end`
-- Use logical units instead of physical units. The [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css) plugin is used.
+- Use logical units instead of physical units.
   - 😨 `inline-size: 10lvw`
   - 🙂 `inline-size: 10lvi`
+- Use logical values instead of physical values.
+  - 😨 `text-align: right`
+  - 🙂 `text-align: end`
+  - 🙂 `caption-side: top` (Logical values for the [`caption-side` property](https://drafts.csswg.org/css-logical-1/#caption-side) is only `inline-start` or `inline-end`)
 - Disallow default viewport-percentage units. The [`stylelint-no-default-viewport`](https://github.com/SaekiTominaga/stylelint-plugin/tree/main/packages/no-default-viewport) plugin is used.
   - 😨 `inline-size: 10vi`
   - 🙂 `inline-size: 10lvi`

@@ -43,6 +43,19 @@
 	margin-left: 0;
 }
 
+/* unit-layout-mappings */
+.unit-layout-mappings {
+	inline-size: 10dvw;
+}
+
+/* value-keyword-layout-mappings */
+.value-keyword-layout-mappings {
+	float: left;
+	clear: left;
+	resize: horizontal;
+	text-align: left;
+}
+
 /* selector-max-id */
 #selector-max-id {
 }

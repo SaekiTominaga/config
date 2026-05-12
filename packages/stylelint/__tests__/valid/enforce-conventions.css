@@ -42,6 +42,20 @@
 	overflow-inline: visible;
 }
 
+/* unit-layout-mappings */
+.unit-layout-mappings {
+	inline-size: 10dvi;
+}
+
+/* value-keyword-layout-mappings */
+.value-keyword-layout-mappings {
+	float: inline-start;
+	clear: inline-start;
+	resize: inline;
+	caption-side: top; /* ignoreProperties */
+	text-align: start;
+}
+
 /* selector-max-universal */
 * {
 }

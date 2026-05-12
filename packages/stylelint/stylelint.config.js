@@ -17,14 +17,8 @@ const disallowedShothands = [
 
 /** @type {import('stylelint').Config} */
 export default {
-	plugins: [
-		'stylelint-attribute-case-sensitivity',
-		'stylelint-no-default-viewport',
-		'stylelint-plugin-defensive-css',
-		'stylelint-plugin-logical-css',
-		'stylelint-root-colors',
-	],
-	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order', 'stylelint-plugin-logical-css/configs/recommended'],
+	plugins: ['stylelint-attribute-case-sensitivity', 'stylelint-no-default-viewport', 'stylelint-plugin-defensive-css', 'stylelint-root-colors'],
+	extends: ['stylelint-config-standard', 'stylelint-config-concentric-order'],
 	rules: {
 		/**
 		 * Avoid errors
@@ -62,6 +56,7 @@ export default {
 		// ✅ no-invalid-double-slash-comments
 		// ✅ no-invalid-position-at-import-rule
 		// ✅ no-invalid-position-declaration
+		'selector-no-invalid': true,
 		// ✅ string-no-newline
 		// ✅ syntax-string-no-invalid
 
@@ -186,6 +181,15 @@ export default {
 				ignoreProperties: ['overflow-x', 'overflow-y'], // for Safari 18.7-
 			},
 		],
+		'unit-layout-mappings': ['flow-relative'],
+		'value-keyword-layout-mappings': [
+			'flow-relative',
+			{
+				ignoreProperties: [
+					'caption-side', // https://drafts.csswg.org/css-logical-1/#caption-side
+				],
+			},
+		],
 
 		/* Max & min */
 		// ✅ declaration-block-single-line-max-declarations
@@ -284,11 +288,6 @@ export default {
 		 * [plugin] stylelint-plugin-defensive-css
 		 */
 		'defensive-css/require-flex-wrap': true,
-
-		/**
-		 * [plugin] stylelint-plugin-logical-css
-		 */
-		'logical-css/require-logical-properties': null,
 
 		/**
 		 * [plugin] stylelint-attribute-case-sensitivity

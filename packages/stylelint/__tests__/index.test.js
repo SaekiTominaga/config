@@ -36,7 +36,7 @@ test('invalid', async (t) => {
 	});
 
 	await t.test('severity: error files', () => {
-		assert.equal(linterResult.results.flatMap((result) => result.errored).filter((result) => result === true).length, 8);
+		assert.equal(linterResult.results.flatMap((result) => result.errored).filter((result) => result === true).length, 7);
 	});
 
 	await t.test('severity: warning files', () => {

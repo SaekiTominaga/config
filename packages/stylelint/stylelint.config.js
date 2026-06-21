@@ -9,6 +9,7 @@ const disallowedShothands = [
 	'mask',
 	'mask-border',
 	'scroll-timeline',
+	'text-box',
 	'text-decoration',
 	'text-emphasis',
 	'transition',

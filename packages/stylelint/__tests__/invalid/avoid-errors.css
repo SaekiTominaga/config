@@ -5,3 +5,17 @@
 /* selector-no-invalid */
 [.selector-no-invalid] {
 }
+
+/* no-unknown-animations */
+.no-unknown-animations {
+	animation-name: foo;
+}
+
+/* no-unknown-custom-media */
+@media (--foo) {
+}
+
+/* no-unknown-custom-properties */
+.no-unknown-custom-properties {
+	color: var(--foo);
+}

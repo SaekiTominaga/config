@@ -86,9 +86,9 @@ export default {
 		// function-no-unknown
 		// ✅ media-feature-name-no-unknown
 		// ✅ media-feature-name-value-no-unknown
-		// no-unknown-animations
-		// no-unknown-custom-media
-		// no-unknown-custom-properties
+		'no-unknown-animations': true,
+		'no-unknown-custom-media': true,
+		'no-unknown-custom-properties': true,
 		// ✅ property-no-unknown
 		// ✅ selector-pseudo-class-no-unknown
 		// ✅ selector-pseudo-element-no-unknown

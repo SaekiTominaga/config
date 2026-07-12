@@ -101,7 +101,7 @@ export default defineConfig(
 		},
 	},
 	{
-		files: ['**/*.test.js', '**/*.test.ts'],
+		files: ['**/*.spec.js', '**/*.spec.ts', '**/*.test.js', '**/*.test.ts'],
 		rules: {
 			'no-new': 'off',
 			'no-unused-expressions': 'off',
@@ -110,7 +110,7 @@ export default defineConfig(
 		},
 	},
 	{
-		files: ['**/*.test.ts'],
+		files: ['**/*.spec.ts', '**/*.test.ts'],
 		rules: {
 			'@typescript-eslint/no-non-null-assertion': 'off',
 			'@typescript-eslint/no-unnecessary-type-assertion': 'off',

@@ -97,7 +97,15 @@ export default defineConfig(
 	{
 		files: ['**/*.config.js'],
 		rules: {
-			'import/no-extraneous-dependencies': 'off',
+			'import/no-extraneous-dependencies': [
+				'error',
+				{
+					devDependencies: true,
+					optionalDependencies: false,
+					peerDependencies: false,
+					bundledDependencies: false,
+				},
+			],
 		},
 	},
 	{
@@ -105,7 +113,15 @@ export default defineConfig(
 		rules: {
 			'no-new': 'off',
 			'no-unused-expressions': 'off',
-			'import/no-extraneous-dependencies': 'off',
+			'import/no-extraneous-dependencies': [
+				'error',
+				{
+					devDependencies: true,
+					optionalDependencies: false,
+					peerDependencies: false,
+					bundledDependencies: false,
+				},
+			],
 			'safely-storage/try-catch': 'off',
 		},
 	},

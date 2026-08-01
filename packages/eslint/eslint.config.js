@@ -112,7 +112,6 @@ export default defineConfig(
 		files: ['**/*.spec.js', '**/*.spec.ts', '**/*.test.js', '**/*.test.ts'],
 		rules: {
 			'no-new': 'off',
-			'no-unused-expressions': 'off',
 			'import/no-extraneous-dependencies': [
 				'error',
 				{

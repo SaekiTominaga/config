@@ -61,7 +61,6 @@ test('invalid', async (t) => {
 				'functional/no-loop-statements',
 				'import/extensions',
 				'import/extensions',
-				'import/extensions',
 				'import/newline-after-import',
 				'import/no-absolute-path',
 				'import/no-deprecated',

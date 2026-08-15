@@ -30,17 +30,17 @@
 		"eslint": "^9.39.5",
 		"eslint-plugin-functional": "^10.0.0",
 		"eslint-plugin-import": "^2.32.0",
-		"eslint-plugin-jsdoc": "^63.3.2",
+		"eslint-plugin-jsdoc": "^64.1.0",
 		"eslint-plugin-safely-storage": "^1.1.0",
-		"globals": "17.8",
-		"typescript-eslint": "^8.65.0"
+		"globals": "^17.11.0",
+		"typescript-eslint": "^8.67.0"
 	},
 	"peerDependencies": {
 		"@eslint/js": "^9.35.0",
 		"eslint": "^9.35.0",
 		"eslint-plugin-functional": "^10.0.0",
 		"eslint-plugin-import": "^2.32.0",
-		"eslint-plugin-jsdoc": "^63.0.0",
+		"eslint-plugin-jsdoc": "^64.0.0",
 		"eslint-plugin-safely-storage": "^1.0.0",
 		"globals": "^17.0.0",
 		"typescript-eslint": "^8.53.0"

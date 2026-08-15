@@ -57,6 +57,7 @@ export default defineConfig(
 		extends: [
 			tseslint.configs.strictTypeChecked,
 			tseslint.configs.stylisticTypeChecked,
+			pluginImport.flatConfigs.typescript,
 			pluginFunctional.configs.externalTypeScriptRecommended,
 			pluginFunctional.configs.recommended,
 			pluginFunctional.configs.stylistic,

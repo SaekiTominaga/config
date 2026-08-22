@@ -96,7 +96,7 @@ export default defineConfig(
 		},
 	},
 	{
-		files: ['**/*.config.js'],
+		files: ['**/*.config.js', '**/*.config.ts'],
 		rules: {
 			'import/no-extraneous-dependencies': [
 				'error',

@@ -1,14 +1,14 @@
 // @ts-check
 /* eslint-disable import/no-unresolved */
 
-import { defineConfig } from 'eslint/config';
+import eslint from '@eslint/js';
 import pluginFunctional from 'eslint-plugin-functional';
 import pluginImport from 'eslint-plugin-import';
 import { jsdoc as pluginJsdoc } from 'eslint-plugin-jsdoc';
 import pluginSafelyStorage from 'eslint-plugin-safely-storage';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import eslint from '@eslint/js';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
 import configEslintPossibleProblems from './rules/eslint/possible-problems.js';
 import configEslintSuggestions from './rules/eslint/suggestions.js';

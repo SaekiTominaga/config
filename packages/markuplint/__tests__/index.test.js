@@ -1,6 +1,6 @@
 import { strict as assert } from 'node:assert/strict';
-import { test } from 'node:test';
 import fs from 'node:fs';
+import { test } from 'node:test';
 import { MLEngine } from 'markuplint';
 import config from '../markuplint.config.js';
 

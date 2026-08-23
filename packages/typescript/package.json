@@ -5,21 +5,24 @@
 	"keywords": [
 		"tsconfig"
 	],
+	"license": "MIT",
+	"author": "Saeki Tominaga",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/config.git"
-	},
-	"license": "MIT",
-	"author": "Saeki Tominaga",
-	"type": "module",
-	"exports": {
-		".": "./tsconfig.json",
-		"./*": "./tsconfig-*.json"
 	},
 	"files": [
 		"tsconfig.json",
 		"tsconfig-*.json"
 	],
+	"type": "module",
+	"exports": {
+		".": "./tsconfig.json",
+		"./*": "./tsconfig-*.json"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"test": "tsc -p __tests__/tsconfig-valid.json",
 		"test:invalid": "tsc -p __tests__/tsconfig-invalid.json"
@@ -29,8 +32,5 @@
 	},
 	"peerDependencies": {
 		"typescript": "^6.0.0"
-	},
-	"publishConfig": {
-		"access": "public"
 	}
 }

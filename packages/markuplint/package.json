@@ -6,15 +6,18 @@
 		"markuplint",
 		"markuplint-config"
 	],
+	"license": "MIT",
+	"author": "Saeki Tominaga",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
-	"license": "MIT",
-	"author": "Saeki Tominaga",
+	"files": [],
 	"type": "module",
 	"main": "markuplint.config.js",
-	"files": [],
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"test": "node __tests__/index.test.js"
 	},
@@ -23,8 +26,5 @@
 	},
 	"peerDependencies": {
 		"markuplint": "^5.0.0"
-	},
-	"publishConfig": {
-		"access": "public"
 	}
 }

@@ -28,9 +28,9 @@
 		"test:invalid": "tsc -p __tests__/tsconfig-invalid.json"
 	},
 	"devDependencies": {
-		"typescript": "^6.0.3"
+		"typescript": "^7.0.2"
 	},
 	"peerDependencies": {
-		"typescript": "^6.0.0"
+		"typescript": "^6.0.0 || ^7.0.0"
 	}
 }

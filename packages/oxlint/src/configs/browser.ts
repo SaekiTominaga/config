@@ -1,7 +1,7 @@
-import { defineConfig } from 'oxlint';
+import { type OxlintConfig, defineConfig } from 'oxlint';
 import base from './base.ts';
 
-export default defineConfig({
+const config: OxlintConfig = defineConfig({
 	extends: [base],
 	plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'import', 'jsdoc', 'promise'],
 	jsPlugins: [
@@ -28,3 +28,5 @@ export default defineConfig({
 		},
 	],
 });
+
+export default config;

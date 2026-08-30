@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		/* Modules */
+		"module": "nodenext",
+		"rewriteRelativeImportExtensions": true,
+		"types": ["node"],
+
+		/* Emit */
+		"noEmit": true,
+
+		/* JavaScript Support */
+		"checkJs": true
+	}
+}

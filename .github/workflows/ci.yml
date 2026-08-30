@@ -35,7 +35,7 @@ jobs:
         run: npx oxfmt --check
 
       - name: Run lint
-        run: npm run lint -w @w0s/eslint-config
+        run: npm run lint -w @w0s/eslint-config -w @w0s/oxlint-config
 
   test:
     runs-on: ubuntu-latest

@@ -1,5 +1,5 @@
 import { strict as assert } from 'node:assert/strict';
-import { execFile } from 'node:child_process';
+import { exec } from 'node:child_process';
 import { test } from 'node:test';
 import { promisify } from 'node:util';
 
@@ -23,9 +23,6 @@ interface OxlintJson {
 	start_time?: number;
 }
 
-// oxlint-disable-next-line typescript/strict-void-return
-const execFileAsync = promisify(execFile);
-
 const runLint = async (
 	targetPaths: readonly string[],
 	options?: {
@@ -33,7 +30,7 @@ const runLint = async (
 	},
 ): Promise<OxlintJson> => {
 	try {
-		const { stdout } = await execFileAsync('cmd', ['/c', 'npx', 'oxlint', '-f', 'json', '-c', options?.config ?? 'oxlint.config.ts', ...targetPaths]);
+		const { stdout } = await promisify(exec)(`npx oxlint -f json -c ${options?.config ?? 'oxlint.config.ts'} ${targetPaths.join(' ')}`);
 		return JSON.parse(stdout) as OxlintJson;
 	} catch (error) {
 		const execErr = error as { stdout?: string; message: string };

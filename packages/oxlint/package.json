@@ -1,0 +1,40 @@
+{
+	"name": "@w0s/oxlint-config",
+	"version": "1.0.0",
+	"description": "OxLint configuration file used on `w0s.jp`",
+	"keywords": [
+		"oxlint",
+		"oxlint-config"
+	],
+	"license": "MIT",
+	"author": "Saeki Tominaga",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SaekiTominaga/config.git"
+	},
+	"files": [
+		"rules"
+	],
+	"type": "module",
+	"exports": {
+		".": "./configs/base.ts",
+		"./*": "./configs/*.ts"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"test": "node __tests__/index.test.ts",
+		"lint": "oxlint --ignore-pattern __tests__/invalid"
+	},
+	"devDependencies": {
+		"eslint-plugin-safely-storage": "^1.1.0",
+		"oxlint": "^1.80.0",
+		"oxlint-tsgolint": "^7.0.2001"
+	},
+	"peerDependencies": {
+		"eslint-plugin-safely-storage": "^1.1.0",
+		"oxlint": "^1.80.0",
+		"oxlint-tsgolint": "^7.0.2001"
+	}
+}

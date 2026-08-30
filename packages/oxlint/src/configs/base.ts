@@ -1,4 +1,4 @@
-import { defineConfig } from 'oxlint';
+import { type OxlintConfig, defineConfig } from 'oxlint';
 import rulesEslint from '../rules/eslint.ts';
 import rulesImport from '../rules/import.ts';
 import rulesJsdoc from '../rules/jsdoc.ts';
@@ -8,7 +8,7 @@ import rulesPromise from '../rules/promise.ts';
 import rulesTypeScript from '../rules/typescript.ts';
 import rulesUnicorn from '../rules/unicorn.ts';
 
-export default defineConfig({
+const config: OxlintConfig = defineConfig({
 	categories: {
 		correctness: 'error',
 		suspicious: 'error',
@@ -70,3 +70,5 @@ export default defineConfig({
 		},
 	],
 });
+
+export default config;

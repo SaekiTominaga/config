@@ -1,6 +1,6 @@
 {
 	"name": "@w0s/oxlint-config",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "OxLint configuration file used on `w0s.jp`",
 	"keywords": [
 		"oxlint",

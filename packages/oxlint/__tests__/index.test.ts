@@ -43,7 +43,7 @@ const runLint = async (
 };
 
 await test('node', async (t) => {
-	const CONFIG = 'configs/node.ts';
+	const CONFIG = 'src/configs/node.ts';
 
 	await t.test('valid', async () => {
 		const TEST_DIR = '__tests__/valid';
@@ -79,7 +79,7 @@ await test('node', async (t) => {
 });
 
 await test('browser', async (t) => {
-	const CONFIG = 'configs/browser.ts';
+	const CONFIG = 'src/configs/browser.ts';
 
 	await t.test('valid', async () => {
 		const TEST_DIR = '__tests__/valid';

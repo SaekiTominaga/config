@@ -6,6 +6,7 @@
 	],
 	"type": "module",
 	"devDependencies": {
-		"oxfmt": "^0.64.0"
+		"oxfmt": "^0.64.0",
+		"rimraf": "^6.1.3"
 	}
 }

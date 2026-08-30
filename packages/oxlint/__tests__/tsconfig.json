@@ -1,13 +1,14 @@
 {
-	"include": ["src/**/*.ts"],
 	"compilerOptions": {
 		/* Modules */
 		"module": "nodenext",
 		"rewriteRelativeImportExtensions": true,
-		"rootDir": "src",
 		"types": ["node"],
 
 		/* Emit */
-		"outDir": "dist"
+		"noEmit": true,
+
+		/* JavaScript Support */
+		"checkJs": true
 	}
 }

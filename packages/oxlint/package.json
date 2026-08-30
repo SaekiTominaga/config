@@ -13,18 +13,19 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"files": [
-		"configs",
-		"rules"
+		"dist"
 	],
 	"type": "module",
 	"exports": {
-		".": "./configs/base.ts",
-		"./*": "./configs/*.ts"
+		".": "./dist/configs/base.js",
+		"./*": "./dist/configs/*.js"
 	},
 	"publishConfig": {
 		"access": "public"
 	},
 	"scripts": {
+		"prebuild": "rimraf dist/* -g",
+		"build": "tsc",
 		"test": "node __tests__/index.test.ts",
 		"lint": "oxlint --ignore-pattern __tests__/invalid"
 	},

@@ -47,6 +47,9 @@ const config = {
 } as DummyRuleMap;
 
 const test = {
+	/* pedantic */
+	'unicorn/no-useless-undefined': 'off',
+
 	/* style */
 	'unicorn/no-null': 'off',
 } as DummyRuleMap;

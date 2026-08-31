@@ -7,9 +7,9 @@ Oxlint configuration file used on my personal website ([`w0s.jp`](https://github
 
 ## JS Plugins
 
-In addition to the built-in plugins, this configuration uses the following ESLint-compatible packages.
+In addition to the built-in plugins, this configuration uses the following npm packages.
 
-- [eslint-plugin-safely-storage](https://github.com/SaekiTominaga/eslint-plugin/tree/main/packages/safely-storage)
+- [oxlint-plugin-safely-storage](https://github.com/SaekiTominaga/oxlint-plugin/tree/main/packages/safely-storage)
 
 ## Usage
 

@@ -25,6 +25,9 @@ const config: OxlintConfig = defineConfig({
 			env: {
 				node: true,
 			},
+			rules: {
+				'safely-storage/try-catch': 'off',
+			},
 		},
 	],
 });

@@ -7,7 +7,7 @@ const config: OxlintConfig = defineConfig({
 	jsPlugins: [
 		{
 			name: 'safely-storage',
-			specifier: 'eslint-plugin-safely-storage',
+			specifier: 'oxlint-plugin-safely-storage',
 		},
 	],
 	rules: {

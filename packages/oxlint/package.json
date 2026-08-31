@@ -30,13 +30,13 @@
 		"lint": "oxlint --ignore-pattern __tests__/invalid"
 	},
 	"devDependencies": {
-		"eslint-plugin-safely-storage": "^1.1.0",
 		"oxlint": "^1.80.0",
+		"oxlint-plugin-safely-storage": "^1.0.0",
 		"oxlint-tsgolint": "^7.0.2001"
 	},
 	"peerDependencies": {
-		"eslint-plugin-safely-storage": "^1.1.0",
 		"oxlint": "^1.80.0",
+		"oxlint-plugin-safely-storage": "^1.0.0",
 		"oxlint-tsgolint": "^7.0.2001"
 	}
 }

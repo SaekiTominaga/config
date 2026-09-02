@@ -34,6 +34,11 @@ const typeScript = {
 	],
 } as DummyRuleMap;
 
+const browser = {
+	/* restriction */
+	'import/unambiguous': 'off',
+} as DummyRuleMap;
+
 const node = {
 	/* style */
 	'import/no-nodejs-modules': 'off',
@@ -49,4 +54,4 @@ const test = {
 	'import/no-nodejs-modules': 'off',
 } as DummyRuleMap;
 
-export default { base, typeScript, node, declaration, test };
+export default { base, typeScript, browser, node, declaration, test };

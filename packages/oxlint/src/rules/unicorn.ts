@@ -28,6 +28,23 @@ const base = {
 	'unicorn/no-array-reduce': 'off',
 } as DummyRuleMap;
 
+const browser = {
+	/* style */
+	'unicorn/filename-case': [
+		'error',
+		{
+			cases: {
+				kebabCase: true,
+				camelCase: true,
+				snakeCase: false,
+				pascalCase: true,
+				lowercase: false,
+				screamingSnakeCase: true,
+			},
+		},
+	],
+} as DummyRuleMap;
+
 const config = {
 	/* style */
 	'unicorn/filename-case': [
@@ -54,4 +71,4 @@ const test = {
 	'unicorn/no-null': 'off',
 } as DummyRuleMap;
 
-export default { base, config, test };
+export default { base, browser, config, test };

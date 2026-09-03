@@ -1,3 +1,6 @@
+// @ts-check
+
+/** @type {readonly (string | RegExp)[]} */
 const disallowedShothands = [
 	'animation',
 	'background',
@@ -12,6 +15,7 @@ const disallowedShothands = [
 	'text-box',
 	'text-decoration',
 	'text-emphasis',
+	'text-wrap',
 	'transition',
 	'white-space',
 ];
@@ -131,7 +135,7 @@ export default {
 		// media-feature-name-unit-allowed-list
 		// media-feature-name-value-allowed-list
 		// property-allowed-list
-		'property-disallowed-list': [...disallowedShothands],
+		'property-disallowed-list': disallowedShothands,
 		// ✅ property-no-vendor-prefix
 		// rule-nesting-at-rule-required-list
 		// rule-selector-property-disallowed-list

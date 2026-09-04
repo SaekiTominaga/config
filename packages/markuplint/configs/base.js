@@ -122,7 +122,7 @@ export default {
 		'no-invalid-aria-prop-value': true, // ✅ preset.a11y
 		'no-nested-top-level-landmark': true, // ✅ preset.a11y
 		'no-prohibited-naming': true, // ✅ preset.a11y
-		'no-pseudo-list': true, // ✅ preset.a11y: true
+		'no-pseudo-list': false, // ✅ preset.a11y: true
 		'no-redundant-accessible-name': true, // ✅ preset.a11y
 		'no-redundant-aria-prop': true, // ✅ preset.a11y
 		'no-redundant-role': true, // ✅ preset.a11y

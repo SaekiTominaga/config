@@ -14,15 +14,15 @@
 	},
 	"files": [],
 	"type": "module",
-	"main": "markuplint.config.js",
+	"main": "configs/base.js",
 	"publishConfig": {
 		"access": "public"
 	},
 	"scripts": {
-		"test": "node __tests__/index.test.js"
+		"test": "node __tests__/index.test.ts"
 	},
 	"devDependencies": {
-		"markuplint": "^5.0.0-alpha.2"
+		"markuplint": "^5.0.0-rc.7"
 	},
 	"peerDependencies": {
 		"markuplint": "^5.0.0"

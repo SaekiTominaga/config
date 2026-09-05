@@ -22,9 +22,9 @@
 		"test": "node __tests__/index.test.ts"
 	},
 	"devDependencies": {
-		"markuplint": "^5.0.0-rc.7"
+		"markuplint": "5.0.0-rc.7"
 	},
 	"peerDependencies": {
-		"markuplint": "^5.0.0"
+		"markuplint": "5.0.0-rc.7"
 	}
 }

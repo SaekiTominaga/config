@@ -250,6 +250,16 @@ export default {
 			},
 		},
 		{
+			selector: 'abbr',
+			rules: {
+				'no-restricted-attr': {
+					options: {
+						disallowAttrs: ['title'],
+					},
+				},
+			},
+		},
+		{
 			selector: 'img',
 			rules: {
 				'require-attr': ['alt'],

@@ -141,6 +141,28 @@ Markuplint のドキュメントでも言及されている [rviscomi/capo.js](h
 - `role` 属性が設定されている場合
 - `<dl>` 要素の子要素の場合（例外的に一切属性のない `<div>` 要素を許容したい）
 
+### `abbr`
+
+HTML 仕様では `<abbr>` 要素には `title` 属性で略語の完全表記を提供できるとある。
+
+HTML4 や HTML5 初期の時代は機械可読の面で `title` 属性の活用に期待が持たれていたのだが、それらが活用されることはなく、現代ではその反面アクセシビリティ面から注意が必要であり、多くのケースにおいてはむしろ使わない方がよい。「`<abbr>` 要素には `title` 属性を付けるべき」との主張は今も時おり見られるのだが、HTML4 時代の古い考え方といえるだろう。歴史的経緯を含めたこのあたりの話はブログ記事「[`<abbr>` 要素に `title` 属性は付けるべきかどうか](https://blog.w0s.jp/entry/773)」にまとめている。
+
+そもそも `<abbr>` 要素自体、HTML 仕様において [<q lang="en">Abbreviations do not have to be marked up using this element</q>](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-abbr-element:~:text=Abbreviations%20do%20not%20have%20to%20be%20marked%20up%20using%20this%20element)（略語はこの要素を使用してマークアップする必要はない）とされており、要するに普通に括弧書きなどで表現すればよいのである。
+
+```html
+<!-- HTML4 時代によく行われた書き方 -->
+<p><abbr title="North Atlantic Treaty Organization">NATO</abbr></p>
+
+<!-- 現代の標準的な書き方 -->
+<p>NATO (North Atlantic Treaty Organization)</p>
+<p><abbr>NATO</abbr> (North Atlantic Treaty Organization)</p>
+<p>NATO <span class="abbr-expansion">(North Atlantic Treaty Organization)</span></p>
+```
+
+このコード例にもあるように、`title` 属性のない `<abbr>` 要素はスタイルシートによる装飾目的で有用である。
+
+これらのことから `<abbr>` 要素の使用に際しては `title` 属性を禁止している。ちなみにこれは [`markuplint:a11y`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.a11y.json) とは真逆の考え方である。
+
 ### `img`
 
 HTML 仕様では `<img>` 要素の `alt` 属性は必須ではないが、省略できるケースは限定的である。当サイトでは省略するケースは存在しないため `alt` 属性を必須に設定している。

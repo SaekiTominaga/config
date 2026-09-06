@@ -19,7 +19,7 @@
 		"access": "public"
 	},
 	"scripts": {
-		"test": "node __tests__/index.test.js"
+		"test": "node __tests__/index.test.ts"
 	},
 	"devDependencies": {
 		"stylelint": "^17.14.1",

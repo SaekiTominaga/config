@@ -13,7 +13,8 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"files": [
-		"dist"
+		"dist/configs",
+		"dist/rules/**/*.js"
 	],
 	"type": "module",
 	"exports": {

@@ -172,6 +172,12 @@ export default {
 			},
 		},
 		{
+			selector: 'body',
+			rules: {
+				'no-restricted-element': ['script'],
+			},
+		},
+		{
 			selector: 'meta[property]',
 			rules: {
 				'no-unknown-attr': {
@@ -372,4 +378,5 @@ export default {
 			},
 		},
 	],
+	overrideMode: 'merge',
 };

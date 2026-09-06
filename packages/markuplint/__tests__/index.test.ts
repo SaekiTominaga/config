@@ -72,6 +72,9 @@ test('invalid', async (t) => {
 			/* nodeRules/abbr.html */
 			'no-restricted-attr',
 
+			/* nodeRules/body.html */
+			'no-restricted-element',
+
 			/* nodeRules/details.html */
 			'no-restricted-attr',
 

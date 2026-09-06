@@ -17,8 +17,18 @@
 	],
 	"type": "module",
 	"exports": {
-		".": "./dist/configs/base.js",
-		"./*": "./dist/configs/*.js"
+		".": {
+			"types": "./dist/configs/base.d.js",
+			"default": "./dist/configs/base.js"
+		},
+		"./browser": {
+			"types": "./dist/configs/browser.d.js",
+			"default": "./dist/configs/browser.js"
+		},
+		"./node": {
+			"types": "./dist/configs/node.d.js",
+			"default": "./dist/configs/node.js"
+		}
 	},
 	"publishConfig": {
 		"access": "public"

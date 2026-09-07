@@ -1,11 +1,11 @@
 import { strict as assert } from 'node:assert/strict';
 import { test } from 'node:test';
-import stylelint from 'stylelint';
+import stylelint, { type LinterResult } from 'stylelint';
 import config from '../stylelint.config.js';
 
 test('valid', async (t) => {
-	/** @type {stylelint.LinterResult} */
-	let linterResult;
+	let linterResult: LinterResult;
+
 	t.beforeEach(async () => {
 		linterResult = await stylelint.lint({
 			config: config,
@@ -26,8 +26,8 @@ test('valid', async (t) => {
 });
 
 test('invalid', async (t) => {
-	/** @type {stylelint.LinterResult} */
-	let linterResult;
+	let linterResult: LinterResult;
+
 	t.beforeEach(async () => {
 		linterResult = await stylelint.lint({
 			config: config,

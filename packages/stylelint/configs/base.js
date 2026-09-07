@@ -81,6 +81,7 @@ export default {
 
 		/* Unmatchable */
 		// ✅ selector-anb-no-unmatchable
+		'selector-no-unmatchable': true,
 
 		/* Unknown */
 		// ✅ annotation-no-unknown

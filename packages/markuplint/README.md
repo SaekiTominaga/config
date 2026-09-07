@@ -98,6 +98,10 @@ Markuplint のドキュメントでも言及されている [rviscomi/capo.js](h
 
 [`markuplint:a11y`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.a11y.json) では `lang` 属性が必須に設定されている。本設定ファイルではそれに加えて [OGP](https://ogp.me/) で必要な `prefix` 独自属性を許容している。
 
+### `body`
+
+`<script>` 要素は `<head>` 要素内にのみ配置したいため、ルール上は `<body>` 要素内ヘの配置を禁止する設定としている。
+
 ### `meta[property]`
 
 [OGP](https://ogp.me/) 用に `<meta>` 要素の `property` 属性を許容している。

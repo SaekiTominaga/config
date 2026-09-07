@@ -6,6 +6,10 @@
 [.selector-no-invalid] {
 }
 
+/* selector-no-unmatchable */
+label:checked {
+}
+
 /* no-unknown-animations */
 .no-unknown-animations {
 	animation-name: foo;

@@ -26,16 +26,16 @@
 		"test": "node __tests__/index.test.ts"
 	},
 	"devDependencies": {
-		"stylelint": "^17.14.1",
+		"stylelint": "^17.15.0",
 		"stylelint-attribute-case-sensitivity": "^3.1.1",
 		"stylelint-config-concentric-order": "^5.5.0",
 		"stylelint-config-standard": "^40.0.0",
 		"stylelint-no-default-viewport": "^2.0.2",
-		"stylelint-plugin-defensive-css": "^2.9.6",
+		"stylelint-plugin-defensive-css": "^2.9.7",
 		"stylelint-root-colors": "^3.0.2"
 	},
 	"peerDependencies": {
-		"stylelint": "^17.10.0",
+		"stylelint": "^17.15.0",
 		"stylelint-attribute-case-sensitivity": "^3.0.0",
 		"stylelint-config-concentric-order": "^5.3.0",
 		"stylelint-config-standard": "^40.0.0",

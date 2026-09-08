@@ -35,7 +35,7 @@
 		"access": "public"
 	},
 	"scripts": {
-		"prebuild": "rimraf dist/* -g",
+		"prebuild": "rimraf dist",
 		"build": "tsc",
 		"test": "node __tests__/index.test.ts",
 		"lint": "oxlint --ignore-pattern __tests__/invalid"

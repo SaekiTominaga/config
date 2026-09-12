@@ -141,7 +141,7 @@ export default {
 		'tab-requires-tabpanel': true, // ✅ preset.a11y
 
 		/* Style */
-		'attr-order': false, // TODO: https://github.com/markuplint/markuplint/issues/4033
+		'attr-order': false, // TODO:
 		'attr-value-quotes': true,
 		'case-sensitive-attr-name': true, // ✅ preset.code-styles
 		'case-sensitive-tag-name': true, // ✅ preset.code-styles

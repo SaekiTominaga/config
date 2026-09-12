@@ -24,19 +24,19 @@
 
 ### `markuplint:recommended` に含まれていないが、本設定では有効にしているルール
 
-| カテゴリー            | ルール                                                                                                           | 設定内容と理由                                                       |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Syntax                | [`no-malformed-character-reference`](https://next.markuplint.dev/ja/docs/rules/no-malformed-character-reference) | 省略                                                                 |
-| Syntax                | [`no-unescaped-char`](https://next.markuplint.dev/ja/docs/rules/no-unescaped-char)                               | 省略                                                                 |
-| Structure             | [`head-element-order`](https://next.markuplint.dev/ja/docs/rules/head-element-order)                             | 詳細は[後述](#head-element-order)                                    |
-| Structure             | [`no-duplicate-dt`](https://next.markuplint.dev/ja/docs/rules/no-duplicate-dt)                                   | 省略                                                                 |
-| Structure             | [`no-empty-palpable-content`](https://next.markuplint.dev/ja/docs/rules/no-empty-palpable-content)               | 省略                                                                 |
-| Structure             | [`no-restricted-element`](https://next.markuplint.dev/ja/docs/rules/no-restricted-element)                       | `noscript`, `embed` 要素を禁止、理由は[後述](#no-restricted-element) |
-| Attributes            | [`no-ineffective-attr`](https://next.markuplint.dev/ja/docs/rules/no-ineffective-attr)                           | 省略                                                                 |
-| Style                 | [`attr-value-quotes`](https://next.markuplint.dev/ja/docs/rules/attr-value-quotes)                               | 省略                                                                 |
-| Style                 | [`no-default-value`](https://next.markuplint.dev/ja/docs/rules/no-default-value)                                 | 個人の好み                                                           |
-| Style                 | [`require-end-tag`](https://next.markuplint.dev/ja/docs/rules/require-end-tag)                                   | フォーマッターに任せたいが、カスタム要素は終了タグが補完されないため |
-| Browser Compatibility | [`no-experimental-features`](https://next.markuplint.dev/ja/docs/rules/no-experimental-features)                 | 省略                                                                 |
+| カテゴリー            | ルール                                                                                                      | 設定内容と理由                                                       |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Syntax                | [`no-malformed-character-reference`](https://markuplint.dev/ja/docs/rules/no-malformed-character-reference) | 省略                                                                 |
+| Syntax                | [`no-unescaped-char`](https://markuplint.dev/ja/docs/rules/no-unescaped-char)                               | 省略                                                                 |
+| Structure             | [`head-element-order`](https://markuplint.dev/ja/docs/rules/head-element-order)                             | 詳細は[後述](#head-element-order)                                    |
+| Structure             | [`no-duplicate-dt`](https://markuplint.dev/ja/docs/rules/no-duplicate-dt)                                   | 省略                                                                 |
+| Structure             | [`no-empty-palpable-content`](https://markuplint.dev/ja/docs/rules/no-empty-palpable-content)               | 省略                                                                 |
+| Structure             | [`no-restricted-element`](https://markuplint.dev/ja/docs/rules/no-restricted-element)                       | `noscript`, `embed` 要素を禁止、理由は[後述](#no-restricted-element) |
+| Attributes            | [`no-ineffective-attr`](https://markuplint.dev/ja/docs/rules/no-ineffective-attr)                           | 省略                                                                 |
+| Style                 | [`attr-value-quotes`](https://markuplint.dev/ja/docs/rules/attr-value-quotes)                               | 省略                                                                 |
+| Style                 | [`no-default-value`](https://markuplint.dev/ja/docs/rules/no-default-value)                                 | 個人の好み                                                           |
+| Style                 | [`require-end-tag`](https://markuplint.dev/ja/docs/rules/require-end-tag)                                   | フォーマッターに任せたいが、カスタム要素は終了タグが補完されないため |
+| Browser Compatibility | [`no-experimental-features`](https://markuplint.dev/ja/docs/rules/no-experimental-features)                 | 省略                                                                 |
 
 #### `head-element-order`
 
@@ -81,14 +81,14 @@ Markuplint のドキュメントでも言及されている [rviscomi/capo.js](h
 
 ### 本設定で有効にしていないルール
 
-| カテゴリー      | ルール                                                                                     | 理由                                                                 |
-| --------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| Structure       | [`require-element`](https://next.markuplint.dev/ja/docs/rules/require-element)             | `nodeRules` または `childNodeRules` で指定するため                   |
-| Accessibility   | [`no-pseudo-list`](https://next.markuplint.dev/ja/docs/rules/no-pseudo-list)               | テキストノードの先頭に当該記号文字があるケースがままあるため         |
-| Style           | [`attr-order`](https://next.markuplint.dev/ja/docs/rules/attr-order)                       | 誤検知の発生により暫定的に無効化                                     |
-| Style           | [`class-naming`](https://next.markuplint.dev/ja/docs/rules/class-naming)                   | 個々のプロジェクトルールに従うため共通設定となる本設定では指定しない |
-| Style           | [`no-boolean-attr-value`](https://next.markuplint.dev/ja/docs/rules/no-boolean-attr-value) | 空文字を明記する `required=""` 形式を許容したいため                  |
-| Maintainability | [`no-hardcoded-id`](https://next.markuplint.dev/ja/docs/rules/no-hardcoded-id)             | ID は URL の一部になるため意味を持つ値のハードコーディングを許容する |
+| カテゴリー      | ルール                                                                                | 理由                                                                 |
+| --------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Structure       | [`require-element`](https://markuplint.dev/ja/docs/rules/require-element)             | `nodeRules` または `childNodeRules` で指定するため                   |
+| Accessibility   | [`no-pseudo-list`](https://markuplint.dev/ja/docs/rules/no-pseudo-list)               | テキストノードの先頭に当該記号文字があるケースがままあるため         |
+| Style           | [`attr-order`](https://markuplint.dev/ja/docs/rules/attr-order)                       | 誤検知の発生により暫定的に無効化                                     |
+| Style           | [`class-naming`](https://markuplint.dev/ja/docs/rules/class-naming)                   | 個々のプロジェクトルールに従うため共通設定となる本設定では指定しない |
+| Style           | [`no-boolean-attr-value`](https://markuplint.dev/ja/docs/rules/no-boolean-attr-value) | 空文字を明記する `required=""` 形式を許容したいため                  |
+| Maintainability | [`no-hardcoded-id`](https://markuplint.dev/ja/docs/rules/no-hardcoded-id)             | ID は URL の一部になるため意味を持つ値のハードコーディングを許容する |
 
 ## `nodeRules`
 
@@ -137,7 +137,7 @@ Markuplint のドキュメントでも言及されている [rviscomi/capo.js](h
 
 一切属性のない `<div>` 要素を配置するべきではないと考えている（`<dl>` 要素の子要素の場合を除く）。複雑なスタイルを表現したい場合、 CSS の都合で wrapper や inner 用の `<div>` 要素を差し込むこともあるだろう。とくに inner 用の場合、 `.component > div` のように指定すればクラス名を設定せずとも機能するが、それはあくまで制作者視点であり、ユーザー視点すなわちユーザースタイルシートの設定やスクレイピング、あるいは単に技術的興味のために HTML ソースコードを閲覧するユーザーに意図が伝わらないのは宜しくない。よってその場合も装飾用であることを伝えるクラスを設定するべきだ。
 
-そのため [`require-attr`](https://next.markuplint.dev/ja/docs/rules/require-attr) ルールにて `class` 属性を必須としている。本来はクラス名に限らず `<div lang="foo">` や `<div role="foo">` などもあり得るため、「何らかの属性が一つ以上あること」のチェックをしたいところだが、そのようなルール設定ができないため、 `class` 属性の存在チェックとしている。
+そのため [`require-attr`](https://markuplint.dev/ja/docs/rules/require-attr) ルールにて `class` 属性を必須としている。本来はクラス名に限らず `<div lang="foo">` や `<div role="foo">` などもあり得るため、「何らかの属性が一つ以上あること」のチェックをしたいところだが、そのようなルール設定ができないため、 `class` 属性の存在チェックとしている。
 
 なお以下の場合は `class` 属性なしのケースがあるため、上書き設定で `required-attr` を無効にしている。
 
@@ -215,8 +215,8 @@ HTML 仕様では [`<details>` 要素](https://html.spec.whatwg.org/multipage/in
 
 ### `template *`
 
-`<template><a href=""></a></template>` のようなマークアップをすることがあるため、`<template>` 要素内では [`no-empty-palpable-content`](https://next.markuplint.dev/ja/docs/rules/no-empty-palpable-content) と [`no-invalid-attr-value`](https://next.markuplint.dev/ja/docs/rules/no-invalid-attr-value)、[`require-accessible-name`](https://next.markuplint.dev/ja/docs/rules/require-accessible-name) を無効にしている。
+`<template><a href=""></a></template>` のようなマークアップをすることがあるため、`<template>` 要素内では [`no-empty-palpable-content`](https://markuplint.dev/ja/docs/rules/no-empty-palpable-content) と [`no-invalid-attr-value`](https://markuplint.dev/ja/docs/rules/no-invalid-attr-value)、[`require-accessible-name`](https://markuplint.dev/ja/docs/rules/require-accessible-name) を無効にしている。
 
 ### `:has(> template)`
 
-`<ul><template><li></li></template></ul>` のようなマークアップをすることがあるため、`<template>` 要素の親要素は [`require-owned-elements`](https://next.markuplint.dev/ja/docs/rules/require-owned-elements) を無効にしている。
+`<ul><template><li></li></template></ul>` のようなマークアップをすることがあるため、`<template>` 要素の親要素は [`require-owned-elements`](https://markuplint.dev/ja/docs/rules/require-owned-elements) を無効にしている。

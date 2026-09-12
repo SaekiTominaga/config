@@ -139,7 +139,7 @@ Markuplint のドキュメントでも言及されている [rviscomi/capo.js](h
 
 そのため [`require-attr`](https://markuplint.dev/ja/docs/rules/require-attr) ルールにて `class` 属性を必須としている。本来はクラス名に限らず `<div lang="foo">` や `<div role="foo">` などもあり得るため、「何らかの属性が一つ以上あること」のチェックをしたいところだが、そのようなルール設定ができないため、 `class` 属性の存在チェックとしている。
 
-なお以下の場合は `class` 属性なしのケースがあるため、上書き設定で `required-attr` を無効にしている。
+なお以下の場合は `class` 属性なしのケースがあるため、上書き設定で `require-attr` を無効にしている。
 
 - `id` 属性が設定されている場合
 - `role` 属性が設定されている場合

@@ -7,7 +7,7 @@
 
 自分が利用するためだけに作った思想強めの設定なので、実際のプロジェクトにそのまま導入するのはお勧めしません。多くのケースでは[公式のプリセット](https://markuplint.dev/ja/docs/guides/presets)を利用するのが良いでしょう。
 
-私はいくつかの理由から [`markuplint:recommended`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.recommended.json) やそれ以外のプリセットをそのまま利用することはせず、有用なルールは部分的に取り入れながらも `rules` と `nodeRules` を独自に設定しています。
+私はいくつかの理由から [`markuplint:recommended`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.recommended.jsonc) やそれ以外のプリセットをそのまま利用することはせず、有用なルールは部分的に取り入れながらも `rules` と `nodeRules` を独自に設定しています。
 
 このドキュメントでは `markuplint:recommended` と異なる部分について**なぜあえて変えているのか**その理由を記しています。もし `markuplint:recommended` の適用に問題があるか、あるいは Markuplint の開発者とは別の意見を見てみたいというのであれば本設定ファイルが参考になる部分もあるかもしれません。そのうえで、あなたのプロジェクトに適した部分があれば部分的に取り入れるのが良いと思います。
 
@@ -96,17 +96,17 @@ Markuplint のドキュメントでも言及されている [rviscomi/capo.js](h
 
 ### `html`
 
-[`markuplint:a11y`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.a11y.json) では `lang` 属性が必須に設定されている。本設定ファイルではそれに加えて [OGP](https://ogp.me/) で必要な `prefix` 独自属性を許容している。
+[`markuplint:a11y`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.a11y.jsonc) では `lang` 属性が必須に設定されている。本設定ファイルではそれに加えて [OGP](https://ogp.me/) で必要な `prefix` 独自属性を許容している。
 
 ### `body`
 
-`<script>` 要素は `<head>` 要素内にのみ配置したいため、ルール上は `<body>` 要素内ヘの配置を禁止する設定としている。
+`<script>` 要素は `<head>` 要素内にのみ配置したいため、`<body>` 要素内ヘの配置を禁止する設定としている。
 
 ### `meta[property]`
 
 [OGP](https://ogp.me/) 用に `<meta>` 要素の `property` 属性を許容している。
 
-[`markuplint:rdfa`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.rdfa.json) を `extends` しても良いのだが、当サイトでは OGP 用途以外で `property` 属性を使うことはないため、許可する属性値を正規表現で絞りたく独自設定としている。
+[`markuplint:rdfa`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.rdfa.jsonc) を `extends` しても良いのだが、当サイトでは OGP 用途以外で `property` 属性を使うことはないため、許可する属性値を正規表現で絞りたく独自設定としている。
 
 ### `dl`
 
@@ -165,7 +165,7 @@ HTML4 や HTML5 初期の時代は機械可読の面で `title` 属性の活用�
 
 このコード例にもあるように、`title` 属性のない `<abbr>` 要素はスタイルシートによる装飾目的で有用である。
 
-これらのことから `<abbr>` 要素の使用に際しては `title` 属性を禁止している。ちなみにこれは [`markuplint:a11y`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.a11y.json) とは真逆の考え方である。
+これらのことから `<abbr>` 要素の使用に際しては `title` 属性を禁止している。ちなみにこれは [`markuplint:a11y`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.a11y.jsonc) とは真逆の考え方である。
 
 ### `img`
 
@@ -203,7 +203,7 @@ HTML 仕様では `<caption>` 要素の使い方として以下の記述があ�
 
 ### `input[pattern]`
 
-[`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.json) では `pattern` 属性が設定されている場合に `title` 属性が必須に設定されている。
+[`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.jsonc) では `pattern` 属性が設定されている場合に `title` 属性が必須に設定されている。
 
 これは [HTML 仕様](https://html.spec.whatwg.org/multipage/input.html#the-pattern-attribute)で <q>When an `input` element has a `pattern` attribute specified, authors should include a `title` attribute to give a description of the pattern.</q> と規定されているためで、あくまで <q>should</q> ではあるものの、これに背く理由もないので本設定ファイルでも同じく必須としている。
 
@@ -211,7 +211,7 @@ HTML 仕様では `<caption>` 要素の使い方として以下の記述があ�
 
 HTML 仕様では [`<details>` 要素](https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element)について <q>A document must not contain a `details` element that is a descendant of another `details` element in the same details name group.</q> と規定されている。
 
-[`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.json) ではそれに対応した設定があり、本設定ファイルでも同様の設定としている。
+[`markuplint:html-standard`](https://github.com/markuplint/markuplint/blob/main/packages/%40markuplint/config-presets/src/preset.html-standard.jsonc) ではそれに対応した設定があり、本設定ファイルでも同様の設定としている。
 
 ### `template *`
 

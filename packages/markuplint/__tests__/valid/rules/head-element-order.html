@@ -26,10 +26,22 @@
 
 		<link rel="Alternate" href="feed" type="application/atom+xml" title="Feed" />
 
+		<script type="ImportMap">
+			{}
+		</script>
 		<script src="js/module" type="Module"></script>
 		<script src="js/async" async=""></script>
 		<script src="js/defer" defer=""></script>
 
+		<script type="SpeculationRules">
+			{
+				"prefetch": [
+					{
+						"urls": ["/"]
+					}
+				]
+			}
+		</script>
 		<script type="application/ld+json">
 			{}
 		</script>

@@ -40,7 +40,7 @@
 
 #### `head-element-order`
 
-Markuplint のドキュメントでも言及されている [rviscomi/capo.js](https://github.com/rviscomi/capo.js/) を参考に `<head>` 要素内の記述順序を設定している。
+Markuplint のドキュメントでも言及されている [capo.js](https://rviscomi.github.io/capo.js/) を参考に `<head>` 要素内の記述順序を設定している。
 
 ```javascript
 'head-element-order': [
@@ -59,6 +59,7 @@ Markuplint のドキュメントでも言及されている [rviscomi/capo.js](h
   'link[rel="prefetch" i]',
   'link[rel="dns-prefetch" i]',
   'link',
+  'script[type="importmap" i]',
   'script[src]',
   'script',
   'meta',

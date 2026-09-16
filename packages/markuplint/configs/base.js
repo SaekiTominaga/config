@@ -32,6 +32,7 @@ export default {
 			'link[rel="prefetch" i]',
 			'link[rel="dns-prefetch" i]',
 			'link',
+			'script[type="importmap" i]',
 			'script[src]',
 			'script',
 			'meta',

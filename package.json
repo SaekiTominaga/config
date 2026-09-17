@@ -5,8 +5,14 @@
 		"packages/*"
 	],
 	"type": "module",
+	"scripts": {
+		"lint": "npm run lint:js",
+		"lint:js": "oxlint"
+	},
 	"devDependencies": {
 		"oxfmt": "^0.64.0",
+		"oxlint": "1.83.0",
+		"oxlint-tsgolint": "7.0.2001",
 		"rimraf": "^6.1.3"
 	}
 }

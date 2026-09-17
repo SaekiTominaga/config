@@ -1,7 +1,4 @@
-{
-	const fn = function (s: string) {
-		// No error?
-		console.log(s.substr(3));
-	};
-	fn('42');
-}
+const fn = (s: string) => s.slice(3);
+fn('42');
+
+export { fn };

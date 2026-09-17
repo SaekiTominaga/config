@@ -1,3 +1,1 @@
-import configBase from './configs/base.js';
-
-export default configBase;
+export { default } from './configs/base.js';

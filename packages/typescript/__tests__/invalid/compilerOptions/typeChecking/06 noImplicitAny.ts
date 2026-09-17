@@ -1,7 +1,4 @@
-{
-	const fn = function (s) {
-		// No error?
-		console.log(s.substr(3));
-	};
-	fn(42);
-}
+const fn = (s) => s.slice(3);
+fn(42);
+
+export { fn };

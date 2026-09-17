@@ -1,11 +1,7 @@
-{
-	// Declared as existing
+export const fn = (env: { NAME: string; OS: string; [propName: string]: string }) => {
 	const sysName = env.NAME;
 	const os = env.OS;
-
-	// Not declared, but because of the index
-	// signature, then it is considered a string
 	const nodeEnv = env['NODE_ENV'];
 
-	console.debug(sysName.trim(), os.trim(), nodeEnv.trim());
-}
+	return { sysName, os, nodeEnv: nodeEnv.trim() };
+};

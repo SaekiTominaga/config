@@ -11,8 +11,6 @@ test('valid', async (t) => {
 		const files = fs.promises.glob('__tests__/valid/**/*.html');
 
 		for await (const file of files) {
-			console.debug(file);
-
 			const mlFile = await MLEngine.toMLFile(file.replaceAll('\\', '/'));
 			if (mlFile === undefined) {
 				continue;
@@ -27,10 +25,7 @@ test('valid', async (t) => {
 	});
 
 	await t.test('violations', () => {
-		const violations = linterResults
-			.map((result) => result?.violations)
-			.flat()
-			.map((violation) => violation?.ruleId);
+		const violations = linterResults.flatMap((result) => result?.violations).map((violation) => violation?.ruleId);
 
 		assert.deepEqual(violations, []);
 	});
@@ -43,8 +38,6 @@ test('invalid', async (t) => {
 		const files = fs.promises.glob('__tests__/invalid/**/*.html');
 
 		for await (const file of files) {
-			console.debug(file);
-
 			const mlFile = await MLEngine.toMLFile(file.replaceAll('\\', '/'));
 			if (mlFile === undefined) {
 				continue;
@@ -59,10 +52,7 @@ test('invalid', async (t) => {
 	});
 
 	await t.test('violations', () => {
-		const violations = linterResults
-			.map((result) => result?.violations)
-			.flat()
-			.map((violation) => violation?.ruleId);
+		const violations = linterResults.flatMap((result) => result?.violations).map((violation) => violation?.ruleId);
 
 		assert.deepEqual(violations, [
 			/* rules/no-restricted-attr.html */

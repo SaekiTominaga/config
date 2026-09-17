@@ -238,7 +238,7 @@ export default {
 		// comment-pattern
 		// ✅ container-name-pattern
 		// ✅ custom-media-pattern
-		'custom-property-pattern': /^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$/, // ✅
+		'custom-property-pattern': /^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$/u, // ✅
 		// ✅ keyframes-name-pattern
 		// ✅ layer-name-pattern
 		// ✅ selector-class-pattern

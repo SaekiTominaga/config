@@ -6,11 +6,13 @@
 	],
 	"type": "module",
 	"scripts": {
-		"lint": "npm run lint:js & npm run lint:package",
+		"prelint": "npm run build -w @w0s/oxlint-config",
+		"lint": "conc --raw \"npm run lint:js\" \"npm run lint:package\"",
 		"lint:js": "oxlint",
-		"lint:package": "publint packages/eslint & publint packages/markuplint & publint packages/oxlint & publint packages/stylelint & publint packages/typescript"
+		"lint:package": "conc --raw \"publint packages/eslint\" \"publint packages/markuplint\" \"publint packages/oxlint\" \"publint packages/stylelint\" \"publint packages/typescript\""
 	},
 	"devDependencies": {
+		"concurrently": "10.0.5",
 		"oxfmt": "0.64.0",
 		"oxlint": "1.83.0",
 		"oxlint-tsgolint": "7.0.2001",

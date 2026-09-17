@@ -30,15 +30,15 @@
 		"test": "node __tests__/index.test.js"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.39.5",
-		"@types/node": "^24.13.3",
-		"eslint": "^9.39.5",
-		"eslint-plugin-functional": "^10.0.0",
-		"eslint-plugin-import": "^2.32.0",
-		"eslint-plugin-jsdoc": "^64.1.0",
-		"eslint-plugin-safely-storage": "^1.1.0",
-		"globals": "^17.11.0",
-		"typescript-eslint": "^8.67.0"
+		"@eslint/js": "9.39.5",
+		"@types/node": "24.13.3",
+		"eslint": "9.39.5",
+		"eslint-plugin-functional": "10.0.0",
+		"eslint-plugin-import": "2.32.0",
+		"eslint-plugin-jsdoc": "64.1.0",
+		"eslint-plugin-safely-storage": "1.1.0",
+		"globals": "17.11.0",
+		"typescript-eslint": "8.67.0"
 	},
 	"peerDependencies": {
 		"@eslint/js": "^9.35.0",

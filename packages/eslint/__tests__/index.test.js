@@ -1,6 +1,6 @@
 import { strict as assert } from 'node:assert/strict';
 import { test } from 'node:test';
-import { ESLint, Linter, loadESLint } from 'eslint';
+import { loadESLint } from 'eslint';
 import config from '../eslint.config.js';
 
 /** @type {typeof ESLint} */
@@ -36,7 +36,7 @@ test('invalid', async (t) => {
 	/** @type {Linter.LintMessage[]} */
 	let linterMessages;
 	t.before(async () => {
-		linterMessages = (await eslint.lintFiles(['__tests__/invalid/**/*.{js,ts}'])).map((result) => result.messages).flat();
+		linterMessages = (await eslint.lintFiles(['__tests__/invalid/**/*.{js,ts}'])).flatMap((result) => result.messages);
 	});
 
 	await t.test('error', () => {
@@ -44,7 +44,7 @@ test('invalid', async (t) => {
 			linterMessages
 				.filter((message) => message.severity === 2)
 				.map((message) => message.ruleId)
-				.sort(),
+				.toSorted(),
 			[
 				'@typescript-eslint/consistent-type-imports',
 				'@typescript-eslint/dot-notation',
@@ -106,7 +106,7 @@ test('invalid', async (t) => {
 			linterMessages
 				.filter((message) => message.severity === 1)
 				.map((message) => message.ruleId)
-				.sort(),
+				.toSorted(),
 			['jsdoc/lines-before-block', 'jsdoc/no-types', 'jsdoc/require-returns-type', 'jsdoc/tag-lines', 'no-console'],
 		);
 	});

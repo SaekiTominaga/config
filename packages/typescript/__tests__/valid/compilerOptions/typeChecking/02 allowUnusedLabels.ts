@@ -1,7 +1,6 @@
-export const verifyAge = function (age: number) {
-	// Forgot 'return' statement
+export const verifyAge = (age: number): boolean => {
 	if (age > 18) {
 		return true;
 	}
-	return;
+	return false;
 };

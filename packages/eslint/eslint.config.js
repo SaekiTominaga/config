@@ -10,7 +10,7 @@ import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import configEslintLayoutFormatting from './rules/eslint/layout&formatting.js';
-import configEslintPossibleProblems from './rules/eslint/possible-problems.js';
+import configEslintPossibleProblems from './rules/eslint/possibleProblems.js';
 import configEslintSuggestions from './rules/eslint/suggestions.js';
 import configFunctional from './rules/functional.js';
 import configImport from './rules/import.js';

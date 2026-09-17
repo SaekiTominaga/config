@@ -1,8 +1,6 @@
-export const lookupHeadphonesManufacturer = function (color: 'blue' | 'black'): string {
+export const lookupHeadphonesManufacturer = (color: 'blue' | 'black'): string => {
 	if (color === 'blue') {
 		return 'beats';
-	} else {
-		('bose');
 	}
 	return '';
 };

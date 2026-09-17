@@ -1,6 +1,8 @@
-export const verifyAge = function (age: number) {
-	// Forgot 'return' statement
+// oxlint-disable no-unused-labels no-unused-expressions no-labels
+
+export const verifyAge = (age: number): boolean => {
 	if (age > 18) {
 		verified: true;
 	}
+	return age > 18;
 };

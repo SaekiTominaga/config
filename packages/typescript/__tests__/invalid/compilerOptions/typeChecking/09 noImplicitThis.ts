@@ -1,3 +1,5 @@
+// oxlint-disable func-names class-methods-use-this
+
 export class Rectangle {
 	width: number;
 

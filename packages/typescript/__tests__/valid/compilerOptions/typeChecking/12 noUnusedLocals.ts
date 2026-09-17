@@ -1,3 +1,1 @@
-(modelID: number) => {
-	return { type: 'keyboard', modelID };
-};
+export default (modelID: number) => ({ type: 'keyboard', modelID });

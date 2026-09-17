@@ -1,11 +1,23 @@
-export class Album {
-	setup() {}
+// oxlint-disable max-classes-per-file
+
+class Album {
+	readonly foo = 'abc';
+
+	setup() {
+		return this.foo;
+	}
 }
 
-export class MLAlbum extends Album {
-	override setup() {}
+class MLAlbum extends Album {
+	override setup() {
+		return this.foo;
+	}
 }
 
-export class SharedAlbum extends Album {
-	override setup() {}
+class SharedAlbum extends Album {
+	override setup() {
+		return this.foo;
+	}
 }
+
+export { Album, MLAlbum, SharedAlbum };

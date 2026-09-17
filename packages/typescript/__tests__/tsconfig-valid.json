@@ -1,6 +1,6 @@
 {
 	"extends": "../tsconfig.json",
-	"include": ["@types/*.d.ts", "valid/**/*.ts"],
+	"include": ["valid/**/*.ts"],
 	"compilerOptions": {
 		/* Emit */
 		"noEmit": true,

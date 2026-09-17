@@ -19,15 +19,15 @@
 	"type": "module",
 	"exports": {
 		".": {
-			"types": "./dist/configs/base.d.js",
+			"types": "./dist/configs/base.d.ts",
 			"default": "./dist/configs/base.js"
 		},
 		"./browser": {
-			"types": "./dist/configs/browser.d.js",
+			"types": "./dist/configs/browser.d.ts",
 			"default": "./dist/configs/browser.js"
 		},
 		"./node": {
-			"types": "./dist/configs/node.d.js",
+			"types": "./dist/configs/node.d.ts",
 			"default": "./dist/configs/node.js"
 		}
 	},

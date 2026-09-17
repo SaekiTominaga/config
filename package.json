@@ -6,13 +6,15 @@
 	],
 	"type": "module",
 	"scripts": {
-		"lint": "npm run lint:js",
-		"lint:js": "oxlint"
+		"lint": "npm run lint:js & npm run lint:package",
+		"lint:js": "oxlint",
+		"lint:package": "publint packages/eslint & publint packages/markuplint & publint packages/oxlint & publint packages/stylelint & publint packages/typescript"
 	},
 	"devDependencies": {
 		"oxfmt": "^0.64.0",
 		"oxlint": "1.83.0",
 		"oxlint-tsgolint": "7.0.2001",
+		"publint": "0.3.24",
 		"rimraf": "^6.1.3"
 	}
 }

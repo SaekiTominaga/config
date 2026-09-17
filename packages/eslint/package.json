@@ -15,10 +15,13 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"files": [
+		"configs",
 		"rules"
 	],
 	"type": "module",
-	"main": "eslint.config.js",
+	"exports": {
+		".": "./configs/base.js"
+	},
 	"publishConfig": {
 		"access": "public"
 	},

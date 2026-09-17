@@ -12,9 +12,13 @@
 		"type": "git",
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
-	"files": [],
+	"files": [
+		"configs"
+	],
 	"type": "module",
-	"main": "configs/base.js",
+	"exports": {
+		".": "./configs/base.js"
+	},
 	"publishConfig": {
 		"access": "public"
 	},

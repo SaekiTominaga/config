@@ -12,13 +12,13 @@
 		"url": "git+https://github.com/SaekiTominaga/config.git"
 	},
 	"files": [
-		"tsconfig.json",
-		"tsconfig-*.json"
+		"configs"
 	],
 	"type": "module",
 	"exports": {
-		".": "./tsconfig.json",
-		"./*": "./tsconfig-*.json"
+		".": "./configs/base.json",
+		"./bundler": "./configs/bundler.json",
+		"./node": "./configs/node.json"
 	},
 	"publishConfig": {
 		"access": "public"

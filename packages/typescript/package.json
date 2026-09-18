@@ -16,9 +16,9 @@
 	],
 	"type": "module",
 	"exports": {
-		".": "./configs/base.json",
-		"./bundler": "./configs/bundler.json",
-		"./node": "./configs/node.json"
+		".": "./configs/tsconfig.json",
+		"./bundler": "./configs/tsconfig.bundler.json",
+		"./node": "./configs/tsconfig.node.json"
 	},
 	"publishConfig": {
 		"access": "public"

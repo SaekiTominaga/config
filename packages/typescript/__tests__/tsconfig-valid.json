@@ -1,5 +1,5 @@
 {
-	"extends": "../configs/base.json",
+	"extends": "../configs/tsconfig.json",
 	"include": ["valid/**/*.ts"],
 	"compilerOptions": {
 		/* Emit */

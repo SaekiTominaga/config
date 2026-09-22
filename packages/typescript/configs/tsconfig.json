@@ -22,7 +22,6 @@
 		"verbatimModuleSyntax": true,
 
 		/* Language and Environment */
-		"moduleDetection": "force",
 		"target": "es2025",
 
 		/* Projects */

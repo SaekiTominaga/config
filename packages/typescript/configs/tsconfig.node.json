@@ -4,6 +4,9 @@
 		/* Modules */
 		"module": "node18",
 		"moduleResolution": "node16",
-		"types": ["node"]
+		"types": ["node"],
+
+		/* Language and Environment */
+		"moduleDetection": "force"
 	}
 }

@@ -187,15 +187,8 @@ export default {
 				ignoreProperties: ['overflow-x', 'overflow-y'], // for Safari 18.7-
 			},
 		],
-		'unit-layout-mappings': ['flow-relative'],
-		'value-keyword-layout-mappings': [
-			'flow-relative',
-			{
-				ignoreProperties: [
-					'caption-side', // https://drafts.csswg.org/css-logical-1/#caption-side
-				],
-			},
-		],
+		'unit-layout-mappings': 'flow-relative',
+		'value-keyword-layout-mappings': 'flow-relative',
 
 		/* Max & min */
 		// ✅ declaration-block-single-line-max-declarations

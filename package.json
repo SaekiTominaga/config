@@ -12,7 +12,7 @@
 		"lint:package": "conc --raw \"publint packages/eslint\" \"publint packages/markuplint\" \"publint packages/oxlint\" \"publint packages/stylelint\" \"publint packages/typescript\""
 	},
 	"devDependencies": {
-		"concurrently": "10.0.5",
+		"concurrently": "10.0.6",
 		"oxfmt": "0.64.0",
 		"oxlint": "1.83.0",
 		"oxlint-tsgolint": "7.0.2001",

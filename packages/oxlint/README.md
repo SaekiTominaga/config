@@ -15,8 +15,8 @@ In addition to the built-in plugins, this configuration uses the following npm p
 
 ```typescript
 /* oxlint.config.ts */
-import { defineConfig } from 'oxlint';
 import w0sConfigNode from '@w0s/oxlint-config/node';
+import { defineConfig } from 'oxlint';
 
 export default defineConfig({
   extends: [w0sConfigNode],

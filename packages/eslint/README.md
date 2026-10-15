@@ -40,8 +40,8 @@ export default [
 or
 
 ```javascript
-import { defineConfig } from 'eslint/config';
 import w0sConfig from '@w0s/eslint-config';
+import { defineConfig } from 'eslint/config';
 
 export default defineConfig(w0sConfig, {
   // other options

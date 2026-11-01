@@ -40,7 +40,7 @@
 		"test": "node __tests__/index.test.ts"
 	},
 	"devDependencies": {
-		"oxlint-plugin-safely-storage": "1.0.0"
+		"oxlint-plugin-safely-storage": "1.0.2"
 	},
 	"peerDependencies": {
 		"oxlint": "^1.80.0",

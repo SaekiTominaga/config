@@ -1,5 +1,3 @@
-// @ts-check
-
 /** @type {readonly (string | RegExp)[]} */
 const disallowedShothands = [
 	'animation',
@@ -136,7 +134,12 @@ export default {
 		// media-feature-name-unit-allowed-list
 		// media-feature-name-value-allowed-list
 		// property-allowed-list
-		'property-disallowed-list': disallowedShothands,
+		'property-disallowed-list': [
+			disallowedShothands,
+			{
+				message: (property) => `Disallowed property \`${property}\`. Use longhand properties instead`,
+			},
+		],
 		// ✅ property-no-vendor-prefix
 		// rule-nesting-at-rule-required-list
 		// rule-selector-property-disallowed-list
@@ -145,7 +148,13 @@ export default {
 		// selector-attribute-operator-disallowed-list
 		// selector-combinator-allowed-list
 		// selector-combinator-disallowed-list
-		// selector-disallowed-list
+		'selector-disallowed-list': [
+			[/\[\s*(?:part|rel|headers|sandbox|itemprop|aria-labelledby|aria-describedby)\s*=/u],
+			{
+				message: (selector) => `Disallowed attribute selector \`${selector}\`. Use the "~=" format instead`,
+			},
+		],
+
 		// selector-no-qualifying-type
 		// ✅ selector-no-vendor-prefix
 		// selector-pseudo-class-allowed-list

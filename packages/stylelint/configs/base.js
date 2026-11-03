@@ -62,6 +62,7 @@ export default {
 		'selector-no-invalid': true,
 		// ✅ string-no-newline
 		// ✅ syntax-string-no-invalid
+		// ✅ value-no-invalid
 
 		/* Irregular */
 		// ✅ no-irregular-whitespace
@@ -114,6 +115,7 @@ export default {
 		// color-no-hex
 		// comment-word-disallowed-list
 		'declaration-no-important': true,
+		// declaration-property-custom-property-allowed-list
 		'declaration-property-unit-allowed-list': {
 			'line-height': [],
 		},
@@ -154,7 +156,6 @@ export default {
 				message: (selector) => `Disallowed attribute selector \`${selector}\`. Use the "~=" format instead`,
 			},
 		],
-
 		// selector-no-qualifying-type
 		// ✅ selector-no-vendor-prefix
 		// selector-pseudo-class-allowed-list
@@ -164,6 +165,7 @@ export default {
 		// unit-allowed-list
 		// unit-disallowed-list
 		// ✅ value-no-vendor-prefix
+		// value-type-custom-property-required-list
 
 		/* Case */
 		// ✅ function-name-case

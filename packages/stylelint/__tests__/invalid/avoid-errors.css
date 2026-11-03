@@ -1,15 +1,3 @@
-/* selector-no-deprecated */
-:focus-ring {
-}
-
-/* selector-no-invalid */
-[.selector-no-invalid] {
-}
-
-/* selector-no-unmatchable */
-label:checked {
-}
-
 /* no-unknown-animations */
 .no-unknown-animations {
 	animation-name: foo;

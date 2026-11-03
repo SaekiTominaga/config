@@ -31,7 +31,7 @@ export default {
 		// ✅ declaration-property-value-keyword-no-deprecated
 		// ✅ media-type-no-deprecated
 		// ✅ property-no-deprecated
-		'selector-no-deprecated': true,
+		// ✅ selector-no-deprecated
 
 		/* Descending */
 		'no-descending-specificity': null, // ✅
@@ -50,6 +50,7 @@ export default {
 		// ✅ no-empty-source
 
 		/* Invalid */
+		// ✅ at-charset-rule-no-invalid
 		// ✅ at-rule-prelude-no-invalid
 		// color-no-invalid-hex
 		// ✅ function-calc-no-unspaced-operator
@@ -59,7 +60,7 @@ export default {
 		// ✅ no-invalid-double-slash-comments
 		// ✅ no-invalid-position-at-import-rule
 		// ✅ no-invalid-position-declaration
-		'selector-no-invalid': true,
+		// ✅ selector-no-invalid
 		// ✅ string-no-newline
 		// ✅ syntax-string-no-invalid
 		// ✅ value-no-invalid
@@ -80,7 +81,7 @@ export default {
 
 		/* Unmatchable */
 		// ✅ selector-anb-no-unmatchable
-		'selector-no-unmatchable': true,
+		// ✅ selector-no-unmatchable
 
 		/* Unknown */
 		// ✅ annotation-no-unknown

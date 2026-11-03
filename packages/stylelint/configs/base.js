@@ -200,7 +200,6 @@ export default {
 		'value-keyword-layout-mappings': 'flow-relative',
 
 		/* Max & min */
-		// ✅ declaration-block-single-line-max-declarations
 		// declaration-property-max-values
 		// max-nesting-depth
 		// ✅ number-max-precision

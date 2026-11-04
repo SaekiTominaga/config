@@ -31,7 +31,7 @@ export default {
 		// ✅ declaration-property-value-keyword-no-deprecated
 		// ✅ media-type-no-deprecated
 		// ✅ property-no-deprecated
-		'selector-no-deprecated': true,
+		// ✅ selector-no-deprecated
 
 		/* Descending */
 		'no-descending-specificity': null, // ✅
@@ -50,6 +50,7 @@ export default {
 		// ✅ no-empty-source
 
 		/* Invalid */
+		// ✅ at-charset-rule-no-invalid
 		// ✅ at-rule-prelude-no-invalid
 		// color-no-invalid-hex
 		// ✅ function-calc-no-unspaced-operator
@@ -59,9 +60,10 @@ export default {
 		// ✅ no-invalid-double-slash-comments
 		// ✅ no-invalid-position-at-import-rule
 		// ✅ no-invalid-position-declaration
-		'selector-no-invalid': true,
+		// ✅ selector-no-invalid
 		// ✅ string-no-newline
 		// ✅ syntax-string-no-invalid
+		// ✅ value-no-invalid
 
 		/* Irregular */
 		// ✅ no-irregular-whitespace
@@ -79,7 +81,7 @@ export default {
 
 		/* Unmatchable */
 		// ✅ selector-anb-no-unmatchable
-		'selector-no-unmatchable': true,
+		// ✅ selector-no-unmatchable
 
 		/* Unknown */
 		// ✅ annotation-no-unknown
@@ -114,6 +116,7 @@ export default {
 		// color-no-hex
 		// comment-word-disallowed-list
 		'declaration-no-important': true,
+		// declaration-property-custom-property-allowed-list
 		'declaration-property-unit-allowed-list': {
 			'line-height': [],
 		},
@@ -154,7 +157,6 @@ export default {
 				message: (selector) => `Disallowed attribute selector \`${selector}\`. Use the "~=" format instead`,
 			},
 		],
-
 		// selector-no-qualifying-type
 		// ✅ selector-no-vendor-prefix
 		// selector-pseudo-class-allowed-list
@@ -164,6 +166,7 @@ export default {
 		// unit-allowed-list
 		// unit-disallowed-list
 		// ✅ value-no-vendor-prefix
+		// value-type-custom-property-required-list
 
 		/* Case */
 		// ✅ function-name-case
@@ -200,7 +203,6 @@ export default {
 		'value-keyword-layout-mappings': 'flow-relative',
 
 		/* Max & min */
-		// ✅ declaration-block-single-line-max-declarations
 		// declaration-property-max-values
 		// max-nesting-depth
 		// ✅ number-max-precision

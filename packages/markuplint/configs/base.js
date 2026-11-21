@@ -364,18 +364,21 @@ export default {
 		}, // ✅ preset.html-standard
 		{
 			/* https://github.com/markuplint/markuplint/issues/1948 */
-			selector: 'template *',
+			selector: ':has(> template)',
+			rules: {
+				'require-owned-elements': false,
+			},
+		},
+	],
+	childNodeRules: [
+		{
+			/* https://github.com/markuplint/markuplint/issues/1948 */
+			selector: 'template',
+			inheritance: true,
 			rules: {
 				'no-empty-palpable-content': false,
 				'no-invalid-attr-value': false,
 				'require-accessible-name': false,
-			},
-		},
-		{
-			/* https://github.com/markuplint/markuplint/issues/1948 */
-			selector: ':has(> template)',
-			rules: {
-				'require-owned-elements': false,
 			},
 		},
 	],

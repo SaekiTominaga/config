@@ -13,7 +13,7 @@
 
 もちろん熟考のうえであれば本設定ファイルをそのまま `extends` しても構いませんし、 Issue や Pull Request による改善提案は歓迎します。
 
-なお本ドキュメントは Markuplint v5.0.0 時点のものです。
+なお本ドキュメントは Markuplint v5.6.1 時点のものです。
 
 - ▼ [`rules`](#rules)
 - ▼ [`nodeRules`](#noderules)
